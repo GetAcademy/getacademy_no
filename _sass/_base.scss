@@ -1,13 +1,27 @@
 $content-width: 800px;
 $main: #19ccaa;
-$font-style: 'Open Sans', sans-serif;
-$font-color: #262626;
 $link-color: #425469;
 $link-hover-color: $main;
 $heading-font: 'Muli', sans-serif;
 $heading-font-color: #425469;
 $light: #e7edf4;
 $header: #1d1425;
+$primary-color: #EE7100;
+$primary-color-active: #FF8B00;
+$secondary-button-color: #61A1CB;
+$secondary-button-active: #4388b6;
+$primary-border-color: #d6d6d6;
+$alternating-background-color: #dff4ff;
+
+// Layout
+$content-max-width: 1195px;
+$max-text-width-size: 672px;
+$global-padding: 30px;
+
+// Fonter
+$font-color: #333333;
+$font-size-default: 1.125em;
+$font-style: Poppins, sans-serif;
 
 *,
 *::before,
