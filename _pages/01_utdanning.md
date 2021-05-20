@@ -4,7 +4,7 @@ title: Utdanning
 permalink: /utdanning/
 ---
 
-Utdanning går her.
+Utdanning går her
 
 - A list item
 - Another list item
