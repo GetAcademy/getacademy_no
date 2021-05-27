@@ -9,7 +9,7 @@ excerpt_separator: <!--slutt-->
     <li class="news-card">
       <a href="{{ post.url }}">{{ post.title }}</a>
       <time>{{post.date | date: "%b %-d, %Y %R"}}</time>
-    {{ post.excerpt }}
+    {{ post.excerpt}} <!-- utdragsvisning -->
     </li>
   {% endfor %}
 </ul>

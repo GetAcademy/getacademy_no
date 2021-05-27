@@ -1,14 +1,12 @@
 ---
-layout: nyheter
-title:  "Første Nyheten"
+title:  "Data"
 date:   2021-05-20 11:07:15 +0200
-categories: nyheter,
-excerpt_separator: <!--more-->
+categories: nyheter
 ---
 
 Jekyll requires blog post files to be named according to the following format:
 
-`YEAR-MONTH-DAY-title.MARKUP` <!--more-->
+`YEAR-MONTH-DAY-title.MARKUP`<!--stop--> 
 Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
 Jekyll also offers powerful support for code snippets:

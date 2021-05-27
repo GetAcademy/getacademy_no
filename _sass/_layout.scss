@@ -15,12 +15,12 @@ h3 {
   line-height: 1.5;
 }
 h1 {
-  color: $main;
+  color: $primary-color;
   font-size: 2.5em;
   a,
   a:visited {
     text-decoration: none;
-    color: $main;
+    color: $primary-color;
   }
 }
 h2 {
@@ -85,9 +85,32 @@ time {
   }
 }
 
-/* Aside */
+/* Aside  NAV */
 
 aside {
+
+  .primary {
+    background-color: $primary-color;
+    border: none;
+    margin: 0 0px;
+    padding: 0.59em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 24px;
+  
+    &:hover {
+      background-color: $primary-color-active;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .primary {
+      font-size: 16px;
+      
+    }}
+
   .getlogo {
     height: 50px;
   }
@@ -118,9 +141,8 @@ aside {
           box-shadow: 0;
           &:hover,
           &:active {
-            background: $header;
             text-decoration: none;
-            color: $main;
+            color: $primary-color;
           }
         }
       }
