@@ -1,7 +1,5 @@
 ---
-layout: default
+title: Hjem
+layout: home
 ---
-
-<h2>Hjem</h2>
-
 Main content goes here.

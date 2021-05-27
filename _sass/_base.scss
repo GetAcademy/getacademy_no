@@ -1,11 +1,11 @@
-$content-width: 800px;
-$main: #19ccaa;
-$link-color: #425469;
-$link-hover-color: $main;
-$heading-font: 'Muli', sans-serif;
-$heading-font-color: #425469;
-$light: #e7edf4;
-$header: #1d1425;
+// $content-width: 800px;
+// $main: #19ccaa;
+// $link-color: #425469;
+// $link-hover-color: $main;
+// $heading-font: 'Muli', sans-serif;
+// $heading-font-color: #425469;
+// $light: #e7edf4;
+// $header: #1d1425;
 $primary-color: #EE7100;
 $primary-color-active: #FF8B00;
 $secondary-button-color: #61A1CB;
@@ -19,15 +19,6 @@ $max-text-width-size: 672px;
 $global-padding: 30px;
 
 // Fonter
-$font-color: #333333;
 $primary-font-color: #333333;
 $font-size-default: 1.125em;
 $font-style: Poppins, sans-serif;
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
