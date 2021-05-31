@@ -1,0 +1,20 @@
+<div class="startup-container">
+    <h2 class="startup-header">
+        Neste oppstartsperioder
+    </h2>
+    <div class="start-up">
+        {% for oppstart in site.data.oppstartsdatoer %}
+        <!--Oppstartsdatoer kan endres ved å endre _data/oppstartsdatoer.yml-->
+        <div class="start-up-child">
+            <strong class="date">{{ oppstart.dato }} </strong>
+            <br />
+            <strong class="capacity open">
+                <!--Endre på denne slik at den kan endres individuelt-->
+                {{ oppstart.kapasitet }}
+            </strong>
+        </div>
+        {% endfor %}
+    </div>
+    <a class="application-button" href="{{ page.url | prepend: site.baseurl }}"><button
+        class="button primary">Meld interesse</button></a>
+</div>

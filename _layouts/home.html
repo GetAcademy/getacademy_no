@@ -4,7 +4,8 @@
   <body>
     {% include header.html %}
     <main>
-        {% include home-attention-image.html %}
+        {% include home/01.attention-image.html %}
+        <div class="container-block">{% include home/02.oppstartsdatoer.html %}</div>
       <article>{{ content }}</article>
     </main>
     <footer>{% include footer.html %}</footer>

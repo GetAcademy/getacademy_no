@@ -1,21 +1,21 @@
 <aside>
-	<div class="container">
-		<nav>
-			<div class="nav-container">
-				<a href="{{ page.url | site.home }}"><img class="getlogo" src="/assets/get-academy.png"
+	<nav>
+		<div class="nav-container">
+			<div class="logo-container">
+				<a href="{{ page.url | site.home }}"><img class="logo" src="/assets/get-academy.png"
 						alt="GetAcademy Logo" /></a>
 			</div>
-			<ul>
+			<!--Consider using Javascript for mobile viewers -->
+			<div class="nav-buttons">
 				{% for page in site.pages %} {% if page.title %}
-				<li><a class="page-button" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+				<a class="link-div button-size" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
 				{% endif %} {% endfor %}
-				<button class="button primary">Meld interesse</button>
-			</ul>
-			</li>
-		</nav>
-	</div>
+				<a class="application-button" href="{{ page.url | prepend: site.baseurl }}"><button
+						class="button primary">Meld interesse</button></a>
+			</div>
+		</div>
+	</nav>
 </aside>
 
 <header>
 </header>
-

@@ -2,5 +2,4 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-@import 'base', 'layout', 'syntax-highlighting';
-@import "codehighlighter.css"; // {% highlight csharp  %} {% endhighlight %}
+@import 'base', 'layout', 'syntax-highlighting', 'navbar', 'codehighlighter', 'footer';
