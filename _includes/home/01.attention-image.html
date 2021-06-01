@@ -1,100 +1,98 @@
 <div class="container">
-    <img
-      class="hero-image"
-      src="../../assets/studenter-koder.jpeg"
-      alt="Studenter lærer koding på GET Academy"
-    />
-    <div class="cta-container">
-      <h1 class="cta-text"> <!-- Prev VueTyper -->
-        GET Academy
-      </h1>
-      <h2 class="cta-text">IT er veien til fremtiden</h2>
-      <h2 class="cta-text">Bli IT-Utvikler på under 1½ år</h2>
-      <br>
-      <h2 class="cta-text">GET Academy er en ideell organisasjon</h2>
-      <h2 class="cta-text">Les mer under <a href="/om-oss">Om oss</a></h2>
-    </div>
+  <img class="hero-image" src="{{ "/assets/studenter-koder.jpeg" | relative_url }}" alt="GetAcademy Logo"
+      alt=" Studenter lærer koding på GET Academy" />
+  <div class="cta-container">
+    <h1 class="cta-text">
+      <!-- Prev VueTyper -->
+      GET Academy
+    </h1>
+    <h2 class="cta-text">IT er veien til fremtiden</h2>
+    <h2 class="cta-text">Bli IT-Utvikler på under 1½ år</h2>
+    <br>
+    <h2 class="cta-text">GET Academy er en ideell organisasjon</h2>
+    <h2 class="cta-text">Les mer under <a href="/om-oss">Om oss</a></h2>
   </div>
-  <style lang="scss" scoped>    
-    .container {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+</div>
+<style lang="scss" scoped>
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .cta-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    align-items: left;
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  .hero-image {
+
+    animation: fadeIn 0.7s ease-in-out;
+    padding-bottom: 1rem;
+    align-self: flex-start;
+    width: 600px;
+    height: auto;
+  }
+
+  .hero-image:hover {
+    opacity: 1;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
     }
-    
-    .cta-container {
-      display: flex;
-      flex-direction: column;
-      flex-basis: 40%;
-      align-items: left;
-      justify-content: center;
-      white-space: nowrap;
-    }
-    
-    .hero-image {
-    
-      animation: fadeIn 0.7s ease-in-out;
-      padding-bottom: 1rem;
-      align-self: flex-start;
-      width: 600px;
-      height: auto;
-    }
-    
-    .hero-image:hover {
+
+    100% {
       opacity: 1;
     }
-    
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
+  }
+
+  .button.primary {
+    margin-top: 1rem;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 2.6em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  @media only screen and (max-width: 1010px) {
+    .cta-container {
+      padding: 0 0 2.5rem 1.5rem;
+      flex-basis: 30%;
     }
-    
-    .button.primary {
-      margin-top: 1rem;
-    }
-    
+
     h1 {
-      margin-bottom: 1rem;
+      margin-bottom: 0.3rem;
+      font-size: 2rem;
     }
-    
-    h1 {
-      font-size: 2.6em;
-    }
-    
+
     h2 {
-      font-size: 1.2em;
+      font-size: 1rem;
     }
-    
-    @media only screen and (max-width: 1010px) {
-      .cta-container {
-        padding: 0 0 2.5rem 1.5rem;
-        flex-basis: 30%;
-      }
-    
-      h1 {
-        margin-bottom: 0.3rem;
-        font-size: 2rem;
-      }
-    
-      h2 {
-        font-size: 1rem;
-      }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .cta-container {
+      padding: 0 0 2.5rem 1.5rem;
+      flex-basis: 100%;
     }
-    
-    @media only screen and (max-width: 500px) {
-      .cta-container {
-        padding: 0 0 2.5rem 1.5rem;
-        flex-basis: 100%;
-      }
-    
-      .hero-image {
-        width: 100%;
-        padding-bottom: 1.5rem;
-      }
+
+    .hero-image {
+      width: 100%;
+      padding-bottom: 1.5rem;
     }
-    </style>
-    
+  }
+</style>
