@@ -1,0 +1,37 @@
+    <div class="timeline">
+      <div v-for="(item, index) of items" v-bind:key="index">
+        <div class="container left" v-if="index % 2 == 0">
+          <div class="content">
+            <h3>{{ item.header }}</h3>
+  
+            <h4 v-if="item.miniHeader">{{ item.miniHeader }}</h4>
+  
+            <p v-if="item.texts">{{ item.texts }}</p>
+  
+            <router-link
+              class="link-text"
+              v-if="item.link"
+              :to="item.source"
+              alt="getAcademy"
+            >{{ item.link }}</router-link>
+          </div>
+        </div>
+  
+        <div class="container right" v-else>
+          <div class="content">
+            <h3>{{ item.header }}</h3>
+  
+            <h4 v-if="item.miniHeader">{{ item.miniHeader }}</h4>
+  
+            <p v-if="item.texts">{{ item.texts }}</p>
+  
+            <router-link
+              class="link-text"
+              v-if="item.link"
+              :to="item.source"
+              alt="getAcademy"
+            >{{ item.link }}</router-link>
+          </div>
+        </div>
+      </div>
+    </div>
