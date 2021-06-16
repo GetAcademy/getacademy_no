@@ -1,37 +1,24 @@
+<div class="steps-container">
+  <h2>Bli en utvikler i turbofart!</h2>
+
+  <h3 class="steg-h3">
+    Skolen har lokaler i Larvik, men du kan ta både Start IT og Get IT 100% på
+    nett. Vår målgruppe er unge voksne under 30.
+  </h3>
+
+  <div class="flex-container">
     <div class="timeline">
-      <div v-for="(item, index) of items" v-bind:key="index">
-        <div class="container left" v-if="index % 2 == 0">
+      <div>{% for steg in site.data.steg-utvikler %}
+        <div class="{{ steg.direction }}">
           <div class="content">
-            <h3>{{ item.header }}</h3>
-  
-            <h4 v-if="item.miniHeader">{{ item.miniHeader }}</h4>
-  
-            <p v-if="item.texts">{{ item.texts }}</p>
-  
-            <router-link
-              class="link-text"
-              v-if="item.link"
-              :to="item.source"
-              alt="getAcademy"
-            >{{ item.link }}</router-link>
+            <h3>{{ steg.header }}</h3>
+            <h4>{{ steg.miniHeader }}</h4>
+            <p>{{ steg.texts }}</p>
+            <a class="link-text" alt="getAcademy">{{ steg.link }}</a>
           </div>
         </div>
-  
-        <div class="container right" v-else>
-          <div class="content">
-            <h3>{{ item.header }}</h3>
-  
-            <h4 v-if="item.miniHeader">{{ item.miniHeader }}</h4>
-  
-            <p v-if="item.texts">{{ item.texts }}</p>
-  
-            <router-link
-              class="link-text"
-              v-if="item.link"
-              :to="item.source"
-              alt="getAcademy"
-            >{{ item.link }}</router-link>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
+  </div>
+</div>

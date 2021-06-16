@@ -2,4 +2,16 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-@import 'base', 'layout', 'syntax-highlighting', 'navbar', 'codehighlighter', 'footer';
+@import 
+'global', 
+'layout', 
+'navbar', 
+'footer',
+'news', 
+// Home
+'_01.oppmerksomhets-bilde',
+'_02.oppstart-tider',
+'_03.steg-utvikler';
+
+// 'syntax-highlighting', 
+// 'codehighlighter', 

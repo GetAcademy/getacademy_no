@@ -3,7 +3,7 @@
         Neste oppstartsperioder
     </h2>
     <div class="start-up">
-        {% for oppstart in site.data.oppstartsdatoer %}
+        {% for oppstart in site.data.oppstarts-datoer %}
         <!--Oppstartsdatoer kan endres ved å endre _data/oppstartsdatoer.yml-->
         <div class="start-up-child">
             <strong class="date">{{ oppstart.dato }} </strong>
@@ -15,6 +15,10 @@
         </div>
         {% endfor %}
     </div>
-    <a class="application-button" href="{{ page.url | prepend: site.baseurl }}"><button
-        class="button primary">Meld interesse</button></a>
+</div>
+<div id="application-container">
+    <a class="application-button" href="{{ page.url | prepend: site.baseurl }}">
+        <!-- Søknad -->
+        <button class="button primary">Meld interesse</button>
+    </a>
 </div>

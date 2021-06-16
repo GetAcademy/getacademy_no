@@ -1,0 +1,125 @@
+#application-container {
+  padding: 30px 0;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.startup-container {
+    margin: auto;
+    padding: $global-padding 0;
+    text-align: center;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    background-color: #ffffff;
+    justify-content: center;
+    max-width: 1195px;
+    border: 1px solid $primary-border-color;
+    box-shadow: 0 2px 10px 0px $primary-border-color;
+    
+    .application-button {
+      text-align: center;
+    }
+    
+    .startup-card {
+      box-shadow: -10px 10px 80px rgba(0, 0, 0, 0.1);
+    }
+  
+    .startup-button {
+      margin-top: 30px !important;
+    }
+  
+    .startup-header {
+      padding: $global-padding;
+      border-bottom: 1px solid $primary-border-color;
+    }
+  
+    .start-up {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .start-up-child {
+      padding: 30px 20px;
+      flex-grow: 1;
+      flex-basis: 0;
+      border-left: 1px solid $primary-border-color;
+      border-right: 1px solid $primary-border-color;
+  
+      &:first-child {
+        border-left: 0;
+      }
+  
+      &:last-child {
+        border-right: 0;
+      }
+    }
+    .dateAndTime {
+      padding: 5px;
+      font-weight: bold;
+    }
+  
+    .status {
+      font-size: 20px;
+    }
+  
+    // .capacity,
+    // .date {
+    //   font-weight: 900;
+    // }
+
+    .date{
+        font-weight: 400;
+    }
+    .capacity {
+        font-weight: 700;
+    }
+  
+    .full {
+      color: red;
+    }
+  
+    .few-available {
+      color: rgb(255, 115, 0);
+    }
+  
+    .open {
+      color: #339966;
+    }
+  
+    @media only screen and (max-width: 768px) {
+      .startup-container {
+        width: auto;
+      }
+  
+      .start-up {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      .start-up-child {
+        padding: 20px 20px;
+        margin: 0 30px;
+        text-align: left;
+        justify-content: stretch;
+        border-bottom: 1px solid $primary-border-color;
+        border-left: 0;
+        border-right: 0;
+  
+        &:first-child {
+          border-top: 0;
+        }
+  
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+  
+      .header {
+        margin: 0 10px;
+        text-align: left;
+        font-size: 22px;
+      }
+    }
+  }
+  
