@@ -9,41 +9,52 @@
                 "Dimensjonering av avansert IKT-kompetanse"
             </a>
         </p>
-
         <div id="chart" :options="options" :series="series"></div>
     </div>
+    <div id="application-container">
+        <a class="application-button" href="{{ page.url | prepend: site.baseurl }}">
+            <!-- Søknad -->
+            <button class="button primary">Meld interesse</button>
+        </a>
+    </div>
 </div>
-
+<style>
+    #application-container {
+        text-align: center;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+</style>
 
 <script>
-let options = {
-  chart: {
-          redrawOnParentResize: true,
-          type: "area",
-          toolbar: {
-            show: false,
-          },
-        id: "it-utviklere",
-                stroke: {
-          curve: "straight",
+    let options = {
+        chart: {
+            redrawOnParentResize: true,
+            type: "area",
+            toolbar: {
+                show: false,
+            },
+            id: "it-utviklere",
+            stroke: {
+                curve: "straight",
+            },
+            xaxis: {
+                categories: ["2020", "2030"],
+            },
+            yaxis: {
+                show: true,
+            },
         },
+        series: [{
+            name: "Norges behov for IT utviklere",
+            data: [42500, 55000]
+        }],
         xaxis: {
-          categories: ["2020", "2030"],
-        },
-        yaxis: {
-          show: false,
-        },
-  },
-  series: [{
-    name: "Norges behov for IT utviklere",
-    data: [42500, 55000]
-  }],
-  xaxis: {
-    categories: [2020,2030]
-  }
-}
+            categories: [2020, 2030]
+        }
+    }
 
-var chart = new ApexCharts(document.querySelector("#chart"), options);
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
 
-chart.render();
-  </script>
+    chart.render();
+</script>
