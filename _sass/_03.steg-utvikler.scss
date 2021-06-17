@@ -1,3 +1,28 @@
+.container-block-steps {
+  padding: 3rem $global-padding;
+  margin: auto;
+  margin-bottom: 60px;
+  max-width: 1195px;
+
+  &:nth-child(even) {
+    background-color: $alternating-background-color;
+  }
+
+  &:nth-child(2) {
+    margin: 0 auto;
+  }
+
+  .btn-container {
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .container-block {
+      margin-bottom: 20px;
+    }
+  }
+
+
 .steps-container
 {
     * {
@@ -166,5 +191,5 @@
           left: -21vw;
         }
       }
-
+}
 }
