@@ -7,10 +7,10 @@
 			</div>
 			<!--Consider using Javascript for mobile viewers -->
 			<div class="nav-buttons">
-				{% for page in site.pages %} {% if page.title %}
+				{% for page in site.pages %} {% if page.layout == "page" %}
 				<a class="link-div button-size" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
 				{% endif %} {% endfor %}
-				<a class="application-button" href="{{ page.url | prepend: site.baseurl }}"><button
+				<a class="application-button" href="{{ site.baseurl }}{% link _pages/soknad.md %}"><button
 						class="button primary">Meld interesse</button></a>
 			</div>
 		</div>
