@@ -1,0 +1,49 @@
+<div>
+    <div class="chart-wrapper">
+        <h2>Økende behov for IT utviklere</h2>
+        <p>
+            Fra 2020 til 2030 vil behovet for "avansert IKT-kompetanse" øke med 30%
+            , ifølge regjeringens rapport
+            <a href="https://www.regjeringen.no/globalassets/upload/kmd/aif/dokumenter/dimensjonering_avansert_ikt_kompetanse.pdf?id=2260119"
+                rel="noopener" target="_blank">
+                "Dimensjonering av avansert IKT-kompetanse"
+            </a>
+        </p>
+
+        <div id="chart" :options="options" :series="series"></div>
+    </div>
+</div>
+
+
+<script>
+let options = {
+  chart: {
+          redrawOnParentResize: true,
+          type: "area",
+          toolbar: {
+            show: false,
+          },
+        id: "it-utviklere",
+                stroke: {
+          curve: "straight",
+        },
+        xaxis: {
+          categories: ["2020", "2030"],
+        },
+        yaxis: {
+          show: false,
+        },
+  },
+  series: [{
+    name: "Norges behov for IT utviklere",
+    data: [42500, 55000]
+  }],
+  xaxis: {
+    categories: [2020,2030]
+  }
+}
+
+var chart = new ApexCharts(document.querySelector("#chart"), options);
+
+chart.render();
+  </script>

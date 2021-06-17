@@ -1,0 +1,20 @@
+.container-block-statistics {
+    .chart-wrapper {
+        max-width: $max-text-width-size;
+        margin: auto;
+      }
+      
+      h2 {
+        text-align: center;
+      }
+      
+      p {
+        text-align: center;
+      }
+      
+      @media only screen and (max-width: 768px) {
+        div.chart-wrapper {
+          max-width: 100%;
+        }
+      }
+}
