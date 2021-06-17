@@ -1,0 +1,45 @@
+.container-block-feedback {
+    padding: 3rem $global-padding;
+    margin: auto;
+    margin-bottom: 60px;
+    // max-width: 1195px;
+  
+    &:nth-child(even) {
+      background-color: $alternating-background-color;
+    }
+  
+    &:nth-child(2) {
+      margin: 0 auto;
+    }
+    
+  .container {
+    text-align: center;
+  }
+  
+  img {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    user-select: none;
+  }
+  
+  .custom-arrow::before {
+    color: $primary-font-color;
+  }
+  
+  .p-quotes {
+    max-width: 100%;
+    padding: 0px 10%;
+  }
+  
+  .btn-container {
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .container-block {
+      margin-bottom: 20px;
+    }
+  }
+}

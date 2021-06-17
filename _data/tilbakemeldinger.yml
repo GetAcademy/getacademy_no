@@ -1,0 +1,24 @@
+- image: /assets/tilbakemeldinger-elever/stella.jpg
+  name: Stella L. N.
+  quote: For første gang syntes jeg det var veldig gøy å gå på skole. GET ga meg motivasjon og trygghetsfølelse. Jeg var ikke redd for å gjøre feil, stille spørsmål og vise mine svakheter. En super skole for å lære seg å kode! 
+  currentOccupation: Praksisplass i GET Solutions
+
+- image: /assets/tilbakemeldinger-elever/patrik.jpeg
+  name: Patrik A.
+  quote: Jeg ble mer og mer motivert av å gå på GET, la inn mye innsats og tok kontrollen over livet mitt. Det ledet til at jeg fikk utplassering i Abax, og så jobb i den samme bedriften.,
+  currentOccupation: Utvikler i Abax,
+
+- image: /assets/tilbakemeldinger-elever/bjørnar.jpg
+  name: Bjørnar J.
+  quote: Skolen la til rette til at jeg følte meg trygg, slik at jeg tørte å spørre mer, jeg ble enda mer motivert og fikk tilbake gleden av å lære. GET Academy ga meg de verktøyene som jeg trengte for å komme meg ut i praksis!,
+  currentOccupation: Praksisplass i GET Solutions,
+
+- image: /assets/tilbakemeldinger-elever/pia1.jpg
+  name: Pia A.
+  quote: GET er en utradisjonell skole som legger vekt på innsats, samarbeid, og engasjement i et trygt miljø. På skolen utvikler man seg ikke bare faglig, men også personlig både i forbindelse med jobb og på hjemmebane. Lærere og elever bidrar til et motiverende læringsløp i turbofart, uavhengig hva man kan fra før!,
+  currentOccupation: Praksisplass i Reen,
+
+- image: /assets/tilbakemeldinger-elever/christoffer.jpg
+  name: Christoffer H.
+  quote: Jeg angrer ikke ett sekund på at jeg startet på denne skolen. Har lært mye om meg selv gjennom nøkkelkompetanse, og fått nok kodekompetanse til å lage mine egne programmer og nettsider.,
+  currentOccupation: Ansatt i GET Solutions,

@@ -1,0 +1,14 @@
+<div class="carousel container">
+    <h2>Dette sier studenter om GET Academy</h2>
+    <br />
+    {% for tilbakemelding in site.data.tilbakemeldinger %}
+    <div class="slides">
+        <img class="slides" src="{{ " {{tilbakemelding.image}}" | relative_url }}" alt="{{ "
+            {{tilbakemelding.name}}"}}" />
+        <span>{{ tilbakemelding.name }}</span>
+        <br />
+        <span>{{ tilbakemelding.currentOccupation }}</span>
+        <p class="p-quotes">{{ tilbakemelding.quote }}</p>
+    </div>
+    {% endfor %}
+</div>
