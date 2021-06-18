@@ -10,6 +10,12 @@
         <div class="container-block-companies">{% include home/04.bedrifter.html %}</div>
         <div class="container-block-feedback">{% include home/05.tilbakemeldinger-elever.html %}</div>
         <div class="container-block-statistics">{% include home/06.statistikk.html %}</div>
+        <div id="application-container">
+          <a class="application-button" href="{{ site.baseurl }}{% link _pages/soknad.md %}">
+              <!-- Søknad -->
+              <button class="button primary">Meld interesse</button>
+          </a>
+      </div>
       <article>{{ content }}</article>
     </main>
     <footer>{% include footer.html %}</footer>

@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="about-us-container">
+    <div class="text" v-for="(item, index) of items" v-bind:key="index">
+        <HeaderWithDescription :description="item.description" :header="item.header" />
+    </div>
+    <div class="folkene-bak">
+        <h2>Folkene bak GET-Academy</h2>
+        <div class="profile-card-container">
+            <div class="profile-card">
+              <div class="horizontal-flex">
+                  {{ content }}
+              </div>
+        
+              <p class="person-info">{{ personDescription }}</p>
+              <p class="person-info">{{ additionalDescription }}</p>
+            </div>
+        
+            <button class="btn">
+              {{ buttonText }}
+            </button>
+          </div>
+    </div>
+
+    <div class="logos">
+        {% include home/04.bedrifter.html %}
+    </div>
+</div>

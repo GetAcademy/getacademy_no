@@ -29,6 +29,8 @@ url: "https://github.com/trinityn/cuddly-disco" # the base hostname & protocol f
 twitter_username: TrinityN
 github_username:  TrinityN
 permalink: pretty # https://jekyllrb.com/docs/permalinks/
+collections:   
+  ansatte:
 defaults:
   -
     scope:
