@@ -1,5 +1,7 @@
 ---
 name: Geir Sollid
-position: Lærer i nøkkelkompetanser
+stilling: Lærer i nøkkelkompetanser
+tillegg: 
 profilbilde: geir.jpeg
+profil: /profil/geir
 ---

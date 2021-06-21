@@ -7,7 +7,7 @@
 			</div>
 			<!--Consider using Javascript for mobile viewers -->
 			<div class="nav-buttons">
-				{% for page in site.pages %} {% if page.layout == "page" %}
+				{% for page in site.pages %} {% if page.layout != "default" %}
 				<a class="link-div button-size" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
 				{% endif %} {% endfor %}
 				<a class="application-button" href="{{ site.baseurl }}{% link _pages/soknad.md %}"><button

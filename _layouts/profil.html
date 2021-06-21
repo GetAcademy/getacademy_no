@@ -1,0 +1,110 @@
+---
+layout: default
+---
+<div class="profile">
+  <div class="area area0">
+    <h2>{{ page.navn }}</h2>
+    <h4>{{ page.stilling }}</h4>
+  </div>
+
+  <div class="area area1">
+    <div class="image-container">
+      <img class="view-profile-container" src="\assets\ansatt-bilder\{{ page.profilbilde }}">
+    </div>
+
+    <div class="table-container">
+      <table class="info-table">
+        <tr>
+          <td>
+            <i class="fas fa-map-marker-alt"></i>
+          </td>
+
+          <td>Bosted</td>
+
+          <td>{{ page.bosted }}</td>
+        </tr>
+        {% if page.links != null %}
+        <tr>
+          <td>
+            <i class="fas fa-globe"></i>
+          </td>
+          <td>Finn meg</td>
+          <td>
+            <div v-for="(link, index) of links" v-bind:key="index">
+              <a :href="'https://' + link" target="_blank">{{ link }}</a>
+            </div>
+          </td>
+        </tr>
+        {% endif %}
+
+        {% if page.books != null %}
+        <tr>
+          <td>
+            <i class="fa fa-book" aria-hidden="true"></i>
+          </td>
+          <td>Bøker</td>
+          <td>
+            {% for bok in page.books %}
+            <div>
+              <a class="book-title" href={{bok.buy}} target="_blank">{{ bok.book }}</a>
+              <br />
+              <span class="book-publisher">{{ bok.publisher }}</span>
+            </div>
+            {% endfor %}
+          </td>
+        </tr>
+        {% endif %}
+
+        {% if page.discord != null %}
+        <tr v-if="discord">
+          <td>
+            <img loading="lazy" src="/assets/icon/discord.png" alt="discord" />
+          </td>
+
+          <td>Discord</td>
+
+          <td>
+            <div v-for="(disc, index) of discord" v-bind:key="index">
+              {{ page.discord }}
+            </div>
+          </td>
+        </tr>
+        {% endif %}
+
+        {% if page.contacts != null %}
+        <tr class="no-border-bottom">
+          <td>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+          </td>
+
+          <td>Kontakt</td>
+
+          <td>
+            {% for contact in page.contacts %}
+            <div>
+              {{ contact }}
+            </div>
+            {% endfor %}
+          </td>
+        </tr>
+        {% endif %}
+      </table>
+    </div>
+  </div>
+  <div class="description-container">
+    <h3>Beskrivelse</h3>
+
+    <p>
+      {{ page.description }}
+      <br />
+      <br />
+    </p>
+
+    <ul>
+      <h3>{{ page.navn }} brenner for:</h3>
+      {% for point in page.brenner-for %}
+      <li>{{ point }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

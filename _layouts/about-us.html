@@ -1,30 +1,53 @@
 ---
 layout: default
 ---
-
 <div class="about-us-container">
-    <div class="text" v-for="(item, index) of items" v-bind:key="index">
-        <HeaderWithDescription :description="item.description" :header="item.header" />
+  <div class="text">
+    <p class="about-us-paragraph">GET Academy er en ideell organisasjon, det vil si at det ikke kan tas utbytte - og at alt overskuddet uavkortet går
+    til å vokse og få tilbudet ut til flere. GET Academy er registrert i Frivillighetsregisteret.</p>
+    <div class="header-with-description">
+      <div class="border-container">
+        <h2 class="about-us-header">Historien vår</h2>
+        <p class="about-us-paragraph">GET-Academy kom i stand etter et samarbeid mellom Eskil Domben og Terje Kolderup
+          i «Kunnskapstrening IT». Dette var et prosjekt der Universitetet i Stockholm hadde en hypotese om at gamere
+          har smarte læring- og problemløsningsstrategier.</p>
+        <p class="about-us-paragraph"> Gjennom dette arbeidet kom tanken om å starte en skole basert på noen av de samme
+          ideene.
+          GET Academy AS ble startet i 2016 av Geir Sollid, Eskil Domben og Terje Kolderup. Mens Geir og Eskil hadde
+          jobbet med å fremme nøkkelkompetenser i skolen, hadde Terje jobbet som IT-utvikler og lærer. En uavhengig
+          skole for IT-utviklere lot alle tre fremme det de brenner aller mest for - og vise en annen måte å drive skole
+          på, med mål om å inspirere til endringer også i det offentlige skolesystemet på sikt.</p>
+        <p class="about-us-paragraph">Vår skole er åpen for alle! For opptak til Get Academy er det ingen formelle
+        krav. Her fokuserer vi mer på
+        innsats og villighet til å forbedre seg, enn hvor rask faglig progresjon man har. Tidlig i prosessen
+        formulerte Geir, Eskil og Terje de sentrale verdiene for GET Academy, og de er ydmyk, trygg og nysgjerrig.</p>
+      </div>
     </div>
-    <div class="folkene-bak">
-        <h2>Folkene bak GET-Academy</h2>
-        <div class="profile-card-container">
-            <div class="profile-card">
-              <div class="horizontal-flex">
-                  {{ content }}
-              </div>
-        
-              <p class="person-info">{{ personDescription }}</p>
-              <p class="person-info">{{ additionalDescription }}</p>
-            </div>
-        
-            <button class="btn">
-              {{ buttonText }}
-            </button>
-          </div>
-    </div>
+  </div>
 
-    <div class="logos">
-        {% include home/04.bedrifter.html %}
+  <div class="folkene-bak">
+    <h2>Folkene bak GET-Academy</h2>
+
+    <div class="card-container">
+      {% for ansatt in site.ansatte %}
+      <div class="profile-card-container">
+        <div class="profile-card">
+          <div class="horizontal-flex">
+            <img class="view-profile-container" src="\assets\ansatt-bilder\{{ ansatt.profilbilde }}">
+            <div class="person-name">
+              <span><span class="first-letter">{{ ansatt.name | slice: 0 }}</span>{{ ansatt.name | slice: 1,
+                ansatt.name.size }}</span>
+            </div>
+          </div>
+          <p class="person-info">{{ ansatt.stilling }}</p>
+          <p class="person-info">{{ ansatt.tillegg }}</p>
+        </div>
+        <a href="{{ site.baseurl }}{{ ansatt.profil }}"><button class="btn">Se Profil</button></a>
+      </div>
+      {% endfor %}
     </div>
+  </div>
+  <div class="logos">
+    {% include home/04.bedrifter.html %}
+  </div>
 </div>

@@ -1,5 +1,7 @@
 ---
 name: Eskil Dombden
-position: Lærer i nøkkelkompetanser
+stilling: Daglig leder
+tillegg: Lærer i nøkkelkompetanser
 profilbilde: eskil.jpg
+profil: /profil/eskil
 ---

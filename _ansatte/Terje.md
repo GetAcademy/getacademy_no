@@ -1,5 +1,7 @@
 ---
 name: Terje Koldrup
-position: Lærer i nøkkelkompetanser
+stilling: Hovedlærer i IT-utvikling
+tillegg: 
 profilbilde: terje.jpeg
+profil: /profil/terje
 ---

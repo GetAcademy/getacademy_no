@@ -1,0 +1,150 @@
+.about-us-container {
+    max-width: $content-max-width;
+    margin: auto;
+    padding: $global-padding;
+  
+  .folkene-bak {
+    text-align: center;
+  }
+
+  .profile-card-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border: 1px gray;
+    border-radius: 5px;
+    max-width: 250px;
+    height: 260px;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 2px 2px 2px #dfdfdf;
+    cursor: pointer;
+  
+    &:hover {
+      box-shadow: 0px 2px 10px 2px #dfdfdf;
+      transform: scale(1.02);
+      transition: 0.1s;
+    }
+  }
+  
+  img {
+    padding: 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .person-name {
+    margin-right: 15px;
+    margin-top: 25px;
+  }
+  
+  .first-letter {
+    font-weight: bold;
+    // font-size: 24px;
+    color: $primary-color;
+  }
+  
+  .person-info {
+    max-width: 250px;
+    height: 30px;
+    font-weight: lighter;
+    margin: 15px;
+  }
+  
+  .btn {
+    width: stretch;
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px #dfdfdf;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    text-align: center;
+    background-color: $secondary-button-color;
+    &:hover {
+      background-color: $secondary-button-active;
+    }
+  }
+  
+  .horizontal-flex {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .profile-card-container {
+      margin: 20px auto;
+    }
+  }
+  
+  
+  .text {
+  max-width: 1000px;
+    margin: auto;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  .text h2, p {
+      text-align: left;
+  }
+  
+  .logos {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .card-container {
+    display: flex;
+    // justify-content: left;
+    // gap: 0px;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+  }
+  
+  img {
+    filter: grayscale(100%);
+    padding: 15px;
+    width: 100px;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  .view-profile-container {
+      filter: none;
+  }
+  
+  h2 {
+    text-align: center;
+    padding-bottom: 1em;
+  }
+  
+  .partner-description {
+    margin: auto;
+    max-width: $max-text-width-size;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .card-container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .logos {
+      margin: 0;
+      padding: 0;
+    }
+  
+    h2 {
+      text-align: left;
+    }
+  
+    p {
+      text-align: left;
+    }
+  }
+}
