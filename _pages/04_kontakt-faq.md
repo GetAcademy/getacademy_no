@@ -2,6 +2,7 @@
 layout: page
 title: Kontakt / Faq
 permalink: /kontakt-faq/
+nav: true
 ---
 
 Kontakt/Faq går her

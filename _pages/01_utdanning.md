@@ -2,6 +2,7 @@
 layout: page
 title: Utdanning
 permalink: /utdanning/
+nav: true
 ---
 
 Utdanning går her

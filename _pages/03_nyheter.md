@@ -2,6 +2,7 @@
 layout: page
 title: Nyheter
 permalink: /nyheter/
+nav: true
 excerpt_separator: <!--slutt-->
 ---
 <ul class ="news-container">

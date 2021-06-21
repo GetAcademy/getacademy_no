@@ -43,7 +43,7 @@ defaults:
 theme: minima
 sass:
   sass_dir: _sass
-include: ['_pages']
+include: ['_pages', '_nav-items']
 kramdown:
   input: GFM
 plugins:
