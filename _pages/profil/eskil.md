@@ -3,13 +3,9 @@ layout: profil
 title: Eskil
 permalink: /profil/eskil
 navn: Eskil Dombden
-layout: profil
-title: Eskil
-permalink: /profil/eskil
 stilling: Daglig leder
 profilbilde: eskil.jpg
 bosted: Stavern
-navn: Eskil Dombden
 links:
 discord: Eskil#6979
 books: [

@@ -41,8 +41,8 @@ layout: default
           </div>
           <p class="person-info">{{ ansatt.stilling }}</p>
           <p class="person-info">{{ ansatt.tillegg }}</p>
+          <a href="{{ site.baseurl }}{{ ansatt.profil }}"><button class="btn">Se Profil</button></a>
         </div>
-        <a href="{{ site.baseurl }}{{ ansatt.profil }}"><button class="btn">Se Profil</button></a>
       </div>
       {% endfor %}
     </div>

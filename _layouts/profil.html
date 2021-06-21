@@ -9,7 +9,7 @@ layout: default
 
   <div class="area area1">
     <div class="image-container">
-      <img class="view-profile-container" src="\assets\ansatt-bilder\{{ page.profilbilde }}">
+      <img class="profile-image" src="\assets\ansatt-bilder\{{ page.profilbilde }}">
     </div>
 
     <div class="table-container">
@@ -30,9 +30,11 @@ layout: default
           </td>
           <td>Finn meg</td>
           <td>
-            <div v-for="(link, index) of links" v-bind:key="index">
-              <a :href="'https://' + link" target="_blank">{{ link }}</a>
+            {% for link in page.links %}
+            <div>
+              <a href="https://{{ link }}">{{ link }}</a>
             </div>
+            {% endfor %}
           </td>
         </tr>
         {% endif %}
@@ -101,7 +103,7 @@ layout: default
     </p>
 
     <ul>
-      <h3>{{ page.navn }} brenner for:</h3>
+      <h3>{{ page.navn }} brenner også for:</h3>
       {% for point in page.brenner-for %}
       <li>{{ point }}</li>
       {% endfor %}
