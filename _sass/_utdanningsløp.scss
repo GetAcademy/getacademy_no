@@ -1,0 +1,114 @@
+.page-selector {
+  .content {
+    max-width: 300px;
+    display: flex;
+    flex-direction: row;
+    padding: 50px 50px 90px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #cecfd0;
+  
+    &:hover {
+      box-shadow: 0px 10px 15px 3px #ceced0;
+      // background-color: rgb(245, 248, 250);
+      // background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.25));
+      transform: scale(1.02);
+      transition: 0.2s;
+    }
+  }
+  .active h2 span:after {
+    right: -50px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    // border-bottom: 5px solid $primary-color;
+    width: 140px;
+    margin-bottom: 1.5rem;
+    line-height: 1em;
+  
+    &:hover span {
+      padding-right: 15px;
+    }
+  }
+  
+  h2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  
+    &:after {
+      content: ">";
+      position: absolute;
+      top: 0;
+      right: -40px;
+      transition: 0.5s;
+      color: $primary-color;
+      font-size: 2.7rem;
+    }
+  }
+  
+  a {
+    color: #333333;
+    text-decoration: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .content {
+      padding: 45px;
+    }
+  }
+}
+
+.course-overview {
+    padding: $global-padding;
+    max-width: $content-max-width;
+    margin: auto;
+  
+  h1,
+  h2 {
+    padding-bottom: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+  }
+  
+  .course-overview-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .cards-container {
+    background-color: #e4f5ff;
+    padding: 5rem $global-padding;
+    margin-bottom: 3rem;
+  }
+  
+  .page-links {
+    margin: auto;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .cards-container {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  
+    .course-overview {
+      padding: 0;
+    }
+  
+    .padding-mobile {
+      padding: $global-padding;
+    }
+  
+    h1,
+    h2 {
+      padding-bottom: 0.5rem;
+    }
+  }
+}
