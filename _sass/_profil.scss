@@ -1,5 +1,4 @@
 .profile {
-    max-width: $content-max-width;
     margin: 1.5rem auto;
     
     img {
@@ -14,20 +13,10 @@
     border-radius: 250px;
   }
   
-  // .view-profile-container {
-  //   position: relative;
-  //   float: right;
-  //   width: 240px;
-  //   height: 240px;
-  //   left: 20px;
-  //   top: 10px;
-  //   border-radius: 100%;
-  // }
-  
   .area1 {
     display: flex;
     flex-direction: row;
-    margin: 60px;
+    margin: 30px;
   }
   
   .table-container {
@@ -38,18 +27,12 @@
   }
   
   .info-table {
-    width: 450px;
     border: 0px solid black;
     border-collapse: collapse;
   
     td {
-      padding: 10px;
+      padding: 5px;
       border-bottom: 1px solid $primary-border-color;
-      // width: 40%;
-  
-      &:nth-child(1) {
-        width: 10%;
-      }
     }
   }
 
@@ -113,6 +96,7 @@
       border: 1px solid #fff;
       height: 125px;
       width: 125px;
+      margin: 0 auto 30px;
     }
   
     .profile-image {
@@ -122,6 +106,10 @@
       top: 0px;
     }
   
+    .area0, .area1 {
+      margin: auto;
+      text-align: center;
+    }
     .area1 {
       margin: 10px;
       display: flex;
@@ -144,6 +132,12 @@
         word-break: break-word;
         border-bottom: 1px solid $primary-border-color;
         width: 100%;
+        &:nth-child(1) {
+          width: 10%;
+        }
+        &:nth-child(2) {
+          width: 30%;
+        }
       }
     }
   
@@ -166,6 +160,7 @@
     }
   
     .description-container {
+      text-align: center;
       p {
         padding: 0;
         margin: 0;
