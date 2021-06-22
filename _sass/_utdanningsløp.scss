@@ -1,4 +1,4 @@
-.page-links {
+.page-selector {
   .content {
     max-width: 300px;
     display: flex;
@@ -9,88 +9,85 @@
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px #cecfd0;
-    
-    .quiver {
-      position: relative;
-      transition: 0.5s;
-        top: 0;
-        color: $primary-color;
-        font-size: 2.7rem;
-    }
-    
+
     &:hover {
       box-shadow: 0px 10px 15px 3px #ceced0;
       transform: scale(1.02);
       transition: 0.2s;
-      .quiver {
-        transition: 0.2s;
-        right: -40px;
+      span {
+        padding-right: 15px;
       }
+    }
   }
+  .active h2 span:after {
+    right: -50px;
   }
-  
+
   h2 {
     font-size: 2rem;
     width: 140px;
     margin-bottom: 1.5rem;
     line-height: 1em;
+
+    span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+
+      &:after {
+        content: ">";
+        position: absolute;
+        top: 0;
+        right: -40px;
+        color: $primary-color;
+        font-size: 2.7rem;
+      }
+    }
   }
-  
   a {
     color: #333333;
     text-decoration: none;
   }
-  
-  @media only screen and (max-width: 768px) {
-    .content {
-      padding: 45px;
-    }
-  }
 }
 
 .course-overview {
-    padding: $global-padding;
-    max-width: $content-max-width;
-    margin: auto;
-  
+  padding: $global-padding;
+  max-width: $content-max-width;
+  margin: auto;
   h1,
   h2 {
     padding-bottom: 2.5rem;
   }
-  
   h2 {
     font-size: 1.2em;
   }
-  
   .course-overview-card {
     display: flex;
     flex-wrap: wrap;
   }
-  
   .cards-container {
     background-color: #e4f5ff;
     padding: 5rem $global-padding;
     margin-bottom: 3rem;
   }
-  
   .page-links {
     margin: auto;
   }
-  
   @media only screen and (max-width: 768px) {
+    .content {
+      padding: 45px;
+    }
     .cards-container {
       padding-top: 1rem;
       padding-bottom: 1rem;
     }
-  
     .course-overview {
       padding: 0;
     }
-  
     .padding-mobile {
       padding: $global-padding;
     }
-  
     h1,
     h2 {
       padding-bottom: 0.5rem;
