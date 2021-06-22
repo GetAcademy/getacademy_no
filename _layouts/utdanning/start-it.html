@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<div class="start-it">
+    <h1>Start IT</h1>
+    <div class="start-it-ingress">
+      <span>
+        GET Academy tilbyr deg muligheten til å gå fra null kodeerfaring til
+        juniorutvikler på 1½ år.
+        <br />
+        Utdanningen er delt i to hoveddeler: Start IT og GET IT og forutsetter
+        ingen formell kompetanse eller tidligere kodeerfaring. Du trenger bare å
+        ha tenning for koding og være villig til å legge til mye innsats!
+        <br />
+        <br />
+        Start IT er inngangen og består av tre moduler, studielengde i alle
+        modulene er 2 måneder.
+      </span>
+    </div>
+
+    <div class="start-it-container module-container">
+      <ModuleComponent
+        module_header="MODUL 1"
+        :module_paragraph="module_one_paragraphs"
+        table_location="Nettbasert, eller i Larvik"
+        table_time="8 uker"
+        table_price="17 000 kr"
+        table_requirements="Levert opptaksprøve"
+        :unordered_list="module_one_code"
+        closing_paragraph="Kurset er fulltid mandag til fredag med oppmøte og aktiv deltakelse på Discord  mellom 09.00 og 15.00."
+      />
+    </div>
+    <div class="start-it-container module-container">
+      <ModuleComponent
+        module_header="MODUL 2"
+        :module_paragraph="module_two_paragraphs"
+        table_location="Nettbasert, eller i Larvik"
+        table_time="8 uker"
+        table_price="17 000 kr"
+        table_requirements="Fullført modul 1"
+        :unordered_list="module_two_code"
+        closing_paragraph="Kurset er fulltid mandag til fredag med oppmøte og aktiv deltakelse på Discord  mellom 09.00 og 15.00."
+      />
+    </div>
+    <div class="start-it-container module-container">
+      <ModuleComponent
+        module_header="MODUL 3"
+        :module_paragraph="module_three_paragraphs"
+        table_location="Nettbasert, eller i Larvik"
+        table_time="8 uker"
+        table_price="17 000 kr"
+        table_requirements="Fullført modul 2"
+        :unordered_list="module_three_code"
+        closing_paragraph="Kurset er fulltid mandag til fredag med oppmøte og aktiv deltakelse på Discord  mellom 09.00 og 15.00. 5 obligatoriske kursdager pr uke."
+      />
+    </div>
+
+    <div class="button-container">
+      <router-link to="/soknad">
+        <PrimaryButton text="Sikre fremtiden nå" />
+      </router-link>
+    </div>
+  </div>

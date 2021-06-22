@@ -1,5 +1,5 @@
 ---
-layout: utdanning/utdanningsløp
+layout: utdanning/get-it
 title: Utdanning
-permalink: /utdanning/
+permalink: /utdanning/get-it
 ---
