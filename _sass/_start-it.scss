@@ -1,0 +1,180 @@
+.start-it {
+    max-width: $content-max-width;
+    margin: auto;
+    padding: $global-padding;
+  
+  .start-it-ingress {
+    padding-top: $global-padding;
+    padding-bottom: $global-padding;
+  }
+  
+  .start-it-container {
+    padding: $global-padding;
+    display: flex;
+    flex-direction: row;
+  
+    p {
+      flex-grow: 1;
+    }
+  }
+  
+  .module-container:nth-child(odd) {
+    background-color: $alternating-background-color;
+  }
+  
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: $content-max-width;
+    margin: auto;
+    padding: $global-padding;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .start-it {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .start-it-ingress {
+      padding-left: $global-padding;
+      padding-right: $global-padding;
+      padding-top: 0;
+    }
+  
+    h1 {
+      padding: $global-padding;
+    }
+  }
+
+  .icon-name {
+    padding: 0.5rem;
+  }
+  
+  .textline {
+    margin: 0;
+    padding: 7px 0;
+  }
+  
+  .module-component-container {
+    display: flex;
+    flex-direction: row;
+    padding: $global-padding 0;
+  }
+  
+  .area {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .area3 {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .unordered-list {
+    display: flex;
+    flex-direction: column;
+    color: $primary-color;
+    margin: 0;
+    padding: 0 20px;
+    border-radius: 100%;
+    list-style-type: disc;
+  }
+  
+  .unordered-list-main {
+    font-size: 30px;
+  }
+  
+  .unordered-list-sub {
+    font-size: 20px;
+  }
+  
+  .normal-text {
+    color: $primary-font-color;
+    font-size: 18px;
+  }
+  
+  .table-container {
+    background-color: #f3f1f1;
+    margin-top: 13px;
+    margin-left: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid $primary-border-color;
+  }
+  
+  .info-table {
+    width: 500px;
+    border-collapse: collapse;
+    background-color: #f3f1f1;
+  
+    td {
+      padding: 15px;
+      border-bottom: 1px solid $primary-border-color;
+      width: 50%;
+    }
+  }
+  
+  .no-border-bottom td {
+    border: 0;
+  }
+  
+  p {
+    padding: 0 10px;
+  }
+  
+  h3 {
+    padding: $global-padding 0;
+  }
+  
+  .what-do-you-learn {
+    padding: 60px 0 0;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .module-component {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .module-component-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .table-container {
+      margin-top: 2rem;
+      padding: 15px;
+    }
+  
+    .info-table {
+      width: 0;
+      font-size: 1rem;
+  
+      td {
+        padding: 0;
+      }
+    }
+  
+    p {
+      padding: 0;
+      margin: 10px 0;
+    }
+  
+    .area3 {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    h3 {
+      padding: 10px 0px;
+    }
+  }
+}
+

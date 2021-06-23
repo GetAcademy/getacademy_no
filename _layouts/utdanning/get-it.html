@@ -2,20 +2,104 @@
 layout: default
 ---
 
-<div class="get-it">
-    <h1>GET IT</h1>
-    <div class="get-it-container">
-      <ModuleComponent
-        :module_paragraph="paragraphs"
-        table_location="Nettbasert, eller i Larvik"
-        table_time="12 måneder"
-        table_price="Bedriften betaler"
-        table_requirements="Bestått START IT"
-        :unordered_list="get_it_code"
-        header="Hva lærer du?"
-        closing_paragraph="
-        Det er én obligatorisk dag på GET Academy per uke og fire dager i bedrift.
-        I løpet av skoleåret er det også tre individuelle uker hvor du er på skolen alle dager og gjør opplegg fra skolen."
-      />
+<div class="start-it">
+  <!-- siden css er identisk -->
+  <h1>GET IT</h1>
+  <div class="get-it-container">
+    <div class="module-component">
+
+      <div class="module-component-container">
+        <div class="area area1">
+          <div class="module-paragraph-container">
+            {% for paragraf in page.info %}
+            <p class="textline">{{ paragraf }}</p>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="area area2">
+          <div class="table-container">
+            <table class="info-table">
+              <tr>
+                <td>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span class="icon-name">Studiested</span>
+                </td>
+                <td>{{ page.studiested }}</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <i class="fas fa-calendar-alt"></i><span class="icon-name">
+                    Studielengde</span>
+                </td>
+                <td>{{ page.studielengde }}</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <i class="fas fa-credit-card"></i><span class="icon-name">Pris</span>
+                </td>
+                <td>{{ page.kostnad }}</td>
+              </tr>
+
+              <tr class="no-border-bottom">
+                <td>
+                  <i class="fas fa-sticky-note"></i><span class="icon-name">Opptakskrav</span>
+                </td>
+                <td>{{ page.krav }}</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="what-do-you-learn">Hva lærer du?</h3>
+      </div>
+      {% for item in page.learning-goals %}
+      <div class="module-component-container">
+        <ul class="unordered-list unordered-list-main">
+          <li>
+            <span class="normal-text">{{ item.language }}</span>
+          </li>
+
+          <ul>
+            <ul class="unordered-list unordered-list-sub">
+              {% for info in item.sublist %}
+              <li>
+                <span class="normal-text">{{ info }}</span>
+              </li>
+              {% endfor %}
+            </ul>
+          </ul>
+          {% endfor %}
+        </ul>
+        <div class="module-component-container">
+          <ul class="unordered-list unordered-list-main">
+            <li>
+              <span class="normal-text">Nøkkelkompetanser</span>
+            </li>
+
+            <ul>
+              <ul class="unordered-list unordered-list-sub">
+                {% for info in page.keycompetences %}
+                <li>
+                  <span class="normal-text">{{ info }}</span>
+                </li>
+                {% endfor %}
+              </ul>
+            </ul>
+          </ul>
+        </div>
+      </div>
+
+      <div class="module-component-container">
+        <div class="area area4">
+          <h3>Praktisk informasjon</h3>
+          <p>{{ page.tileggsinfo }}</p>
+        </div>
+      </div>
     </div>
   </div>
+</div>
