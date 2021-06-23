@@ -1,0 +1,111 @@
+<template>
+    <div class="accordion-body">
+      <div id="accordion" class="accordion-container">
+        <div
+          v-for="(item, index) of items"
+          :key="index"
+          :class="['accordion', { 'is-open': isOpen.includes(index) }]"
+        >
+          <div class="accordion-header" @click="toggleAccordion(index)">
+            <slot class="accordion-question">{{ item.title }}</slot>
+            <i v-if="!isOpen.includes(index)" class="fas fa-angle-down" />
+            <i v-else class="fas fa-angle-up" />
+          </div>
+  
+          <div class="accordion-body">
+            <div class="accordion-content">
+              {{ item.text }}
+              <strong>{{ item.sub }}</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+  
+  <script>
+  export default {
+    name: "Accordion",
+    data() {
+      return {
+        items: [
+          {
+            title: "Er det fulltidsstudie?",
+            text:
+              "Ja, kursene krever deltakelse hver dag fra mandag til fredag. Vi har en kjernetid for aktiv deltakelse fra 09.00 - 15.00 hvor du må være tilgjengelig og aktivt deltakende. I tillegg må du regne med at du må jobbe utenfor denne tiden også.",
+            sub: "",
+          },
+          {
+            title: "Kan jeg følge kurset på internett?",
+            text:
+              "Ja, Start IT kan tas hjemmefra med deltakelse via internett. Vi bruker Discord til det meste av kommunikasjon.",
+            sub: "",
+          },
+          {
+            title: "Hvilke kunnskaper bør jeg ha før jeg begynner på Start IT?",
+            text:
+              "Du trenger ikke forkunnskaper når du starter på vår skole. Vi har elever som har fullført og fått jobb som IT-utvikler med null kodeerfaring før de kom til GET. Vi vil gjerne at du har tenning for kode og vil legge til mye innsats på din egen læring.",
+            sub: "",
+          },
+          {
+            title: "Hvordan foregår undervisningen?",
+            text:
+              "Du følger videoer og oppgaver som ligger i vår kursportal. Det er veldig lite undervisning i plenum, og du jobber med oppgaver i ditt eget tempo. Men spør teamet ditt og våre kodelærere når du står fast, og hjelper medstudenter med å forklare og forstå ting de sliter med. Du kan si at du får hjelp til det du trenger når du trenger det, men du må be om det og være aktiv selv.",
+            sub: "",
+          },
+          {
+            title: "Må man ha generell studiekompetanse?",
+            text:
+              "Nei, du kan absolutt søke deg inn hos oss uten generell studiekompetanse.",
+            sub: "",
+          },
+          {
+            title: "Koster det penger?",
+            text:
+              "Ja, på Start IT koster hver modul 17000,- kr. Dersom du kommer med på GET IT er det ingen kursavgift.",
+            sub: "",
+          },
+          {
+            title: "Kan jeg søke om studielån?",
+            text:
+              "Nei, vi kvalifiserer dessvere ikke for studielån i Lånekassen. Men vi har en avtale med Svea finans, hvor du kan søke om å få lån til å dekke kursutgiftene i Start IT. Ta kontakt for mer info.",
+            sub: "",
+          },
+          {
+            title: "Trenger jeg egen PC?",
+            text:
+              "Ja du trenger en egen PC på Start IT. Når du er på GET IT vil du få PC av bedrift eller ha mulighet til å låne av oss.",
+            sub: "",
+          },
+          {
+            title: "Må jeg ha en ny “råskinn-PC”?",
+            text: "Nei, og kjøp gjerne brukt - det gjør vi :)",
+            sub: "",
+          },
+          {
+            title: "Kan jeg sitte alene og ikke forholde meg til andre?",
+            text:
+              "Nei, GET Academy er et sted for dem som har lyst til å involvere andre i sin læring og hjelpe andre i sin læring. I alle moduler blir du delt inn i et team på maks 4 personer som er dine nærmeste læringskollegaer. Dere kommuniserer mye hver dag og har faste treff og rutiner som hjelper dere til å planlegge og strukturere gode læringsdager sammen.",
+            sub: "",
+          },
+          {
+            title: "Er jeg garantert bedrift dersom jeg fullfører Start IT?",
+            text:
+              "Nei. Bedrift, og dermed plass på GET IT, forutsetter at en bedrift velger deg. Fullfører du Start IT vil vi jobbe for at du blir presentert for en eller flere bedrifter, men det er ingen garanti for å bli valgt.",
+            sub: "",
+          },
+        ],
+        isOpen: [],
+      };
+    },
+    methods: {
+      toggleAccordion(index) {
+        if (this.isOpen.includes(index)) {
+          this.isOpen = this.isOpen.filter((i) => i !== index);
+          return;
+        }
+        this.isOpen.push(index);
+      },
+    },
+  };
+  </script>

@@ -1,0 +1,172 @@
+.accordion-container{
+
+.accordion:not(.is-open) > .accordion-body {
+    display: none;
+  }
+  
+  .accordion {
+    box-sizing: border-box;
+    color: #444;
+    cursor: pointer;
+    padding: 18px 0;
+    max-width: 500px;
+    // border: 1px solid $primary-border-color;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+  }
+  
+  .accordion:hover {
+    background-color: whitesmoke;
+  }
+  
+  .accordion:nth-child(even) {
+    background-color: whitesmoke;
+  }
+  
+  .accordion-header {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .accordion-body {
+    border: 1px solid rgb(231, 232, 235);
+    border-radius: 5px;
+  }
+  
+  .accordion-content {
+    padding: 35px 20px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 6px 15px 5px $primary-border-color;
+  }
+  
+  .accordion {
+    background-color: #ffffff;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .accordion {
+      width: 100%;
+    }
+  }
+}
+.contactus-container{
+    * {
+    box-sizing: border-box;
+  
+    &:focus {
+      outline: none !important;
+    }
+  }
+  
+  input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 18px;
+  
+    &:hover {
+      border: 1px solid #aaa;
+    }
+  }
+  
+  input[type="text"] {
+    border-radius: 5px;
+    border: 1px solid $primary-border-color;
+    transition: 0.3s border-color;
+  }
+  
+  textarea {
+    width: 100%;
+    resize: vertical;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid $primary-border-color;
+    height: 162px;
+    color: black;
+    font-size: 18px;
+  
+    &:hover {
+      border: 1px solid #aaa;
+    }
+  }
+  
+  .form-button {
+    color: white;
+    background-color: #61a1cb;
+    border-radius: 5px;
+    border: 0;
+    text-align: center;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #4388b6;
+    border: 0;
+  }
+  
+  .contact-card-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    max-width: 450px;
+    min-width: 250px;
+  }
+  
+  .contact-card {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .profile-image {
+    max-width: 130px;
+    max-height: 130px;
+    object-fit: contain;
+    border-radius: 100%;
+    padding: 15px;
+  }
+  
+  .person-name {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .person-info {
+    max-width: 350px;
+    font-weight: lighter;
+  }
+  
+  .first-letter {
+    color: $primary-color;
+  }
+  
+  a {
+    color: black;
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: 800;
+    padding-bottom: 1.25rem;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .contact-card {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+  
+    .profile-image {
+      padding: 0;
+      margin: 0;
+    }
+  
+    p {
+      margin: 0;
+    }
+  }
+}

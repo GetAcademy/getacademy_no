@@ -1,0 +1,34 @@
+<div class="contact-card-container">
+    <div class="contact-card">
+        <img loading="lazy" class="profile-image" :src="require('@/assets/' + profileImage + '')" :alt="personName" />
+
+        <p class="person-name">
+            <span class="first-letter person-info">{{personName}}</span>
+            <span>{{ personName }}</span>
+            <br />
+            <span class="person-info">
+                <a :href="'mailto:' + personEmail" rel="noopener">
+                    {{personEmail}}</a>
+            </span>
+            <br />
+            <span class="person-info">{{ personPhone }}</span>
+        </p>
+    </div>
+    <br />
+
+    <div class="form-group">
+        <h3>Lurer du på noe? Ta kontakt!</h3>
+        <form name="contact" action="https://formspree.io/xknqldae" method="POST">
+            <label type="text" for="name">Navn:</label>
+            <input type="text" name="name" id="name" />
+
+            <label type="text" for="email">E-post:</label>
+            <input type="text" name="email" id="email" />
+
+            <label type="text" for="message">Melding:</label>
+            <textarea class="form-field" name="message" id="message"></textarea>
+
+            <input class="form-button" type="submit" value="Send melding" />
+        </form>
+    </div>
+</div>
