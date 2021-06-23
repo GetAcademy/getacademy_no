@@ -72,32 +72,39 @@ layout: default
       <div>
         <h3 class="what-do-you-learn">Hva lærer du?</h3>
       </div>
-      {% for goals in modul.learning-goals %}
       <div class="module-component-container">
         <ul class="unordered-list unordered-list-main" v-for="(item, index) of unordered_list" v-bind:key="index">
-          <li>
-            <span class="normal-text">{{ goals.name }}</span>
-          </li>
 
-          <ul>
-            <ul class="unordered-list unordered-list-sub" v-for="(paragraph, index) of item.sublist" v-bind:key="index">
-              {% for list in goals.sublist %}
-              <li>
-                <span class="normal-text">{{ list }}</span>
-              </li>
-              {% endfor %}
+          {% for goals in modul.learning-goals %}
+          <div class="vertical-align">
+
+            <li>
+              <span class="normal-text">{{ goals.name }}</span>
+            </li>
+
+            <ul>
+              <ul class="unordered-list unordered-list-sub" v-for="(paragraph, index) of item.sublist"
+                v-bind:key="index">
+                {% for list in goals.sublist %}
+                <li>
+                  <span class="normal-text">{{ list }}</span>
+                </li>
+                {% endfor %}
+              </ul>
             </ul>
-          </ul>
+          </div>
           {% endfor %}
         </ul>
-        <div class="module-component-container">
-          <ul class="unordered-list unordered-list-main" v-for="(item, index) of unordered_list" v-bind:key="index">
+        <ul class="unordered-list unordered-list-main" v-for="(item, index) of unordered_list" v-bind:key="index">
+
+          <div class="vertical-align">
             <li>
               <span class="normal-text">Nøkkelkompetanser</span>
             </li>
-  
+
             <ul>
-              <ul class="unordered-list unordered-list-sub" v-for="(paragraph, index) of item.sublist" v-bind:key="index">
+              <ul class="unordered-list unordered-list-sub" v-for="(paragraph, index) of item.sublist"
+                v-bind:key="index">
                 {% for key in modul.keycompetences %}
                 <li>
                   <span class="normal-text">{{ key }}</span>
@@ -105,8 +112,8 @@ layout: default
                 {% endfor %}
               </ul>
             </ul>
-          </ul>
-        </div>
+          </div>
+        </ul>
       </div>
 
       <div class="module-component-container">
