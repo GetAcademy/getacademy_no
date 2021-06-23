@@ -2,9 +2,7 @@
 - page: /utdanning/start-it
   text: Start IT
   description: På Start IT får du utfordret deg selv på flere kodespråk. Hovedfokuset er å lære seg HTML, CSS, JavaScript og C#. Du trenger ingen kodeerfaring for å starte nå.
-  image: ellipse57.png
 
 - page: /utdanning/get-it
   text: GET IT
   description: Etter 6 måneder på Start IT er du kvalifisert til å utvikle deg selv videre hos en bedrift. Vi jobber tett sammen med bedriften for å tilpasse pensum til deres behov.
-  image: ellipse58.png

@@ -1,5 +1,8 @@
 .profile {
     margin: 1.5rem auto;
+    max-width: $content-max-width;
+    margin: auto;
+    padding: $global-padding;
     
     img {
         width: 18px;
@@ -31,7 +34,7 @@
     border-collapse: collapse;
   
     td {
-      padding: 5px;
+      padding: 15px;
       border-bottom: 1px solid $primary-border-color;
     }
   }
@@ -124,20 +127,15 @@
   
       tr {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        border-bottom: 1px solid $primary-border-color;
       }
   
       td {
         font-size: 1rem;
-        word-break: break-word;
-        border-bottom: 1px solid $primary-border-color;
-        width: 100%;
-        &:nth-child(1) {
-          width: 10%;
-        }
-        &:nth-child(2) {
-          width: 30%;
-        }
+        width: auto;
+        border: 0px;
+        padding: 0.8rem 4rem;
       }
     }
   
