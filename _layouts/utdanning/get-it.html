@@ -57,26 +57,28 @@ layout: default
       <div>
         <h3 class="what-do-you-learn">Hva lærer du?</h3>
       </div>
-      {% for item in page.learning-goals %}
       <div class="module-component-container">
         <ul class="unordered-list unordered-list-main">
-          <li>
-            <span class="normal-text">{{ item.language }}</span>
-          </li>
+          {% for item in page.learning-goals %}
+          <div class="vertical-align">
+            <li>
+              <span class="normal-text">{{ item.language }}</span>
+            </li>
 
-          <ul>
-            <ul class="unordered-list unordered-list-sub">
-              {% for info in item.sublist %}
-              <li>
-                <span class="normal-text">{{ info }}</span>
-              </li>
-              {% endfor %}
+            <ul>
+              <ul class="unordered-list unordered-list-sub">
+                {% for info in item.sublist %}
+                <li>
+                  <span class="normal-text">{{ info }}</span>
+                </li>
+                {% endfor %}
+              </ul>
             </ul>
-          </ul>
+          </div>
           {% endfor %}
         </ul>
-        <div class="module-component-container">
-          <ul class="unordered-list unordered-list-main">
+        <ul class="unordered-list unordered-list-main">
+          <div class="vertical-align">
             <li>
               <span class="normal-text">Nøkkelkompetanser</span>
             </li>
@@ -90,15 +92,15 @@ layout: default
                 {% endfor %}
               </ul>
             </ul>
-          </ul>
-        </div>
+          </div>
+        </ul>
       </div>
+    </div>
 
-      <div class="module-component-container">
-        <div class="area area4">
-          <h3>Praktisk informasjon</h3>
-          <p>{{ page.tileggsinfo }}</p>
-        </div>
+    <div class="module-component-container">
+      <div class="area area4">
+        <h3>Praktisk informasjon</h3>
+        <p>{{ page.tileggsinfo }}</p>
       </div>
     </div>
   </div>

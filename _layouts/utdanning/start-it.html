@@ -73,7 +73,7 @@ layout: default
         <h3 class="what-do-you-learn">Hva lærer du?</h3>
       </div>
       <div class="module-component-container">
-        <ul class="unordered-list unordered-list-main" v-for="(item, index) of unordered_list" v-bind:key="index">
+        <ul class="unordered-list unordered-list-main">
 
           {% for goals in modul.learning-goals %}
           <div class="vertical-align">
@@ -95,7 +95,7 @@ layout: default
           </div>
           {% endfor %}
         </ul>
-        <ul class="unordered-list unordered-list-main" v-for="(item, index) of unordered_list" v-bind:key="index">
+        <ul class="unordered-list unordered-list-main">
 
           <div class="vertical-align">
             <li>
