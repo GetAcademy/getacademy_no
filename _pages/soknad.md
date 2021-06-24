@@ -1,5 +1,5 @@
 ---
 layout: default
 title: Søknad
-permalink: /søknad/
+permalink: /soknad/
 ---
