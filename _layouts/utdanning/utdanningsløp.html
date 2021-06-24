@@ -14,7 +14,7 @@ layout: default
           {% for kurs in site.data.kurs %}
           <div class="page-links">
             <div class="page-selector">
-              <a href="{{ kurs.page | prepend: site.baseurl }}">
+              <a href="{{ site.baseurl }} {{ kurs.page }} ">
                 <div class="content">
                   <div>
                     <h2>

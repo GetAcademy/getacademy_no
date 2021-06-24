@@ -3,7 +3,7 @@
   <br />
   {% for tilbakemelding in site.data.tilbakemeldinger %}
   <div class="mySlides fade">
-    <img class="slides" src="{{ " {{tilbakemelding.image}}" | | prepend: site.baseurl }}" alt="{{ " {{tilbakemelding.name}}"}}" />
+    <img class="slides" src="{{ " {{tilbakemelding.image}}" | relative_url }}" alt="{{ " {{tilbakemelding.name}}"}}" />
     <div>{{ tilbakemelding.name }}</div>
     <div>{{ tilbakemelding.currentOccupation }}</div>
     <p class="p-quotes">{{ tilbakemelding.quote }}</p>

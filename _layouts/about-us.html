@@ -33,7 +33,7 @@ layout: default
       <div class="profile-card-container">
         <div class="profile-card">
           <div class="horizontal-flex">
-            <img class="view-profile-container" src="\assets\ansatt-bilder\{{ ansatt.profilbilde | prepend: site.baseurl }}">
+            <img class="view-profile-container" src="\assets\ansatt-bilder\{{ ansatt.profilbilde }}">
             <div class="person-name">
               <span><span class="first-letter">{{ ansatt.name | slice: 0 }}</span>{{ ansatt.name | slice: 1,
                 ansatt.name.size }}</span>
@@ -41,7 +41,7 @@ layout: default
           </div>
           <p class="person-info">{{ ansatt.stilling }}</p>
           <p class="person-info">{{ ansatt.tillegg }}</p>
-          <a href="{{ ansatt.profil  | prepend: site.baseurl }}"><button class="btn">Se Profil</button></a>
+          <a href="{{ site.baseurl }}{{ ansatt.profil }}"><button class="btn">Se Profil</button></a>
         </div>
       </div>
       {% endfor %}
