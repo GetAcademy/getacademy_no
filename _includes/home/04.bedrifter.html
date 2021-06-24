@@ -9,7 +9,7 @@
     <div class="imagesContainer">
         <div>
             {% for company in site.data.bedrifter %}
-            <img class="single-image" src="{{ " {{company.logo-source}}" | relative_url }}" alt="{{ " {{company.name}}"}}" />
+            <img class="single-image" src="{{ " {{company.logo-source}}" | | prepend: site.baseurl }}" alt="{{ " {{company.name}}"}}" />
             {% endfor %}
         </div>
     </div>

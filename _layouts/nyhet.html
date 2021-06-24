@@ -8,9 +8,9 @@ timezone: Europe/Oslo
     {{content}}
   </main>
   <div class="share-buttons">
-    <a class="share-button" href="{{ site.baseurl }}{{page.link-social }}">
+    <a class="share-button" href="{{page.link-social | prepend: site.baseurl}}">
       <button class="button primary">Del</button>
     </a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=#{{ page.url }}" target="_blank">Share</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=#{{ page.url | prepend: site.baseurl}}" target="_blank">Share</a>
   </div>
 </div>
