@@ -1,0 +1,41 @@
+  .video-and-text-container {
+    &:nth-child(even) {
+      background-color: $alternating-background-color;
+    }
+  }
+  
+  .video-and-text {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+  
+    margin: auto;
+    max-width: $content-max-width;
+  }
+  
+  .text-screen {
+    flex-grow: 1;
+    width: 300px;
+  }
+  
+  .video-screen {
+    flex-grow: 1;
+  }
+  
+  .content-screen {
+    margin: auto;
+  }
+  
+  iframe {
+    min-height: 300px;
+    margin: auto;
+    height: 75%;
+    width: 90%;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .video-and-text {
+      display: flex;
+      flex-direction: column;
+    }
+  }
