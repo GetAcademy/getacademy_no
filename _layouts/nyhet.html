@@ -2,14 +2,15 @@
 layout: default
 timezone: Europe/Oslo
 ---
-
-<h2>{{ page.title }}</h2>
-<time>{{ page.date | date: "%b %-d, %Y %R"}}</time>
-
-{{ content }}
-
-<style>
-  h2 {
-    text-align: center;
-  }
-</style>
+<div class ="news-container">
+  <h1 class="headline">{{page.title}}</h1>
+  <main>
+    {{content}}
+  </main>
+  <div class="share-buttons">
+    <a class="share-button" href="{{ site.baseurl }}{{page.link-social }}">
+      <button class="button primary">Del</button>
+    </a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=#{{ page.url }}" target="_blank">Share</a>
+  </div>
+</div>

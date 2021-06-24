@@ -1,59 +1,9 @@
-.accordion-container{
+.faq-container {
+  max-width: $content-max-width;
+  margin: auto;
+  padding: $global-padding;
 
-.accordion:not(.is-open) > .accordion-body {
-    display: none;
-  }
-  
-  .accordion {
-    box-sizing: border-box;
-    color: #444;
-    cursor: pointer;
-    padding: 18px 0;
-    max-width: 500px;
-    // border: 1px solid $primary-border-color;
-    text-align: left;
-    outline: none;
-    font-size: 18px;
-    transition: 0.4s;
-  }
-  
-  .accordion:hover {
-    background-color: whitesmoke;
-  }
-  
-  .accordion:nth-child(even) {
-    background-color: whitesmoke;
-  }
-  
-  .accordion-header {
-    padding: 0 10px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .accordion-body {
-    border: 1px solid rgb(231, 232, 235);
-    border-radius: 5px;
-  }
-  
-  .accordion-content {
-    padding: 35px 20px;
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 0 6px 15px 5px $primary-border-color;
-  }
-  
-  .accordion {
-    background-color: #ffffff;
-  }
-  
-  @media only screen and (max-width: 768px) {
-    .accordion {
-      width: 100%;
-    }
-  }
-}
-.contactus-container{
+  .contactus-container {
     * {
     box-sizing: border-box;
   
@@ -169,4 +119,86 @@
       margin: 0;
     }
   }
+  }
+
+
+h2 {
+  padding-top: $global-padding;
+  padding-bottom: $global-padding;
+}
+
+.faq {
+  display: flex;
+  justify-content: space-around;
+}
+
+// acc
+.accordion:not(.is-open) > .accordion-body {
+  display: none;
+}
+
+.accordion {
+  box-sizing: border-box;
+  color: #444;
+  cursor: pointer;
+  padding: 18px 0;
+  max-width: 500px;
+  // border: 1px solid $primary-border-color;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.accordion:hover {
+  background-color: whitesmoke;
+}
+
+.accordion:nth-child(even) {
+  background-color: whitesmoke;
+}
+
+.accordion-header {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion-body {
+  border: 1px solid rgb(231, 232, 235);
+  border-radius: 5px;
+}
+
+.accordion-content {
+  padding: 35px 20px;
+  // border-bottom: 2px solid #d1d1d1;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 6px 15px 5px $primary-border-color;
+}
+
+.accordion {
+  background-color: #ffffff;
+  // border-bottom: 1px solid #d6d6d6;
+}
+
+@media only screen and (max-width: 768px) {
+  .accordion {
+    width: 100%;
+  }
+}
+
+//acc
+
+@media only screen and (max-width: 768px) {
+  .faq {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    padding: 10px;
+    margin: auto;
+  }
+}
 }

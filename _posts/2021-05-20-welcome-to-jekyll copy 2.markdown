@@ -2,6 +2,7 @@
 title:  "Data"
 date:   2021-05-20 11:07:15 +0200
 categories: nyheter
+link-social: facebook.com
 ---
 
 Jekyll requires blog post files to be named according to the following format:

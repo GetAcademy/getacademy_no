@@ -1,17 +1,13 @@
 <div class="contact-card-container">
     <div class="contact-card">
-        <img loading="lazy" class="profile-image" :src="require('@/assets/' + profileImage + '')" :alt="personName" />
-
+        <img loading="lazy" class="profile-image" src="\assets\ansatt-bilder\{{ page.profilbilde }}" :alt="page.navn" />
         <p class="person-name">
-            <span class="first-letter person-info">{{personName}}</span>
-            <span>{{ personName }}</span>
+            <span class="first-letter person-info">{{page.navn | slice: 0}}</span>
+            <span>{{ page.navn | slice: 1, page.navn.size }}</span>
             <br />
-            <span class="person-info">
-                <a :href="'mailto:' + personEmail" rel="noopener">
-                    {{personEmail}}</a>
-            </span>
+            <span class="person-info"><a :href="'mailto:' + personEmail" rel="noopener">{{page.email}}</a></span>
             <br />
-            <span class="person-info">{{ personPhone }}</span>
+            <span class="person-info">{{ page.number }}</span>
         </p>
     </div>
     <br />

@@ -1,14 +1,13 @@
 ---
-# layout: nyhet # /_layouts/nyhet.html
-title:  "Guide"
-date: 1990-08-15 12:07:15 +0200
+title: "Guide" # Tittel på nyheten
+date: 1990-08-15 12:07:15 +
 categories: nyheter
 published: true # Set to false if you don’t want a specific post to show up when the site is generated.
+
 # For å stoppe utdragsvisning etter ønske bruk <!--stop--> som eksempelet under viser
 ---
 
-
-For å markere kodetekst <!-- https://github.com/rouge-ruby/rouge/wiki -->
+For å markere kodetekst
 {% highlight csharp %}
 int a = 18;
 int b = 6;
@@ -22,6 +21,5 @@ Console.WriteLine(c);
 * [Linktest]({% post_url 2021-05-25-link-test %}) <!-- Lenke til annen nyhetsartikkel -->  
 * This is the *[Markdown Guide](https://www.markdownguide.org)*
 * [Lenke til logo](/assets/get-academy.png)
-
 
 <!-- ![Get Academy. This place is so cool!](/assets/get-academy.png "Get Academy") -->
