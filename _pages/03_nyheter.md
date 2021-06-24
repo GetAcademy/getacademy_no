@@ -8,7 +8,7 @@ excerpt_separator: <!--slutt-->
 <ul class ="news-container">
   {% for post in site.posts %}
     <li class="news-card">
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <a href="{{ post.url}}{{ relative_url }}">{{ post.title }}</a>
       <time>{{post.date | date: "%b %-d, %Y %R"}}</time>
     {{ post.excerpt}} <!-- utdragsvisning -->
     </li>
