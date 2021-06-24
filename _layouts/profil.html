@@ -9,7 +9,7 @@ layout: default
 
   <div class="area area1">
     <div class="image-container">
-      <img class="profile-image" src="\assets\ansatt-bilder\{{ page.profilbilde }}">
+      <img class="profile-image" src="\assets\ansatt-bilder\{{ page.profilbilde | relative_url }}">
     </div>
 
     <div class="table-container">
@@ -60,7 +60,7 @@ layout: default
         {% if page.discord != null %}
         <tr v-if="discord">
           <td>
-            <img loading="lazy" src="/assets/icon/discord.png" alt="discord" />
+            <i class="fab fa-discord"></i>
           </td>
 
           <td>Discord</td>
