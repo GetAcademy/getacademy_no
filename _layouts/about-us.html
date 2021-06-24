@@ -33,7 +33,7 @@ layout: default
       <div class="profile-card-container">
         <div class="profile-card">
           <div class="horizontal-flex">
-            <img class="view-profile-container" src="\assets\ansatt-bilder\{{ ansatt.profilbilde }}">
+            <img class="view-profile-container" src="\assets\ansatt-bilder\{{ ansatt.profilbilde | relative_url}}">
             <div class="person-name">
               <span><span class="first-letter">{{ ansatt.name | slice: 0 }}</span>{{ ansatt.name | slice: 1,
                 ansatt.name.size }}</span>
