@@ -4,7 +4,7 @@ title: Geir
 permalink: /profil/geir
 navn: Geir Sollid
 stilling: Lærer i nøkkelkompetanse
-profilbilde: geir.jpeg
+profilbilde: /assets/ansatt-bilder/geir.jpeg
 bosted: Stavern
 links:
 discord: Geir#4082
