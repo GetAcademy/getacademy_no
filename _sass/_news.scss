@@ -1,7 +1,10 @@
 .news-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  margin: 1.5rem auto;
+  max-width: $content-max-width;
+  padding: $global-padding;
+  background-color: $alternating-background-color;
+    
     .headline {
       text-align: center;
     }
@@ -23,4 +26,21 @@
       transform: scale(1.02);
       transition: 0.1s;
     }
+    .share-buttons{
+      margin-top: 2rem;
+      button {
+        font: 1em sans-serif;
+      }
+    }
+  }
+  .news-content{
+    margin: 1.5rem auto;
+    max-width: $content-max-width;
+    padding: $global-padding;
+    background-color: wheat;
+  }
+
+  .news-picture img {
+    height: 25%;
+    width: 25%;
   }

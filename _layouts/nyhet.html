@@ -2,14 +2,16 @@
 layout: default
 timezone: Europe/Oslo
 ---
-<div class ="news-container">
+
+<div class ="news-content">
   <h1 class="headline">{{page.title}}</h1>
   <main>
+    {% if page.picture %}
+    {% endif %}
     {{content}}
   </main>
   <div class="share-buttons">
     <a class="share-button" href="https://www.facebook.com/sharer/sharer.php?u=#{{ page.url | relative_url }}">
-
       <button class="button primary">Del</button>
     </a>
   </div>

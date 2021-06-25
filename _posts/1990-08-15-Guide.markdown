@@ -1,11 +1,18 @@
 ---
-title: "Guide" # Tittel på nyheten
+title: Velkommen # Tittel på nyheten
 date: 1990-08-15 12:07:15 +
 categories: nyheter
 published: true # Set to false if you don’t want a specific post to show up when the site is generated.
+picture: /assets/studenter-koder.jpeg
+pictureText: studenter koder
 
 # For å stoppe utdragsvisning etter ønske bruk <!--stop--> som eksempelet under viser
 ---
+{% if page.picture %}
+{:.news-picture}
+  ![My helpful screenshot]({{page.picture}})
+  <span>{{page.pictureText}}</span>
+{% endif %}
 
 For å markere kodetekst
 {% highlight csharp %}
@@ -18,6 +25,6 @@ Console.WriteLine(c);
 
 
 ## Lenker
-* [Linktest]({% post_url 2021-05-25-link-test %}) <!-- Lenke til annen nyhetsartikkel -->  
+* [Linktest]({% post_url 2021-25-06-Åpen-Dag %}) <!-- Lenke til annen nyhetsartikkel -->  
 * This is the *[Markdown Guide](https://www.markdownguide.org)*
 * [Lenke til logo](/assets/get-academy.png)
