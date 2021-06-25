@@ -3,14 +3,14 @@ layout: default
 timezone: Europe/Oslo
 ---
 <div class ="news-container">
-  <h1 class="headline" style="text-align: center;">{{page.title}}</h1>
+  <h1 class="headline">{{page.title}}</h1>
   <main>
     {{content}}
   </main>
   <div class="share-buttons">
-    <a class="share-button" href="{{ site.baseurl }}{{page.link-social }}">
+    <a class="share-button" href="https://www.facebook.com/sharer/sharer.php?u=#{{ page.url | relative_url }}">
+
       <button class="button primary">Del</button>
     </a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=#{{ page.url }}" target="_blank">Share</a>
   </div>
 </div>

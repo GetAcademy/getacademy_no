@@ -21,5 +21,3 @@ Console.WriteLine(c);
 * [Linktest]({% post_url 2021-05-25-link-test %}) <!-- Lenke til annen nyhetsartikkel -->  
 * This is the *[Markdown Guide](https://www.markdownguide.org)*
 * [Lenke til logo](/assets/get-academy.png)
-
-<!-- ![Get Academy. This place is so cool!](/assets/get-academy.png "Get Academy") -->
