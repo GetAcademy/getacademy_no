@@ -1,5 +1,7 @@
 .news-container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: 1.5rem auto;
   max-width: $content-max-width;
   padding: $global-padding;
@@ -9,10 +11,10 @@
       text-align: center;
     }
   }
-  .news-card {
+  .news-card {  
     display: flex;
-    width: 44%;
     margin: 15px;
+    width: 28%;
     padding: 15px;
     align-items: center;
     flex-direction: column;
