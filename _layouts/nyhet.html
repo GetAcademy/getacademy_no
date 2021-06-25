@@ -3,10 +3,22 @@ layout: default
 timezone: Europe/Oslo
 ---
 
-<div class ="news-content">
+<div class="news-content">
   <h1 class="headline">{{page.title}}</h1>
   <main>
+    {% if page.picture %}
+    {% for link in page.picture %} {% for text in page.picture-texts %}
+    <img class="news-picture" src="{{link | relative_url}}">
+    <span>{{text}}</span>
+    {% endfor %} {% endfor %}
+    {% endif %}
     {{content}}
+    {% if page.youtube-link %}
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{page.youtube-link}}"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    {% endif %}
   </main>
   <div class="share-buttons">
     <a class="share-button" href="https://www.facebook.com/sharer/sharer.php?u=#{{ page.url | relative_url }}">

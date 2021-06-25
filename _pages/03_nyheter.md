@@ -11,7 +11,7 @@ excerpt_separator: <!--slutt-->
     <li class="news-card">
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       <time>{{post.date | date: "%b %-d, %Y %R"}}</time>
-    {{ post.excerpt}} <!-- utdragsvisning -->
+    <div class="excerpt-text">{{ post.description | default: 'Trykk her for info'}}</div> <!-- utdragsvisning, legg til klasse -->
     </li>
   {% endfor %}
 </ul>

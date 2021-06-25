@@ -3,14 +3,11 @@ title: Velkommen
 date: 1990-08-15 12:07:15 +
 categories: nyheter
 published: true
-picture: /assets/studenter-koder.jpeg
-pictureText: studenter koder
-
+description: Bilder av studenter som koder
+picture: ['/assets/studenter-koder.jpeg'] # 
+picture-texts: ['studenter koder'] # 
+youtube-link: "fVRoOkf4jt4" # siste delen av--->  https://www.youtube.com/watch?v=eVYyFNAwHk4
 # For å stoppe utdragsvisning etter ønske bruk <!--stop--> som eksempelet under viser
 ---
-{% if page.picture %}
-{:.news-picture}
-  ![My helpful screenshot]({{page.picture | relative_url}})
-  <span>{{page.pictureText}}</span>
-{% endif %}
+
 <!--stop--> 
