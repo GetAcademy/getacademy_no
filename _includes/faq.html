@@ -1,7 +1,7 @@
 <div class="accordion-body">
   <div id="accordion" class="accordion-container">
-    {% for question in site.data.faq %}
     <div class="accordion">
+      {% for question in site.data.faq %}
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <div class="accordion-question">{{ question.title }}</div>
       </div>
