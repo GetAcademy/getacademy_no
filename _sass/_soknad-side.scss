@@ -1,0 +1,280 @@
+.soknad-side-container {
+  padding: 15px;
+  margin: auto;
+  max-width: $content-max-width;
+
+  #mandatory {
+    text-align: center;
+    margin-top: -1.5rem;
+    .required label::after {
+      content: "*";
+      color: $primary-color;
+    }
+  }
+
+  .required-info{
+    color: $primary-color;
+    font-size: 2rem;
+  }
+  .about {
+    max-width: $content-max-width;
+    margin: auto;
+    padding: $global-padding;
+    min-height: 700px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 100px;
+    margin-top: 30px;
+  
+  * {
+    box-sizing: border-box;
+  
+    &:focus {
+      outline: none !important;
+    }
+  }
+  
+  input {
+    display: block;
+    width: 150%;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid $primary-border-color;
+    transition: 0.3s border-color;
+  
+    &:hover {
+      border: 1px solid rgb(165, 165, 167);
+    }
+  }
+  
+  .required label::after {
+    content: "*";
+    color: $primary-color;
+  }
+  
+  textarea {
+    width: 150%;
+    resize: vertical;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid $primary-border-color;
+    height: 150px;
+    color: #333333;
+    font-size: 18px;
+  }
+  
+  textarea:hover {
+    border: 1px solid rgb(165, 165, 167);
+  }
+  
+  .form-button {
+    color: white;
+    background-color: $primary-color;
+    border-radius: 5px;
+    border: 0;
+    text-align: center;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: $primary-color-active;
+    border: 0;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .form-group {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+  
+    input,
+    textarea {
+      width: 100%;
+    }
+  }
+}
+  
+  h2 {
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+  
+  p:before {
+    color: $primary-color;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    p {
+      text-align: left;
+      padding-left: 4rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+    #mandatory p {
+      text-align: left;
+      font-size: 2rem;
+    }
+    span {
+      text-align: left;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .steps-container{
+    * {
+      box-sizing: border-box;
+    }
+    
+    h4 {
+      margin-bottom: 0.8em;
+      margin-top: 1em;
+      font-weight: 700;
+    }
+    
+    p {
+      text-align: left;
+      padding: 0;
+    }
+    
+    .timeline {
+      position: relative;
+      max-width: 50%;
+      margin: 0 auto 3rem;
+    }
+    
+    .timeline::after {
+      content: "";
+      position: absolute;
+      width: 6px;
+      background-color: $primary-border-color;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+      border-radius: 5px;
+    }
+    
+    .container {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 100%;
+    }
+    
+    .container::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: white;
+      border: 4px solid $primary-color;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    
+    .left {
+      left: -50%;
+    }
+    
+    .right {
+      left: 50%;
+    }
+    
+    .right::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      left: 30px;
+      border-width: 10px 10px 10px 0;
+    }
+    
+    .right::after {
+      left: -16px;
+    }
+    
+    .content {
+      padding: 20px 30px;
+      border: 1px gray;
+      box-shadow: 0px 3px 10px 2px #dfdfdf;
+      position: relative;
+      border-radius: 6px;
+      border: 1px solid $primary-border-color;
+      background-color: white;
+    }
+    
+    .link-text {
+      font-size: 1rem;
+    }
+    
+    @media screen and (max-width: 768px) and (min-width: 768px) {
+      .timeline::after {
+        left: 16px;
+      }
+    
+      .container {
+        width: 100%;
+      }
+    
+      .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+    
+      .left::after,
+      .right::after {
+        left: 0px;
+      }
+    
+      .right,
+      .left {
+        left: 0;
+      }
+    }
+    
+    @media screen and (max-width: 767px) {
+      .timeline::after {
+        left: -41%;
+      }
+    
+      .container {
+        width: 225%;
+      }
+    
+      .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+    
+      .left::after,
+      .right::after {
+        left: 0px;
+      }
+    
+      .right,
+      .left {
+        left: -21vw;
+      }
+    }
+  }
+}

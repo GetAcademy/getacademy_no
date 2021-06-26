@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<div class="soknad-side-container">
+    <h2>Slik foregår det</h2>
+    <div class="steps-container">
+        <div class="flex-container">
+          <div class="timeline">
+            <div>{% for steg in site.data.soknad-steg %}
+              <div class="{{ steg.direction }}">
+                <div class="content">
+                  <h3>{{ steg.header }}</h3>
+                  <h4>{{ steg.miniHeader }}</h4>
+                  <p>{{ steg.texts }}</p>
+                  <a class="link-text" alt="getAcademy" href="{{steg.source | relative_url}}">{{ steg.link }}</a>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2>Meld interesse for Start IT</h2>
+      <p id="mandatory"> <span class="required-info">*</span><span>indikerer obligatorisk felt</span></p>
+    <div class="form-group">
+        <form
+          name="contact"
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdMb2atBPZB2_i5-wAT36ApAuR4-chF0kgarFP8mvWfMRKzPg/formResponse"
+          target="hidden_iframe"
+          onsubmit="submitted=true;"
+        >
+          <div class="required">
+            <label>Navn</label>
+            <input type="text" name="entry.1664326350" id="name" required />
+    
+            <label>E-post</label>
+            <input type="email" name="entry.389422620" id="email" required />
+    
+            <label>Telefon</label>
+            <input type="text" name="entry.1360877689" id="phone" required />
+    
+            <label>Fødselsdato</label>
+            <input type="date" name="entry.234732904" id="birthday" required />
+    
+            <label>Hvor bor du?</label>
+            <input type="text" name="entry.662853765" id="location" required />
+    
+            <label>Hva driver du med nå?</label>
+            <input type="text" name="entry.174019006" id="occupation" required />
+          </div>
+    
+          <label>Hvor hørte du om GET Academy?</label>
+          <input type="text" name="entry.1983034497" id="get" />
+    
+          <div>
+            <label>Spørsmål eller kommentar</label>
+          </div>
+          <textarea
+            class="form-field"
+            name="entry.1450879274"
+            id="comment"
+          ></textarea>
+    
+          <input class="form-button" type="submit" value="Send" />
+        </form>
+      </div>
+</div>
