@@ -31,23 +31,6 @@
     padding: $global-padding;
   }
 
-  @media only screen and (max-width: 768px) {
-    .start-it {
-      margin: 0;
-      padding: 0;
-    }
-
-    .start-it-ingress {
-      padding-left: $global-padding;
-      padding-right: $global-padding;
-      padding-top: 0;
-    }
-
-    h1 {
-      padding: $global-padding;
-    }
-  }
-
   .icon-name {
     padding: 0.5rem;
   }
@@ -144,6 +127,20 @@
   }
 
   @media only screen and (max-width: 768px) {
+    .start-it {
+      margin: 0;
+      padding: 0;
+    }
+
+    .start-it-ingress {
+      padding-left: $global-padding;
+      padding-right: $global-padding;
+      padding-top: 0;
+    }
+
+    h1 {
+      padding: $global-padding;
+    }
     .module-component {
       display: flex;
       flex-direction: column;
