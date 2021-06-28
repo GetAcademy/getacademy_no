@@ -153,14 +153,17 @@
     outline: none;
     font-size: 18px;
     transition: 0.4s;
+    border-radius: 5px;
   }
 
-  .accordion:hover {
-    background-color: whitesmoke;
+  .accordion:nth-child(odd) {
+    background-color: #efefef;
   }
-
   .accordion:nth-child(even) {
-    background-color: whitesmoke;
+    background-color: #dedede;
+  }
+  .accordion:hover {
+    background-color: #cecece;
   }
 
   .accordion-header {
@@ -169,33 +172,20 @@
     justify-content: space-between;
   }
 
-  .accordion-body {
-    border: 1px solid rgb(231, 232, 235);
-    border-radius: 5px;
-  }
-
   .accordion-content {
-    padding: 35px 20px;
-    // border-bottom: 2px solid #d1d1d1;
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 0 6px 15px 5px $primary-border-color;
+    margin: 15px 30px;
+    padding: 15px 30px;
+    background-color: transparent;
   }
 
   .accordion {
     background-color: #ffffff;
-    // border-bottom: 1px solid #d6d6d6;
   }
 
   @media only screen and (max-width: 768px) {
     .accordion {
       width: 100%;
     }
-  }
-
-  //acc
-
-  @media only screen and (max-width: 768px) {
     .faq {
       display: flex;
       flex-direction: column-reverse;
