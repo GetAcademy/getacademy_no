@@ -1,10 +1,11 @@
 ---
-title: Åpen dag
+title: Annet nytt
 date: 2021-06-25 11:09:15 +
 categories: nyheter
 published: true
-link: https://www.youtube.com/watch?v=fVRoOkf4jt4
-picture: 
+youtube-link: "fVRoOkf4jt4"
+picture:
+link: 
 ---
 
 **God Aften alle sammen!**🌞

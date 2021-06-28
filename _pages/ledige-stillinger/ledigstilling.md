@@ -1,4 +1,5 @@
 ---
+layout: stillinger/stilling
 tittel: "Vi søker etter en IT-utvikler"
 page-path: /ledige-stillinger/utlysning-eksempel
 arbeidssted: LARVIK

@@ -2,27 +2,50 @@
 layout: default
 timezone: Europe/Oslo
 ---
+<html>
 
-<div class="news-content">
-  <h1 class="headline">{{page.title}}</h1>
-  <main>
-    {% if page.picture %}
-    {% for link in page.picture %} {% for text in page.picture-texts %}
-    <img class="news-picture" src="{{link | relative_url}}">
-    <span>{{text}}</span>
-    {% endfor %} {% endfor %}
-    {% endif %}
-    {{content}}
-    {% if page.youtube-link %}
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{page.youtube-link}}"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
-    {% endif %}
-  </main>
-  <div class="share-buttons">
-    <a class="share-button" href="https://www.facebook.com/sharer/sharer.php?u=#{{ page.url | relative_url }}">
-      <button class="button primary">Del</button>
-    </a>
+<head>
+  <title>Your Website Title</title>
+  <meta property="og:url" content="{{ post.url | relative_url }}" />
+  <meta property="og:type" content="Skole" />
+  <meta property="og:title" content="Get Academy" />
+  <meta property="og:description" content="{{page.description}}" />
+  <meta property="og:image" content="{{link | relative_url }}" />
+</head>
+
+<body>
+
+  <div class="news-content">
+    <h1 class="headline">{{page.title}}</h1>
+    <main>
+      {% if page.picture %}
+      {% for link in page.picture %} {% for text in page.picture-texts %}
+      <img class="news-picture" src="{{link | relative_url}}">
+      <span>{{text}}</span>
+      {% endfor %} {% endfor %}
+      {% endif %}
+      {{content}}
+      {% if page.youtube-link %}
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/{{page.youtube-link}}"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      {% endif %}
+    </main>
+    <div class="share-buttons">
+      <div class="fb-share-button" data-href="{{ post.url | relative_url }}" data-layout="button">
+      </div>
+    </div>
   </div>
-</div>
+  </body>
+  </html>
+
+  <script>
+  (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
