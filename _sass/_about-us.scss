@@ -100,8 +100,7 @@
   
   .card-container {
     display: flex;
-    // justify-content: left;
-    // gap: 0px;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 60px;
   }
