@@ -8,6 +8,10 @@
     padding-bottom: $global-padding;
   }
 
+  .application-container {
+    margin-top: 10px;
+  }
+
   .start-it-container {
     padding: $global-padding;
     display: flex;
@@ -20,6 +24,8 @@
 
   .module-container:nth-child(odd) {
     background-color: $alternating-background-color;
+    border-top: 3px solid $primary-color;
+    border-bottom: 3px solid $primary-color;
   }
 
   .button-container {
