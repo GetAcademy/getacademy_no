@@ -31,6 +31,7 @@ github_username:  TrinityN
 permalink: pretty # https://jekyllrb.com/docs/permalinks/
 collections:   
   ansatte:
+  ledigestillinger:
 defaults:
   -
     scope:
@@ -43,7 +44,7 @@ defaults:
 theme: minima
 sass:
   sass_dir: _sass
-include: ['_pages', '_nav-items']
+include: ['_pages']
 kramdown:
   input: GFM
 plugins:

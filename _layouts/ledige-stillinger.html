@@ -6,8 +6,10 @@ layout: default
     <div class="vacancies-list-container">
       <div class="vacancy-list">
         <ul>
+          {% for stilling in site.ledigestillinger %}
           <li>
             <!--WIP-->
+            <h1>{{stilling.name}}</h1>
             <a class="m-list-item list-item" href="/ledige-stillinger/it-utvikler">
               <div class="a-list-item-side-content">
                 <div class="date icon">
@@ -26,26 +28,7 @@ layout: default
               </div>
             </a>
           </li>
-
-          <li>
-            <a class="m-list-item list-item" href="/ledige-stillinger/">
-              <div class="a-list-item-side-content">
-                <div class="date icon">
-                  <font-awesome-icon class="icon" icon="briefcase" size="3x" />      <!--Add icon-->
-                </div>
-              </div>
-              <div class="a-list-item-content information">
-                <h4 class="a-headline">
-                  <span>Salg (Beskrivelse kommer)</span>
-                </h4>
-                <ul class="a-metadata-list">
-                  <li class="item">Larvik</li>
-                  <li class="item">Heltid</li>
-                  <li class="item">Snarest</li>
-                </ul>
-              </div>
-            </a>
-          </li>
+          {% endfor %}
         </ul>
       </div>
     </div>
