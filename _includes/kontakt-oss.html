@@ -1,9 +1,13 @@
 <div class="contact-card-container">
     <div class="contact-card">
-        <img loading="lazy" class="profile-image" src="{{"/assets/ansatt-bilder/geir.jpeg" | relative_url }}" :alt="page.navn" />
+        <div class="image-container">
+            <img loading="lazy" class="profile-image" src="{{" /assets/ansatt-bilder/geir.jpeg" | relative_url }}"
+                :alt="page.navn" />
+        </div>
         <p class="person-name">
-            
-            <span><span class="first-letter person-info">{{page.navn | slice: 0}}</span>{{ page.navn | slice: 1, page.navn.size }}</span>
+
+            <span><span class="first-letter person-info">{{page.navn | slice: 0}}</span>{{ page.navn | slice: 1,
+                page.navn.size }}</span>
             <br />
             <span class="person-info"><a :href="'mailto:' + personEmail" rel="noopener">{{page.email}}</a></span>
             <br />

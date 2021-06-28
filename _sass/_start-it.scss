@@ -154,7 +154,11 @@
       padding: 0;
       margin: 0;
     }
+    .unordered-list {
+      display: flex;
+      flex-direction: column;
 
+    }
     .table-container {
       margin-top: 2rem;
       padding: 15px;
