@@ -30,7 +30,7 @@
     margin: auto;
     padding: $global-padding;
   }
-  
+
   @media only screen and (max-width: 768px) {
     .start-it {
       margin: 0;
@@ -85,7 +85,6 @@
   .horizontal-align {
     display: flex;
     flex-direction: column;
-  
   }
 
   .unordered-list-main {
@@ -140,6 +139,10 @@
     padding: 60px 0 0;
   }
 
+  .application-container {
+    text-align: center;
+  }
+
   @media only screen and (max-width: 768px) {
     .module-component {
       display: flex;
@@ -157,7 +160,6 @@
     .unordered-list {
       display: flex;
       flex-direction: column;
-
     }
     .table-container {
       margin-top: 2rem;
@@ -185,6 +187,12 @@
 
     h3 {
       padding: 10px 0px;
+    }
+    .application-container {
+      text-align: center;
+      * {
+        width: 100%;
+      }
     }
   }
 }
