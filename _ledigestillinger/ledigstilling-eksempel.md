@@ -1,4 +1,6 @@
 ---
+published: false
+tittel: "Vi søker etter en IT-utvikler"
 infoParagrapher: [
     #
     "Vi søker etter IT-utvikler til vår skole GET Academy er et ideelt AS som tilbyr en yrkesrettet utdanning innen IT-utvikling. I tillegg til IT-utvikling, vektlegger vi læring og trening i nøkkelkompetanser, som er en rekke emner innenfor samspill og læring. Første del av utdanningen, Start IT, er ren skole, mens andre del, GET IT, er en kombinasjon av skole og utplassering i bedrift.",
@@ -12,7 +14,7 @@ infoParagrapher: [
     "Det er fleksibilitet på hvilke av arbeidsoppgavene under som går inn i denne rollen og hvilke som løses av andre ved GET Academy."]
 
 arbeidsoppgaver: [
-    "Hjelpe GET IT-studenter en-til-en med oppgavene de har i sin praksisbedrift - typisk via skjermdeling og samtale over Discord - eller tekstlig chat",
+    "Hjelpe GET IT-studenter en-til-en med oppgavene de har i sin praksisbedrift - typisk via skjermdeling og samtale over Discord -    eller tekstlig chat",
     "Lage undervisningsmateriell, som videoer, oppgaver og løsningsforslag",
     "Holde undervisningsøkter over Google Meet (Vi har lite tradisjonell undervisning - til sammen kun tre live undervisningsøkter per uke)",
     "Delta i møter og dialog med praksisbedriftene",
