@@ -1,3 +1,33 @@
+.main-container-stilling{
+  max-width: $content-max-width;
+  margin: auto;
+  padding: $global-padding;
+ 
+  p {
+    font-size: $font-size-default;
+  }
+
+  .inline {
+    display: inline;
+  }
+
+  .sub-title {
+    font-weight: bold;
+  }
+
+  .list-style {
+    color: $primary-color;
+    margin: 0;
+    padding: 0 20px;
+    border-radius: 100%;
+  }
+  
+  .normal-text {
+    color: $primary-font-color;
+    line-height: 1.4rem;
+  }
+}
+
 .vacancies {
   max-width: $content-max-width;
   margin: auto;

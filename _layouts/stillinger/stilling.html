@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<div class="main-container-stilling">
+    <h1>{{page.tittel}}</h1>
+    {% for paragraph in page.paragraphs %}
+    <p>{{paragraph}}</p>
+    {% endfor %}
+    <p class="sub-title">Arbeidsoppgaver:</p>
+    <ul class="list-style">
+      {% for oppgaver in page.arbeidsoppgaver %}
+      <li>
+        <p class="normal-text">{{oppgaver}}</p>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <p class="sub-title">Kvalifikasjoner og personlige egenskaper:</p>
+    <ul class="list-style">
+      {% for egenskap in page.personligeegenskaper %}
+      <li>
+        <p class="normal-text">{{egenskap}}</p>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <br />
+
+    <span>Ta gjerne kontakt med oss om du har spørsmål. </span>
+    <br />
+    <br />
+    <span class="sub-title">Kontaktperson: </span>
+    <span>{{page.kontaktperson}}</span>
+    <br />
+    <span class="sub-title">Arbeidssted: </span>
+    <span>{{page.sluttinfo}}</span>
+  </div>

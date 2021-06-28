@@ -9,21 +9,18 @@ layout: default
           {% for stilling in site.ledigestillinger %}
           <li>
             <!--WIP-->
-            <h1>{{stilling.name}}</h1>
-            <a class="m-list-item list-item" href="/ledige-stillinger/it-utvikler">
+            <a class="m-list-item list-item" href="{{ stilling.side | relative_url }}">
               <div class="a-list-item-side-content">
-                <div class="date icon">
-                  <font-awesome-icon class="icon" icon="briefcase" size="3x" /> <!--Add icon-->
-                </div>
+                <i class="fa fa-briefcase fa-3x" aria-hidden="true" style="color: orange; padding: 1rem;"></i>
               </div>
               <div class="a-list-item-content information">
                 <h4 class="a-headline">
-                  <span>Erfaren IT-utvikler</span>
+                  <span>{{stilling.tittel}}</span>
                 </h4>
                 <ul class="a-metadata-list">
-                  <li class="item">Larvik</li>
-                  <li class="item">Heltid</li>
-                  <li class="item">Snarest</li>
+                  <li class="item">{{stilling.arbeidssted}}</li>
+                  <li class="item">{{stilling.heltid-deltid}}</li>
+                  <li class="item">{{stilling.tiltredelsesdato}}</li>
                 </ul>
               </div>
             </a>
