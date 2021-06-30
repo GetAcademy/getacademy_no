@@ -20,8 +20,8 @@
 # LEGGE OG ELLER ENDRE INNHOLD
 
 ### Ansatte
-  > Legge til ny ansatt
-  1. i folderen /_ansatte: kopier eksempel.md filen som er der, endre navn og data slik at den samsvarer med ansatte som skal legges til, husk at path: sin verdi skal samsvare med punkt 2 sin perma-lenke.
-  2. i folderen /_pages/profil gjør det samme som punkt 2, kopier denne sin eksempel.md fil, rename og endre det slik at det samsvarer med ansatte som skal legges til.
-  3. Husk å legg til /assets/ansatt-bilder/navn-på-ansatt.filformat
-  4. Fjern eller sett published: **true**
+  - Legge til ny ansatt
+    - i folderen /_ansatte: kopier eksempel.md filen som er der, endre navn og data slik at den samsvarer med ansatte som skal legges til, husk at path: sin verdi skal samsvare med punkt 2 sin perma-lenke.
+    - i folderen /_pages/profil gjør det samme som punkt 2, kopier denne sin eksempel.md fil, rename og endre det slik at det samsvarer med ansatte som skal legges til.
+    -  Husk å legg til /assets/ansatt-bilder/navn-på-ansatt.filformat
+    -  Fjern eller sett published: **true**
