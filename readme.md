@@ -1,7 +1,7 @@
 
 # HVA ER JEKYLL
 - Jekyll står bak GitHub Pages der du gjøre nettsiden din tilgjengelig for offentligheten rett fra github-repository.
-  Jekyll er en static site generator som bruker Liquid og Markdown og gjengir dette til HTML og CSS. ***(les mer om dette her: https://shopify.github.io/liquid/)***.
+  Jekyll er en static site generator som bruker Liquid og Markdown. ***(les mer om dette her: https://shopify.github.io/liquid/)***.
 
  # INSTALLASJON
  
