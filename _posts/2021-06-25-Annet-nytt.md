@@ -4,17 +4,16 @@ date: 2021-06-25 11:09:15 +
 categories: nyheter
 published: true
 youtube-link: "fVRoOkf4jt4"
-picture:
+picture: /assets/ansatt-bilder/terje.jpeg
 link: 
 ---
 
 **God Aften alle sammen!**🌞
 
 GET Academy AS ble startet i 2016 av Geir Sollid, Eskil Domben og Terje Kolderup. Mens Geir og Eskil hadde jobbet med å fremme nøkkelkompetenser i skolen, hadde Terje jobbet som IT-utvikler og lærer.
-
 Det er vel egentlig bare to endringer i forhold til eksisterende webside: 
-1. mulighet til å legge ut nyheter osm markdown-filer. En side lister opp alle nyheter (nyeste først) - og så kan man klikke seg inn på en og en nyhet
-2. oversikt over ansatte på samme måte - dvs. at vi kan legge inn nye ansatte ved å legge til en ny markdown-fil
+- mulighet til å legge ut nyheter osm markdown-filer. En side lister opp alle nyheter (nyeste først) - og så kan man klikke seg inn på en og en nyhet
+- oversikt over ansatte på samme måte - dvs. at vi kan legge inn nye ansatte ved å legge til en ny markdown-fil
 begge deler må virke med bilder
 trenger ikke kunne klikke seg inn på ansatte
 eller kanskje, jo

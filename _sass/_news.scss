@@ -50,18 +50,18 @@
   margin: 1.5rem auto;
   max-width: $content-max-width;
   padding: $global-padding;
-  background-color: wheat;
+  background-color: rgba($color: $primary-color, $alpha: 0.7);
 }
 
 .news-picture {
-  height: 25%;
-  width: 25%;
-}
-.external-link {
-  border: palegoldenrod 5px solid;
+  height: 25%; // alt for liten på mobil?
+  width: 25%; // alt for liten på mobil?
 }
 @media only screen and (max-width: 768px) {
   .news-card {
     width: 100%;
+  }
+  .news-content {
+    padding: $global-padding;
   }
 }
