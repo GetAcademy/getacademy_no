@@ -19,10 +19,12 @@ timezone: Europe/Oslo
     <h1 class="headline">{{page.title}}</h1>
     <main>
       {% if page.picture %}
-      {% for link in page.picture %} {% for text in page.picture-texts %}
-      <img class="news-picture" src="{{link | relative_url}}">
-      <span>{{text}}</span>
-      {% endfor %} {% endfor %}
+      {% for link in page.picture %}
+      <img class="news-picture" src="{{link | relative_url}}" alt="{{page.picture-texts}}">
+      {% endfor %}
+      {% for text in page.picture-texts %}
+      <p>{{text}}</p>
+      {% endfor %}
       {% endif %}
       {{content}}
       {% if page.youtube-link %}
@@ -37,15 +39,16 @@ timezone: Europe/Oslo
       </div>
     </div>
   </div>
-  </body>
-  </html>
+</body>
 
-  <script>
+</html>
+
+<script>
   (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    </script>
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>

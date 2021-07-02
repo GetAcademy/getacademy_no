@@ -4,7 +4,8 @@ date: 2021-06-25 11:09:15 +
 categories: nyheter
 published: true
 youtube-link: "fVRoOkf4jt4"
-picture: /assets/ansatt-bilder/terje.jpeg
+picture: "/assets/ansatt-bilder/terje.jpeg"
+picture-texts: "Bilde av Terje"
 link: 
 ---
 
