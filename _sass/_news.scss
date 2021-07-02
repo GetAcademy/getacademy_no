@@ -7,8 +7,19 @@
   padding: $global-padding;
   background-color: $alternating-background-color;
 
-  .headline {
-    text-align: center;
+  .news-card {
+    padding: 30px;
+    .content {
+      width: 100%;
+      margin: auto;
+      padding: 0px;
+      text-align: center;
+      a {
+        margin: 0px;
+        display: block;
+        width: 100%;
+      }
+    }
   }
 }
 .news-card {

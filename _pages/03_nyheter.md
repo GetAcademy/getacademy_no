@@ -12,7 +12,8 @@ excerpt_separator: <!--slutt-->
     <div class="content">
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       <time>{{post.date | date: "%b %-d, %Y %R"}}</time>
-    <div class="excerpt-text">{{ post.description | default: 'Trykk her for info'}}</div>
+      <a href="{{ post.url | relative_url }}">{{ post.description | default: 'Trykk her for info'}}</a>
+   
     </div>
     </li>
   {% endfor %}
