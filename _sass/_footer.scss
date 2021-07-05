@@ -6,7 +6,16 @@
     a {
       color: rgba(255, 255, 255, 0.65);
       &:hover {
-        color: white;
+        color: $primary-color;
+      }
+    }
+  }
+
+  .bottom-footer {
+    text-align: center;
+    a {
+      &:hover {
+        color: $primary-color;
       }
     }
   }
@@ -24,7 +33,7 @@
     text-decoration: none;
 
     &:hover {
-      color: white;
+      color: $primary-color;
     }
   }
   background-color: #2b2b2b;
@@ -67,6 +76,7 @@
     text-decoration: none;
     &:hover {
       text-decoration: none;
+      color: $primary-color;
     }
   }
 
