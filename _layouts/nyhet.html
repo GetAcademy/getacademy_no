@@ -16,6 +16,7 @@ timezone: Europe/Oslo
 <body>
 
   <div class="news-content">
+    <button onclick="window.history.back()">Tilbake</button>
     <h1 class="headline">{{page.title}}</h1>
     <main>
       {% if page.picture %}
@@ -37,6 +38,7 @@ timezone: Europe/Oslo
     <div class="share-buttons">
       <div class="fb-share-button" data-href="{{ post.url | relative_url }}" data-layout="button">
       </div>
+
     </div>
   </div>
 </body>

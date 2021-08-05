@@ -8,13 +8,12 @@ excerpt_separator: <!--slutt-->
 <h2 style="text-align:center;">{{ page.title }}</h2>
 <ul class ="news-container">
   {% for post in site.posts %}
-    <li class="news-card">
+    <a class="news-card" href="{{ post.url | relative_url }}">
     <div class="content">
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <p>{{ post.title }}</p>
       <time>{{post.date | date: "%b %-d, %Y %R"}}</time>
-      <a href="{{ post.url | relative_url }}">{{ post.description | default: 'Trykk her for info'}}</a>
-   
+      <p>{{ post.description | default: 'Trykk her for info'}}</p>
     </div>
-    </li>
+    </a>
   {% endfor %}
 </ul>
