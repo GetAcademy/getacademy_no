@@ -4,48 +4,50 @@
   flex-wrap: wrap;
   margin: 1.5rem auto;
   max-width: $content-max-width;
-  padding: $global-padding;
   background-color: $alternating-background-color;
 
   .news-card {
-    padding: 30px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    width: 30%;
+    margin: 15px auto;
+    padding: 0 30px;
+    box-shadow: 0px 2px 2px 2px #dfdfdf;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2);
+    }
     .content {
+      
+      // nødvendig?
       width: 100%;
       margin: auto;
       padding: 0px;
+      // nødvendig?
+
       text-align: center;
-      a {
-        margin: 0px;
-        display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      .news-title {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #000000;
+      }
+      img {
         width: 100%;
+      }
+      time {
+        color: rgba(0, 0, 0, 0.4);
+        float: right;
       }
     }
   }
 }
-.news-card {
-  display: flex;
-  margin: 15px auto;
-  width: 30%;
-  padding: 5rem 0;
-  align-items: center;
-  flex-direction: column;
-  border: 1px gray;
-  border-radius: 5px;
-  background-color: white;
-  box-shadow: 0px 2px 2px 2px #dfdfdf;
-  cursor: pointer;
-  &a:hover {
-    box-shadow: 0px 2px 10px 2px #dfdfdf;
-    transform: scale(1.02);
-    transition: 0.1s;
-  }
-  .share-buttons {
-    margin-top: 2rem;
-    button {
-      font: 1em sans-serif;
-    }
-  }
-}
+
 .news-content {
   margin: 1.5rem auto;
   max-width: $content-max-width;
@@ -53,17 +55,27 @@
   background-color: rgba($color: $primary-color, $alpha: 0.7);
 }
 
+.share-buttons {
+  margin-top: 2rem;
+  button {
+    font: 1em sans-serif;
+  }
+}
+
 .news-picture {
   height: 25%; // alt for liten på mobil?
   width: 25%; // alt for liten på mobil?
 }
+
 @media only screen and (max-width: 768px) {
   .news-card {
     width: 100%;
   }
+
   .news-content {
     padding: $global-padding;
   }
+
   .news-picture {
     width: 100%;
   }
