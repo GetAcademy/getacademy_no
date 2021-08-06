@@ -22,7 +22,6 @@
       transform: scale(1.2);
     }
     .content {
-      
       // nødvendig?
       width: 100%;
       margin: auto;
@@ -63,13 +62,15 @@
 }
 
 .news-picture {
-  height: 25%; // alt for liten på mobil?
-  width: 25%; // alt for liten på mobil?
+  height: 25%;
+  width: 25%;
 }
 
 @media only screen and (max-width: 768px) {
-  .news-card {
-    width: 100%;
+  .news-container {
+    .news-card {
+      width: 100%;
+    }
   }
 
   .news-content {
@@ -77,6 +78,7 @@
   }
 
   .news-picture {
+    height: 100%;
     width: 100%;
   }
 }
