@@ -5,7 +5,8 @@ permalink: /nyheter/
 nav: true
 excerpt_separator: <!--slutt-->
 ---
-<h2 style="text-align:center;">{{ page.title }}</h2>
+<div class="news-content-container">
+<h2>{{ page.title }}</h2>
 <ul class="news-container">
   {% for post in site.posts %}
     <a class="news-card" href="{{ post.url | relative_url }}" >
@@ -22,3 +23,4 @@ excerpt_separator: <!--slutt-->
     </a>
   {% endfor %}
 </ul>
+</div>

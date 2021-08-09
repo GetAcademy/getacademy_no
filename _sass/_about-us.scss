@@ -18,13 +18,13 @@
     // height: 260px;
     justify-content: space-between;
     background-color: white;
-    box-shadow: 0px 2px 2px 2px #dfdfdf;
+    box-shadow: $box-shadow;
     cursor: pointer;
-  
+    transition: 0.3s;
     &:hover {
-      box-shadow: 0px 2px 10px 2px #dfdfdf;
-      transform: scale(1.02);
-      transition: 0.1s;
+      box-shadow: $hover-box-shadow;
+      transform: translateY(-0.50em);
+      
     }
   }
   
