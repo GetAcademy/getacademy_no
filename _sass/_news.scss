@@ -4,8 +4,6 @@
   flex-wrap: wrap;
   margin: 1.5rem auto;
   max-width: $content-max-width;
- 
-
 
   .news-card {
     display: flex;
@@ -24,11 +22,6 @@
       box-shadow: $hover-box-shadow;
     }
     .content {
-      // nødvendig?
-      width: 100%;
-      margin: auto;
-      padding: 0px;
-      // nødvendig?
       word-wrap: break-word;
       text-align: center;
       .news-title {
@@ -51,7 +44,7 @@
   margin: 1.5rem auto;
   max-width: $content-max-width;
   padding: $global-padding;
-  background-color: white
+  background-color: white;
 }
 
 .news-content-container {
