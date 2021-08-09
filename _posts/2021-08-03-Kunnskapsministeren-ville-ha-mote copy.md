@@ -5,7 +5,7 @@ date: 2021-08-03 19:02:00 +
 categories: nyheter
 published: true
 youtube-link: 
-picture: "/assets/eskil-terje-ministeren.jpg"
+picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/200px-Tour_Eiffel_Wikimedia_Commons.jpg"
 picture-texts: "Bilde av Eskil, Terje og kunnskapsministeren"
 link: 
 ---
