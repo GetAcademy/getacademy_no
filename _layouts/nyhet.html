@@ -22,9 +22,6 @@ timezone: Europe/Oslo
       {% if page.picture %}
       {% for link in page.picture %}
       <img class="news-picture" src="{{link | relative_url}}" alt="{{page.picture-texts}}">
-      {% for text in page.picture-texts %}
-      <p>{{text}}</p>
-      {% endfor %}
       {% endfor %}
       {% endif %}
       {{content}}
