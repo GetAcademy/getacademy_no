@@ -142,6 +142,16 @@ a {
   cursor: pointer;
 }
 
+.back-button {
+  &::before {
+    content: '\003C';
+  }
+  &:hover {
+   color: $primary-color-active;
+  }
+  background-color: transparent;
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition-duration: 0.5s;

@@ -1,5 +1,5 @@
 ---
-title: Tar inn elever
+title: Tar inn videregående-dropouts til utvikler-utdanning
 date: 2021-06-25 21:47:00 +
 categories: nyheter
 published: true

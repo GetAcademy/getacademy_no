@@ -4,12 +4,12 @@
   flex-wrap: wrap;
   margin: 1.5rem auto;
   max-width: $content-max-width;
-  background-color: $alternating-background-color;
 
   .news-card {
     display: flex;
     align-items: center;
     transition: 0.3s;
+    
     width: 30%;
     margin: 15px auto;
     padding: 0 30px;
@@ -27,10 +27,8 @@
       margin: auto;
       padding: 0px;
       // nødvendig?
-
+      word-wrap: break-word;
       text-align: center;
-      white-space: nowrap;
-      overflow: hidden;
       .news-title {
         font-size: 1.1em;
         font-weight: bold;
@@ -51,7 +49,7 @@
   margin: 1.5rem auto;
   max-width: $content-max-width;
   padding: $global-padding;
-  background-color: rgba($color: $primary-color, $alpha: 0.7);
+  background-color: white
 }
 
 .share-buttons {
