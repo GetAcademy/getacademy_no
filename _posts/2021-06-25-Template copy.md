@@ -3,7 +3,7 @@ title: Annet nytt
 date: 2021-06-25 11:09:15 +
 categories: nyheter
 published: true
-youtube-link: "fVRoOkf4jt4"
+youtube-link: "https://www.youtube.com/embed/fVRoOkf4jt4"
 picture: 
 picture-texts: "Bilde av Terje"
 link: 
