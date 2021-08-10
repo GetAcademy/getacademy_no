@@ -2,13 +2,16 @@
 	<nav>
 		<div class="nav-container">
 			<div class="logo-container">
-				<a href="{{ "/" | relative_url }}"><img class="logo" src={{ "/assets/get-academy.png" | relative_url }} alt="GetAcademy Logo" /></a>
+				<a href="{{ '/' | relative_url }}">
+					<img class="logo" src="{{ '/assets/get-academy.png' | relative_url }}" alt="GetAcademy Logo" />
+				</a>
 			</div>
 			<div class="nav-buttons">
 				{% for page in site.pages %} {% if page.nav %}
 				<a class="link-div button-size" href="{{ page.url | relative_url }}">{{ page.title }}</a>
 				{% endif %} {% endfor %}
-				<a class="application-button" href={{ '/soknad/' | relative_url }}><button class="button primary">Meld interesse</button></a>
+				<a class="application-button" href="{{ '/soknad/' | relative_url }}"><button class="button primary">Meld
+						interesse</button></a>
 			</div>
 		</div>
 	</nav>
