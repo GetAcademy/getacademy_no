@@ -19,51 +19,16 @@
 }
 
 .cta-text {
-  text-align: center;
   overflow: hidden;
   transform: translateY(-50%);    
 }
-#animated-text::before{
-  animation: changing-text 20s;
-  animation-iteration-count: infinite;
-  content: ''
-}
-@keyframes changing-text {
-  0% {
-    content: 'Academy';
-  }
-  12% {
-    content: 'friends';
-  }
-  25% {
-    content: 'Academy';
-  }
-  37% {
-    content: 'coding skills';
-  }
-  50% {
-    content: 'Academy';
-  }
-  62% {
-    content: 'life skills';
-  }
-  75% {
-    content: 'Academy';
-  }
-  87% {
-    content: 'network';
-  }
-  100% {
-    content: 'Academy';
-  }
-}
 #animated-text::after{
-  animation: orange-carot 1s; 
+  animation: orange-caret 1s; 
   animation-iteration-count: infinite;
   content: '|';
   color: $primary-color;
 }
-@keyframes orange-carot {
+@keyframes orange-caret {
   0% {
     opacity: 1;
 
