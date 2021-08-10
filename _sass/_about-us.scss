@@ -1,8 +1,8 @@
 .about-us-container {
-    max-width: $content-max-width;
-    margin: auto;
-    padding: $global-padding;
-  
+  max-width: $content-max-width;
+  margin: auto;
+  padding: $global-padding;
+
   .folkene-bak {
     text-align: center;
   }
@@ -23,11 +23,10 @@
     transition: 0.3s;
     &:hover {
       box-shadow: $hover-box-shadow;
-      transform: translateY(-0.50em);
-      
+      transform: translateY(-0.5em);
     }
   }
-  
+
   .view-profile-container {
     padding: 15px;
     width: 70px;
@@ -36,25 +35,30 @@
     display: inline-block;
     vertical-align: middle;
   }
-  
+
   .person-name {
     margin-right: 15px;
     margin-top: 25px;
   }
-  
+
   .first-letter {
     font-weight: bold;
     // font-size: 24px;
     color: $primary-color;
   }
-  
+
   .person-info {
     max-width: 250px;
     height: 30px;
     font-weight: lighter;
     margin: 15px;
   }
-  
+
+  .invisible-link {
+    color: $primary-font-color;
+    text-decoration: none;
+  }
+
   .btn {
     width: 100%;
     margin-top: 15px;
@@ -69,41 +73,41 @@
       background-color: $secondary-button-active;
     }
   }
-  
+
   .horizontal-flex {
     display: flex;
     flex-direction: row;
   }
-  
+
   @media only screen and (max-width: 768px) {
     .profile-card-container {
       margin: 20px auto;
     }
   }
-  
-  
+
   .text {
     margin: auto;
     margin-bottom: 60px;
     text-align: center;
   }
 
-  .text h2, p {
-      text-align: left;
+  .text h2,
+  p {
+    text-align: left;
   }
-  
+
   .logos {
     padding: 3rem 1rem;
     text-align: center;
   }
-  
+
   .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 60px;
   }
-  
+
   img {
     filter: grayscale(100%);
     padding: 15px;
@@ -117,34 +121,34 @@
   }
 
   .view-profile-container {
-      filter: none;
+    filter: none;
   }
-  
+
   h2 {
     text-align: center;
     padding-bottom: 1em;
   }
-  
+
   .partner-description {
     margin: auto;
     max-width: $max-text-width-size;
   }
-  
+
   @media only screen and (max-width: 768px) {
     .card-container {
       display: flex;
       flex-direction: column;
     }
-  
+
     .logos {
       margin: 0;
       padding: 0;
     }
-  
+
     h2 {
       text-align: left;
     }
-  
+
     p {
       text-align: left;
     }

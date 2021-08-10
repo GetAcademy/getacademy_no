@@ -3,8 +3,9 @@ layout: default
 ---
 <div class="about-us-container">
   <div class="text">
-    <p class="about-us-paragraph">GET Academy er en ideell organisasjon, det vil si at det ikke kan tas utbytte - og at alt overskuddet uavkortet går
-    til å vokse og få tilbudet ut til flere. GET Academy er registrert i Frivillighetsregisteret.</p>
+    <p class="about-us-paragraph">GET Academy er en ideell organisasjon, det vil si at det ikke kan tas utbytte - og at
+      alt overskuddet uavkortet går
+      til å vokse og få tilbudet ut til flere. GET Academy er registrert i Frivillighetsregisteret.</p>
     <div class="header-with-description">
       <div class="border-container">
         <h2 class="about-us-header">Historien vår</h2>
@@ -18,9 +19,9 @@ layout: default
           skole for IT-utviklere lot alle tre fremme det de brenner aller mest for - og vise en annen måte å drive skole
           på, med mål om å inspirere til endringer også i det offentlige skolesystemet på sikt.</p>
         <p class="about-us-paragraph">Vår skole er åpen for alle! For opptak til Get Academy er det ingen formelle
-        krav. Her fokuserer vi mer på
-        innsats og villighet til å forbedre seg, enn hvor rask faglig progresjon man har. Tidlig i prosessen
-        formulerte Geir, Eskil og Terje de sentrale verdiene for GET Academy, og de er ydmyk, trygg og nysgjerrig.</p>
+          krav. Her fokuserer vi mer på
+          innsats og villighet til å forbedre seg, enn hvor rask faglig progresjon man har. Tidlig i prosessen
+          formulerte Geir, Eskil og Terje de sentrale verdiene for GET Academy, og de er ydmyk, trygg og nysgjerrig.</p>
       </div>
     </div>
   </div>
@@ -28,45 +29,43 @@ layout: default
     <h2>Folkene bak GET-Academy</h2>
     <div class="card-container">
       {% for sjef in site.sjefer %}
-      <div class="profile-card-container">
-        <div class="profile-card">
-          <div class="horizontal-flex">
-            <img class="view-profile-container" src="{{ sjef.profilbilde | relative_url}}" alt="{{sjef.navn}}">
-            <div class="person-name">
-              <span><span class="first-letter">{{ sjef.name | slice: 0 }}</span>{{ sjef.name | slice: 1,
-                sjef.name.size }}</span>
+      <div class="profile-card-container"> <a class="invisible-link" href="{{ sjef.profil | relative_url }}">
+          <div class="profile-card">
+            <div class="horizontal-flex">
+              <img class="view-profile-container" src="{{ sjef.profilbilde | relative_url}}" alt="{{sjef.navn}}">
+              <div class="person-name">
+                <span><span class="first-letter">{{ sjef.name | slice: 0 }}</span>{{ sjef.name | slice: 1,
+                  sjef.name.size }}</span>
+              </div>
             </div>
-          </div>
-          <p class="person-info">{{ sjef.stilling }}</p>
-          <p class="person-info">{{ sjef.tillegg }}</p>
-          <a href="{{ sjef.profil | relative_url }}"><button class="btn">Se Profil</button></a>
-        </div>
+            <p class="person-info">{{ sjef.stilling }}</p>
+            <p class="person-info">{{ sjef.tillegg }}</p>
+            <button class="btn">Se Profil</button>
+        </a>
       </div>
-      {% endfor %}
     </div>
+    {% endfor %}
   </div>
-  <div class="folkene-bak">
-    <h2>Annsatte i GET-Academy</h2>
-    <div class="card-container">
-      {% for ansatt in site.ansatte %}
-      <div class="profile-card-container">
-        <div class="profile-card">
-          <div class="horizontal-flex">
-            <img class="view-profile-container" src="{{ ansatt.profilbilde | relative_url}}" alt="{{ansatt.navn}}">
-            <div class="person-name">
-              <span><span class="first-letter">{{ ansatt.name | slice: 0 }}</span>{{ ansatt.name | slice: 1,
-                ansatt.name.size }}</span>
-            </div>
-          </div>
-          <p class="person-info">{{ ansatt.stilling }}</p>
-          <p class="person-info">{{ ansatt.tillegg }}</p>
-          <a href="{{ ansatt.profil | relative_url }}"><button class="btn">Se Profil</button></a>
+</div>
+<div class="folkene-bak">
+  <h2>Annsatte i GET-Academy</h2>
+  <div class="card-container">
+    {% for ansatt in site.ansatte %}
+    <div class="profile-card-container">
+      <div class="profile-card">
+        <div class="horizontal-flex">
+          <img class="view-profile-container" src="{{ ansatt.profilbilde | relative_url}}" alt="{{ansatt.navn}}">
+          <p class="person-name">{{ ansatt.name }}
+          </p>
         </div>
+        <p class="person-info">{{ ansatt.stilling }}</p>
+        <p class="person-info">{{ ansatt.tillegg }}</p>
       </div>
-      {% endfor %}
     </div>
+    {% endfor %}
   </div>
-  <div class="logos">
-    {% include home/04.bedrifter.html %}
-  </div>
+</div>
+<div class="logos">
+  {% include home/04.bedrifter.html %}
+</div>
 </div>
