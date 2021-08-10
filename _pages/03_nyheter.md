@@ -11,12 +11,13 @@ excerpt_separator: <!--slutt-->
   {% for post in site.posts %}
     <a class="news-card" href="{{ post.url | relative_url }}" >
     <div class="content">
+    {% if post.picture != unknown %}
       <img src="{{ post.picture }}"/>
+    {% endif %}
       {% if post.picture == "" or post.picture == unknown %}
       <img src="/assets/get-academy.png" />
       {% endif %}
       <p class="news-title">{{ post.title }}</p>
-      <br />
       <div class="subinfo-container">
       <span class="category"> {{post.category}}</span>
       <time>{{post.date | date: "%d/%m/%Y %H:%M"}}</time>

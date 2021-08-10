@@ -1,6 +1,6 @@
 ---
 category: Facebook
-title: Kunnskapsministeren ville ha møte
+title: Kunnskapsministeren ville ha møte 
 date: 2021-08-03 19:02:00 +
 categories: nyheter
 published: true
