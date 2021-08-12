@@ -2,7 +2,7 @@ nav {
   background-color: #ffffff;
   box-shadow: 2px 5px 10px rgba(96, 95, 95, 0.2);
 
-  .nav-container {
+  .nav-body {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,17 +12,6 @@ nav {
 
   .application-button:hover {
     border-bottom: 3px solid white !important;
-  }
-
-  .nav-buttons {
-    display: flex;
-    flex-direction: row;
-    padding-top: 1em;
-    span {
-      &:hover {
-        background-color: white;
-      }
-    }
   }
 
   .nav-buttons a {
@@ -52,15 +41,33 @@ nav {
     transition: 0.2s;
   }
 }
+
+.hamburger-menu {
+  display: none;
+}
+.hamburger {
+  display: none;
+}
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1em;
+  span {
+    &:hover {
+      background-color: white;
+    }
+  }
+}
 @media only screen and (max-width: 768px) {
   .nav-container {
     display: flex;
     flex-direction: column;
+    
     padding: 0 15px;
   }
 
   .nav-buttons {
-    padding-top: 0;
+    display: none;
   }
 
   .application-button {
@@ -70,17 +77,31 @@ nav {
   .no-border-bottom {
     border: 0;
   }
-}
-@media only screen and (max-width: 640px) {
-  nav {
-    .nav-buttons {
-      display: flex;
-      flex-direction: column;
-      padding: 0 15px;
-      a {
-        margin: auto;
-        text-align: center;
+  .hamburger {
+    display: block;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .hamburger-links {
+    display: flex;
+    flex-direction: column;
+  
+    a {
+      padding: 0.5em;
+      &:last-child{     
+      text-align: center; 
+       margin: auto;
+      color: blue;  
       }
     }
+
+  }
+  .nav-body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
   }
 }

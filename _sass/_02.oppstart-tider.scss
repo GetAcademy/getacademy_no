@@ -13,37 +13,35 @@
   margin-top: 1.5rem;
 }
 
-#application-container {
-  margin-top: 1.5rem;
-}
-
 .startup-period-container {
   border-radius: 5px;
   background-color: #ffffff;
   border: 1px solid $primary-border-color;
   box-shadow: 0 2px 10px 0px $primary-border-color;
-}
-
-.start-up {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.start-up-child {
-  padding: 30px 0;
-  flex-grow: 1;
-  flex-basis: 0;
-  border-left: 1px solid $primary-border-color;
-  border-right: 1px solid $primary-border-color;
-
-  &:first-child {
-    border-left: 0;
+  .start-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-  &:last-child {
-    border-right: 0;
+  .start-up-child {
+    padding: 30px 0;
+    flex-grow: 1;
+    flex-basis: 0;
+    border-left: 1px solid $primary-border-color;
+    border-right: 1px solid $primary-border-color;
+
+    &:first-child {
+      border-left: 0;
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
   }
+}
+#application-container {
+  margin-top: 1.5rem;
 }
 
 .capacity {
@@ -65,36 +63,30 @@
 @media only screen and (max-width: 768px) {
   .startup-period-container {
     width: auto;
-  }
-
-  .start-up {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .start-up-child {
-    padding: 20px 20px;
-    margin: 0 30px;
-    text-align: left;
-    justify-content: stretch;
-    border-bottom: 1px solid $primary-border-color;
-    border-left: 0;
-    border-right: 0;
-
-    &:first-child {
-      border-top: 0;
+    .startup-header {
+      word-break: break-all;
     }
+    .start-up {
+      display: flex;
+      flex-direction: column;
+      .start-up-child {
+        word-break: break-all;
+        text-align: center;
+        padding: 20px 20px;
+        margin: 0 30px;
+        justify-content: stretch;
+        border-bottom: 1px solid $primary-border-color;
+        border-left: 0;
+        border-right: 0;
 
-    &:last-child {
-      border-bottom: 0;
+        &:first-child {
+          border-top: 0;
+        }
+
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
     }
-  }
-  .startup-header {
-    word-break: break-all;
-  }
-  .start-up-child {
-    margin: 0;
-    word-break: break-all;
-    text-align: center;
   }
 }

@@ -1,56 +1,3 @@
-.page-selector {
-  .content {
-    max-width: 350px;
-    display: flex;
-    flex-direction: row;
-    padding: 50px 50px 90px;
-    background-color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px 0px #cecfd0;
-
-    &:hover {
-      box-shadow: 0px 10px 15px 3px #ceced0;
-      transform: scale(1.02);
-      transition: 0.2s;
-      span {
-        padding-right: 15px;
-      }
-    }
-  }
-  .active h2 span:after {
-    right: -50px;
-  }
-
-  h2 {
-    font-size: 2rem;
-    width: 140px;
-    margin-bottom: 1.5rem;
-    line-height: 1em;
-
-    span {
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      transition: 0.5s;
-
-      &:after {
-        content: ">";
-        position: absolute;
-        top: 0;
-        right: -40px;
-        color: $primary-color;
-        font-size: 2.7rem;
-      }
-    }
-  }
-  a {
-    color: #333333;
-    text-decoration: none;
-  }
-}
-
 .course-overview {
   padding: $global-padding;
   max-width: $content-max-width;
@@ -69,28 +16,68 @@
   .cards-container {
     background-color: #e4f5ff;
     padding: 5rem $global-padding;
-    margin-bottom: 3rem;
   }
   .page-links {
     margin: auto;
   }
-  @media only screen and (max-width: 768px) {
-    .content {
-      padding: 45px;
+}
+
+.page-selector {
+  a {
+    color: #333333;
+    text-decoration: none;
+  }
+  .content {
+    max-width: 350px;
+    display: flex;
+    flex-direction: row;
+    padding: 50px 50px 90px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #cecfd0;
+
+    &:hover {
+      box-shadow: 0px 10px 15px 3px #ceced0;
+      transform: scale(1.02);
+      transition: 0.2s;
+      h2 {
+        padding-right: 15px;
+      }
     }
-    .cards-container {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+  }
+
+  h2 {
+    line-height: 1em;
+
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+
+    &:after {
+      content: ">";
+      position: absolute;
+      top: 0;
+      right: -40px;
+      color: $primary-color;
+      font-size: 2.7rem;
     }
-    .course-overview {
-      padding: 0;
-    }
-    .padding-mobile {
-      padding: $global-padding;
-    }
-    h1,
-    h2 {
-      padding-bottom: 0.5rem;
-    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    padding: 45px;
+  }
+  .cards-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .course-overview {
+    padding: 0;
+  }
+  .padding-mobile {
+    padding: $global-padding;
   }
 }

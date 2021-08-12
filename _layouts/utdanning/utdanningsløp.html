@@ -1,32 +1,30 @@
 ---
 layout: default
 ---
-    <div class="course-overview">
-      <div class="padding-mobile">
-        <h1>Utdanningsløp</h1>
-        <h2>
-          Utdanningsløpet på GET Academy består av to deler:<br />
-          Start IT og GET IT
-        </h2>
-      </div>
-      <div class="cards-container">
-        <div class="course-overview-card">
-          {% for kurs in site.data.kurs %}
-          <div class="page-links">
-            <div class="page-selector">
-              <a href="{{ kurs.page | relative_url }} ">
-                <div class="content">
-                  <div>
-                    <h2>
-                      <span>{{ kurs.text }}</span>
-                    </h2>
-                    <p>{{ kurs.description }}</p>
-                  </div>
-                </div>
-              </a>
+<div class="course-overview">
+  <div class="padding-mobile">
+    <h1>Utdanningsløp</h1>
+    <h2>
+      Utdanningsløpet på GET Academy består av to deler:<br />
+      Start IT og GET IT
+    </h2>
+  </div>
+  <div class="cards-container">
+    <div class="course-overview-card">
+      {% for kurs in site.data.kurs %}
+      <div class="page-links">
+        <div class="page-selector">
+          <a href="{{ kurs.page | relative_url }} ">
+            <div class="content">
+              <div>
+                <h2>{{ kurs.text }} </h2>
+                <p>{{ kurs.description }}</p>
+              </div>
             </div>
-          </div>
-          {% endfor %}
+          </a>
         </div>
       </div>
+      {% endfor %}
     </div>
+  </div>
+</div>
