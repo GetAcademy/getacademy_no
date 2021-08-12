@@ -4,22 +4,13 @@
   padding: $global-padding;
 
   .start-it-ingress {
-    padding-top: $global-padding;
-    padding-bottom: $global-padding;
-  }
-
-  .application-container {
-    margin-top: 10px;
+    padding: $global-padding 0;
   }
 
   .start-it-container {
     padding: $global-padding;
     display: flex;
     flex-direction: row;
-
-    p {
-      flex-grow: 1;
-    }
   }
 
   .module-container:nth-child(odd) {
@@ -28,36 +19,7 @@
     border-bottom: 3px solid $primary-color;
   }
 
-  .button-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: $content-max-width;
-    margin: auto;
-    padding: $global-padding;
-  }
-
-  .icon-name {
-    padding: 0.5rem;
-  }
-
-  .textline {
-    margin: 0;
-    padding: 7px 0;
-  }
-
   .module-component-container {
-    display: flex;
-    flex-direction: row;
-    padding: $global-padding 0;
-  }
-
-  .area {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .area3 {
     display: flex;
     flex-direction: row;
   }
@@ -70,10 +32,6 @@
     padding: 0 20px;
     border-radius: 100%;
     list-style-type: disc;
-  }
-  .horizontal-align {
-    display: flex;
-    flex-direction: column;
   }
 
   .unordered-list-main {
@@ -124,33 +82,16 @@
     padding: $global-padding 0;
   }
 
-  .what-do-you-learn {
-    padding: 60px 0 0;
-  }
-
   .application-container {
     text-align: center;
+    margin-top: 10px;
   }
-
   @media only screen and (max-width: 768px) {
-    .start-it {
-      margin: 0;
-      padding: 0;
-    }
-
-    .start-it-ingress {
-      padding-left: $global-padding;
-      padding-right: $global-padding;
-      padding-top: 0;
-    }
-
     h1 {
       padding: $global-padding;
     }
-    .module-component {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
+    .start-it-ingress {
+      padding: 0 $global-padding $global-padding;
     }
 
     .module-component-container {
@@ -164,56 +105,21 @@
       display: flex;
       flex-direction: column;
     }
-    .table-container {
-      margin-top: 2rem;
-      padding: 15px;
-    }
 
     .info-table {
-      width: 0;
+      width: 100%;
       font-size: 1rem;
-
-      td {
-        padding: 0;
-      }
-    }
-
-    p {
-      padding: 0;
-      margin: 10px 0;
-    }
-
-    .area3 {
-      display: flex;
-      flex-direction: column;
-    }
-
-    h3 {
-      padding: 10px 0px;
-    }
-    .application-container {
-      text-align: center;
-      * {
+      tr {
+        display: flex;
+        flex-direction: column;
         width: 100%;
-      }
-    }
-  }
-  @media only screen and (max-width: 400px) {
-    .table-container {
-      margin: 0;
-    }
-
-    .info-table {
-      width: 100%;
-    }
-    tr {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      padding-bottom: 20px;
-      td {
-        width: 100% !important;
-        flex-grow: 1;
+        td {
+          width: 100% !important;
+          flex-grow: 1;
+        &:last-child {
+          padding-left: $global-padding;
+        }
+        }
       }
     }
   }

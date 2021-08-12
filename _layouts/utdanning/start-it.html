@@ -28,7 +28,7 @@ layout: default
       <div class="module-component-container">
         <div class="area area1">
           <div class="module-paragraph-container">
-            <p class="textline">{{ modul.info }}</p>
+            <p>{{ modul.info }}</p>
           </div>
         </div>
 
@@ -37,30 +37,28 @@ layout: default
             <table class="info-table">
               <tr>
                 <td>
-                  <i class="fas fa-map-marker-alt"></i>
-                  <span class="icon-name">Studiested</span>
+                  <span><i class="fas fa-map-marker-alt"></i> Studiested</span>
                 </td>
                 <td>{{ modul.studiested }}</td>
               </tr>
 
               <tr>
                 <td>
-                  <i class="fas fa-calendar-alt"></i><span class="icon-name">
-                    Studielengde</span>
+                  <span><i class="fas fa-calendar-alt"></i> Studielengde</span>
                 </td>
                 <td>{{ modul.studielengde }}</td>
               </tr>
 
               <tr>
                 <td>
-                  <i class="fas fa-credit-card"></i><span class="icon-name">Pris</span>
+                  <span><i class="fas fa-credit-card"></i> Pris</span>
                 </td>
                 <td>{{ modul.kostnad }}</td>
               </tr>
 
               <tr class="no-border-bottom">
                 <td>
-                  <i class="fas fa-sticky-note"></i><span class="icon-name">Opptakskrav</span>
+                  <span><i class="fas fa-sticky-note"></i> Opptakskrav</span>
                 </td>
                 <td>{{ modul.krav }}</td>
               </tr>
@@ -131,5 +129,4 @@ layout: default
       <button class="button primary">Meld interesse</button>
     </a>
   </div>
-</div>
 </div>
