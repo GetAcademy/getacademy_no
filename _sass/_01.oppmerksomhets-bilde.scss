@@ -22,6 +22,10 @@
     overflow: hidden;
     transform: translateY(-50%);
   }
+  .visible-link {
+    color: #4c8bf5;
+    text-decoration: underline;
+  }
   #animated-text::after {
     animation: fadeIn 1s ease-in-out;
     animation-iteration-count: infinite;

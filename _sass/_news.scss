@@ -75,24 +75,29 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .news-content-container {
+    h1 {
+      padding: 0 $global-padding;
+    }
+  }
   .news-container {
     width: 100%;
-    // align-items: center;
-    .news-card {
+    .news-card { 
       flex-direction: column;
       width: 100%;
       text-align: center;
       align-items: stretch;
     }
   }
-
+  .content {
+    padding: 0;
+  }
   .news-content {
     padding: $global-padding;
     width: 100%;
   }
 
   .news-picture {
-    // height: 100%;
     margin: auto;
     width: 100%;
   }
