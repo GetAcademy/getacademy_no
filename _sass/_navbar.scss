@@ -52,6 +52,7 @@ nav {
     transition: 0.2s;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .nav-container {
     display: flex;
@@ -69,6 +70,10 @@ nav {
 
   .no-border-bottom {
     border: 0;
+  }
+  .hamburger {
+    display: none;
+  
   }
 }
 @media only screen and (max-width: 640px) {
