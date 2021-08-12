@@ -12,10 +12,10 @@ excerpt_separator: <!--slutt-->
     <a class="news-card" href="{{ post.url | relative_url }}" >
     <div class="content">
     {% if post.picture != unknown %}
-      <img src="{{ post.picture }}"/>
+      <img src="{{ post.picture | relative_url}}"/>
     {% endif %}
       {% if post.picture == "" or post.picture == unknown %}
-      <img src="/assets/get-academy.png" />
+        <img src="{{/assets/get-academy.png' | relative_url }}" />
       {% endif %}
       <p class="news-title">{{ post.title }}</p>
       <div class="subinfo-container">
