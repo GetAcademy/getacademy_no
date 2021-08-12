@@ -1,47 +1,21 @@
 .container-block-companies {
-    padding: 3rem $global-padding;
-    margin: auto;
-    margin-bottom: 60px;
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    .single-image {
-        filter: grayscale(100%);
-        padding: 15px;
-        width: 100px;
-        vertical-align: middle;
-      }
-
-    .paragraph {
-        margin: auto;
-        padding-top: 1.5rem;
-      }
-      
-      img {
-        filter: grayscale(100%);
-        padding: 15px;
-        width: 100px;
-        vertical-align: middle;
-      }
-      
-    &:nth-child(even) {
-      background-color: $alternating-background-color;
-    }
-  
-    &:nth-child(2) {
-      margin: 0 auto;
-    }
-  
-  .btn-container {
-    text-align: center;
+  padding: 3rem $global-padding;
+  margin: auto;
+  margin-bottom: 60px;
+  &:nth-child(even) {
+    background-color: $alternating-background-color;
   }
-  
-  @media only screen and (max-width: 768px) {
-    .container-block {
-      margin-bottom: 20px;
-    }
+
+  &:nth-child(2) {
+    margin: 0 auto;
   }
+}
+.container {
+  text-align: center;
+}
+.single-image {
+  filter: grayscale(100%);
+  padding: 15px;
+  width: 100px;
+  vertical-align: middle;
 }
