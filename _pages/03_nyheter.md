@@ -15,7 +15,7 @@ excerpt_separator: <!--slutt-->
       <img src="{{ post.picture | relative_url}}"/>
     {% endif %}
       {% if post.picture == "" or post.picture == unknown %}
-        <img src="{{/assets/get-academy.png' | relative_url }}" />
+        <img src="{{'/assets/get-academy.png' | relative_url }}" />
       {% endif %}
       <p class="news-title">{{ post.title }}</p>
       <div class="subinfo-container">
