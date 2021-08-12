@@ -26,16 +26,17 @@ timezone: Europe/Oslo
       {% endif %}
       {{content}}
       {% if page.youtube-link %}
-      <iframe width="560" height="315" src="{{page.youtube-link}}"
-        title="YouTube video player" frameborder="0"
+      <iframe width="560" height="315" src="{{page.youtube-link}}" title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
       {% endif %}
     </main>
-    <div class="share-buttons">
-      <div class="fb-share-button" data-href="{{ post.url | relative_url }}" data-layout="button">
-      </div>
 
+    <div class="sub-footer">
+      <div class="share-buttons">
+        <div class="fb-share-button" data-href="{{ post.url | relative_url }}" data-layout="button"></div>
+      </div>
+      <time>{{page.date | date: "%d/%m/%Y %H:%M"}}</time>
     </div>
   </div>
 </body>

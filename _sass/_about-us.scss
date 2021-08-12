@@ -15,10 +15,13 @@
     border: 1px gray;
     border-radius: 5px;
     max-width: 250px;
-    // height: 260px;
+    min-height: 260px;
     justify-content: space-between;
     background-color: white;
     box-shadow: $box-shadow;
+  }
+
+  .boss-card {
     cursor: pointer;
     transition: 0.3s;
     &:hover {
@@ -43,7 +46,6 @@
 
   .first-letter {
     font-weight: bold;
-    // font-size: 24px;
     color: $primary-color;
   }
 
@@ -54,11 +56,7 @@
     margin: 15px;
   }
 
-  .invisible-link {
-    color: $primary-font-color;
-    text-decoration: none;
-  }
-
+ 
   .btn {
     width: 100%;
     margin-top: 15px;
@@ -124,33 +122,8 @@
     filter: none;
   }
 
-  h2 {
-    text-align: center;
-    padding-bottom: 1em;
-  }
-
   .partner-description {
     margin: auto;
     max-width: $max-text-width-size;
-  }
-
-  @media only screen and (max-width: 768px) {
-    .card-container {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .logos {
-      margin: 0;
-      padding: 0;
-    }
-
-    h2 {
-      text-align: left;
-    }
-
-    p {
-      text-align: left;
-    }
   }
 }

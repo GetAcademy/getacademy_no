@@ -1,5 +1,4 @@
 .attention-image-container {
-  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -21,6 +20,11 @@
   .cta-text {
     overflow: hidden;
     transform: translateY(-50%);
+    text-align: left;
+  }
+  .visible-link {
+    color: #4c8bf5;
+    text-decoration: underline;
   }
   #animated-text::after {
     animation: fadeIn 1s ease-in-out;
@@ -31,7 +35,6 @@
 
   .hero-image {
     animation: fadeIn 0.7s ease-in-out;
-    padding-bottom: 1rem;
     align-self: flex-start;
     width: 600px;
     height: auto;
@@ -61,7 +64,7 @@
 
   @media only screen and (max-width: 1020px) {
     h1 {
-      margin-bottom: 0.3rem;
+      margin-bottom: 0;
       font-size: 2rem;
     }
 
@@ -70,13 +73,13 @@
     }
 
     .cta-container {
-      padding: 0 0 2.5rem 1.5rem;
+      padding: 1rem 1rem 1rem 1.5rem;
       flex-basis: 100%;
       text-align: center;
     }
 
     .hero-image {
-      width: 90%;
+      width: 100%;
       margin: auto;
       padding-bottom: 1.5rem;
     }
