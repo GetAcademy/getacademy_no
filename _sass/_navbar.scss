@@ -48,12 +48,6 @@ nav {
     font-size: $font-size-default;
   }
 
-  .hamburger-menu {
-    display: inline-block;
-    cursor: pointer;
-    padding: 5px;
-  }
-
   .bar1,
   .bar2,
   .bar3 {
@@ -88,15 +82,6 @@ nav {
     transition: height 0.3s ease-in-out;
   }
 
-  .hamburger-link {
-    padding: 15px 0;
-  }
-
-  .hamburger-link-container {
-    width: 150px;
-    cursor: pointer;
-  }
-
   .logo-container {
     padding-top: 10px;
   }
@@ -108,29 +93,6 @@ nav {
 
   .link-div {
     margin: 8px auto;
-  }
-
-  .dropdown-content {
-    position: absolute;
-    margin-left: 30px;
-    background-color: white;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  }
-
-  .dropdown-content a {
-    padding: 10px 16px;
-    margin: 0;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .dropdown-content a:hover {
-    background-color: rgb(230, 228, 228);
-  }
-
-  .show {
-    display: block;
   }
 }
 @media only screen and (max-width: 768px) {
