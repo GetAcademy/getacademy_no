@@ -114,7 +114,7 @@ h4 {
 }
 a {
   color: #333;
-  text-decoration: none; 
+  text-decoration: none;
 
   &:hover {
     text-decoration: none;
@@ -143,12 +143,16 @@ a {
   cursor: pointer;
 }
 
+time {
+  color: rgba(0, 0, 0, 0.4);
+}
+
 .back-button {
   &::before {
-    content: '\003C';
+    content: "\003C";
   }
   &:hover {
-   color: $primary-color-active;
+    color: $primary-color-active;
   }
   background-color: transparent;
 }
@@ -170,6 +174,4 @@ a {
     padding: 1rem 2rem;
     justify-content: flex-start;
   }
-
-
 }
