@@ -14,17 +14,6 @@ nav {
     border-bottom: 3px solid white !important;
   }
 
-  .nav-buttons {
-    display: flex;
-    flex-direction: row;
-    padding-top: 1em;
-    span {
-      &:hover {
-        background-color: white;
-      }
-    }
-  }
-
   .nav-buttons a {
     display: flex;
     align-items: center;
@@ -53,15 +42,30 @@ nav {
   }
 }
 
+.hamburger {
+  display: none;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1em;
+  span {
+    &:hover {
+      background-color: white;
+    }
+  }
+}
 @media only screen and (max-width: 768px) {
   .nav-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0 15px;
   }
 
   .nav-buttons {
-    padding-top: 0;
+    display: none;
   }
 
   .application-button {
@@ -72,20 +76,9 @@ nav {
     border: 0;
   }
   .hamburger {
-    display: none;
-  
+    display: block;
   }
-}
-@media only screen and (max-width: 640px) {
-  nav {
-    .nav-buttons {
-      display: flex;
-      flex-direction: column;
-      padding: 0 15px;
-      a {
-        margin: auto;
-        text-align: center;
-      }
-    }
+  .hamburger-menu {
+    display: none;
   }
 }

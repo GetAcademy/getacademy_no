@@ -1,3 +1,11 @@
 function hamburger() {
-    console.log("hei jeg er burgerbrød")
+    // var hamburger = document.getElementsByClassName("nav-container");
+    var burgerMenu = document.getElementsByClassName("hamburger-menu")[0];
+    if ( burgerMenu.style.display  == 'none') {
+        burgerMenu.style.display = 'block'
     }
+    else {
+        burgerMenu.style.display = 'none'
+    }
+    console.log(burgerMenu)
+}
