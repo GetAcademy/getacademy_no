@@ -6,7 +6,7 @@ nav: true
 excerpt_separator: <!--slutt-->
 ---
 <div class="news-content-container">
-<h2>{{ page.title }}</h2>
+<h1>{{ page.title }}</h1>
 <ul class="news-container">
   {% for post in site.posts %}
     <a class="news-card" href="{{ post.url | relative_url }}" >
