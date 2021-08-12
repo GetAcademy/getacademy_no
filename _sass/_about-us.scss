@@ -15,10 +15,13 @@
     border: 1px gray;
     border-radius: 5px;
     max-width: 250px;
-    // height: 260px;
+    min-height: 260px;
     justify-content: space-between;
     background-color: white;
     box-shadow: $box-shadow;
+  }
+
+  .boss-card {
     cursor: pointer;
     transition: 0.3s;
     &:hover {

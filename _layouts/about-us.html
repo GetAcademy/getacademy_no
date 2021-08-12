@@ -29,7 +29,7 @@ layout: default
     <h2>Folkene bak GET-Academy</h2>
     <div class="card-container">
       {% for sjef in site.sjefer %}
-      <div class="profile-card-container"> <a class="invisible-link" href="{{ sjef.profil | relative_url }}">
+      <div class="profile-card-container boss-card"> <a class="invisible-link" href="{{ sjef.profil | relative_url }}">
           <div class="profile-card">
             <div class="horizontal-flex">
               <img class="view-profile-container" src="{{ sjef.profilbilde | relative_url}}" alt="{{sjef.navn}}">
