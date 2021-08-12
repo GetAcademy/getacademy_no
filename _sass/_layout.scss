@@ -79,7 +79,7 @@ h4 {
 .vue-typer {
   // edit redudant
   .custom.char {
-    color: #333333;
+    color: $primary-font-color;
   }
 
   .custom.caret {
@@ -113,7 +113,8 @@ h4 {
   max-width: 1000px;
 }
 a {
-  color: #4c8bf5;
+  color: #333;
+  text-decoration: none; 
 
   &:hover {
     text-decoration: none;
