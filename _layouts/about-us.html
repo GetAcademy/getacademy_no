@@ -51,11 +51,11 @@ layout: default
   <h2>Annsatte i GET-Academy</h2>
   <div class="card-container">
     {% for ansatt in site.ansatte %}
-    <div class="profile-card-container">
-      <div class="profile-card">
-        <div class="horizontal-flex">
+    <div class="employee-card-container">
+      <div class="employee-profile-card">
+        <div class="horizontal-flex employee-img-container">
           <img class="view-profile-container" src="{{ ansatt.profilbilde | relative_url}}" alt="{{ansatt.navn}}">
-          <p class="person-name">{{ ansatt.name }}
+          <p class="employee-name">{{ ansatt.name }}
           </p>
         </div>
         <p class="person-info">{{ ansatt.stilling }}</p>
