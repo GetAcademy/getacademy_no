@@ -60,10 +60,14 @@
       flex-direction: row;
       align-items: center;
     }
-    .profile-image-container {
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
+    .image-container {
+      width: 150px;
+      height: 150px;
+      .profile-image-container {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+      }
     }
 
     .person-name {
@@ -81,13 +85,19 @@
       color: $primary-color;
     }
 
-    p {
-      margin: 0;
-    }
-
     h4 {
       font-weight: bold;
       padding-bottom: 1.25rem;
+    }
+    p {
+      margin: 0;
+    }
+    a {
+      color: #4c8bf5;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 

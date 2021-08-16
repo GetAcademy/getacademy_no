@@ -11,4 +11,11 @@
   p {
     text-align: center;
   }
+  a {
+    color: #4c8bf5;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }

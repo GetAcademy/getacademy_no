@@ -32,6 +32,18 @@
     padding: 0 20px;
     border-radius: 100%;
     list-style-type: disc;
+
+    li {
+      border-bottom: none;
+      &:hover {
+        border-bottom: none;
+      }
+      &::before {
+        content: "\2022 ";
+        color: $primary-color;
+        padding-right: 0.5em;
+      }
+    }
   }
 
   .unordered-list-main {
@@ -116,9 +128,9 @@
         td {
           width: 100% !important;
           flex-grow: 1;
-        &:last-child {
-          padding-left: $global-padding;
-        }
+          &:last-child {
+            padding-left: $global-padding;
+          }
         }
       }
     }

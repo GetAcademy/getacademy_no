@@ -43,10 +43,16 @@
   border-radius: 100%;
 }
 
-.burning-passion::before {
-  content: "\2022 ";
-  color: $primary-color;
-  padding-right: 0.5em;
+.burning-passion {
+  border-bottom: none;
+  &:hover {
+    border-bottom: none;
+  }
+  &::before {
+    content: "\2022 ";
+    color: $primary-color;
+    padding-right: 0.5em;
+  }
 }
 
 .no-border-bottom td {
