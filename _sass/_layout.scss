@@ -33,11 +33,14 @@
   padding: 0;
   margin: 0;
 }
-
+main {
+  min-height: 60vh;
+}
 html,
 body {
   width: auto !important;
   overflow-x: hidden !important;
+  
 }
 
 body {
@@ -47,6 +50,7 @@ body {
   color: $primary-font-color;
   line-height: 1.75;
   background-color: rgb(249, 249, 250);
+  
 }
 
 #app {

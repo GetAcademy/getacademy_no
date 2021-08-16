@@ -2,6 +2,7 @@
   max-width: $content-max-width;
   margin: auto;
   padding: $global-padding;
+  
  
   p {
     font-size: $font-size-default;
@@ -35,10 +36,13 @@
 ul {
   margin-top: 20px;
   list-style: none;
+  border-bottom: none;
 }
-li:last-child {
-  border-bottom: 1px solid #e2e2e2;
+li {
+  text-decoration: none;
+  border-bottom: none;
 }
+
 .a-list-item-side-content {
   margin-right: 20px;
 }
@@ -66,7 +70,6 @@ h4.a-headline {
 .m-list-item {
   align-items: center;
   background-color: white;
-  border-top: 1px solid #e2e2e2;
   color: $primary-font-color;
   display: flex;
   padding: 19px 0;
@@ -82,6 +85,7 @@ h4.a-headline {
   line-height: 14px;
   margin-right: 10px;
   padding-right: 10px;
+  
 }
 .a-list-item-content .a-metadata-list .item {
   font-size: 14px;
