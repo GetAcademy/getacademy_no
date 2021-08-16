@@ -2,8 +2,11 @@
   max-width: $content-max-width;
   margin: auto;
   padding: $global-padding;
-  
- 
+  ul li {
+    text-decoration: none;
+    border-bottom: none;
+    padding: 0;
+  }
   p {
     font-size: $font-size-default;
   }
