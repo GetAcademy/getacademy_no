@@ -6,7 +6,16 @@
   .folkene-bak {
     text-align: center;
   }
-
+  .profile-card {
+    p,
+    span {
+      color: $primary-font-color;
+      .first-letter {
+        font-weight: bold;
+        color: $primary-color;
+      }
+    }
+  }
   .profile-card-container {
     display: flex;
     align-items: center;
@@ -28,7 +37,7 @@
       transform: translateY(-0.5em);
     }
   }
-  
+
   .employee-card-container {
     display: flex;
     align-items: center;
@@ -41,18 +50,18 @@
     justify-content: space-between;
     background-color: white;
     box-shadow: $box-shadow;
-  } 
- .employee-profile-card {
-   width: 100%;
-   .employee-img-container {
-     display: flex;
-     align-items: center;
-     justify-content: flex-start;
-   }
-   .employee-name {
-    margin: 0;
-   }
- }
+  }
+  .employee-profile-card {
+    width: 100%;
+    .employee-img-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .employee-name {
+      margin: 0;
+    }
+  }
   .view-profile-container {
     padding: 15px;
     width: 70px;
@@ -66,12 +75,6 @@
     margin-right: 15px;
     margin-top: 25px;
   }
-
-  .first-letter {
-    font-weight: bold;
-    color: $primary-color;
-  }
-
   .person-info {
     max-width: 250px;
     height: 30px;
@@ -79,7 +82,6 @@
     margin: 15px;
   }
 
- 
   .btn {
     width: 100%;
     margin-top: 15px;
