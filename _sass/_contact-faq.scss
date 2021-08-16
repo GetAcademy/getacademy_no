@@ -6,28 +6,21 @@
   .contactus-container {
     * {
       box-sizing: border-box;
-
-      &:focus {
-        outline: none !important;
-      }
     }
 
     input {
-      display: block;
       width: 100%;
       margin: 10px 0;
       padding: 15px;
-      font-size: 18px;
-
-      &:hover {
-        border: 1px solid #aaa;
-      }
     }
 
     input[type="text"] {
       border-radius: 5px;
       border: 1px solid $primary-border-color;
       transition: 0.3s border-color;
+      &:hover {
+        border: 1px solid #aaa;
+      }
     }
 
     textarea {
@@ -36,9 +29,7 @@
       padding: 15px;
       border-radius: 5px;
       border: 1px solid $primary-border-color;
-      height: 162px;
-      color: black;
-      font-size: 18px;
+      height: 8em;
 
       &:hover {
         border: 1px solid #aaa;
@@ -51,11 +42,9 @@
       border-radius: 5px;
       border: 0;
       text-align: center;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #4388b6;
-      border: 0;
+      &:hover {
+        background-color: #4388b6;
+      }
     }
 
     .contact-card-container {
@@ -64,7 +53,7 @@
       border-radius: 10px;
       max-width: 450px;
       min-width: 250px;
-     }
+    }
 
     .contact-card {
       display: flex;
@@ -75,12 +64,11 @@
       width: 130px;
       height: 130px;
       border-radius: 50%;
-      // padding: 10px;
     }
 
     .person-name {
-      font-size: 24px;
-      font-weight: 700;
+      font-size: 1.3em;
+      font-weight: bold;
       padding: 0 0 0 15px;
     }
 
@@ -93,43 +81,13 @@
       color: $primary-color;
     }
 
-    a {
-      color: black;
-    }
     p {
       margin: 0;
     }
 
-    h3 {
-      font-size: 18px;
-      font-weight: 800;
+    h4 {
+      font-weight: bold;
       padding-bottom: 1.25rem;
-    }
-
-    @media only screen and (max-width: 1000px) {
-      .contact-card-container {
-        margin: auto;
-      }
-      .contact-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: auto;
-        text-align: center;
-      }
-
-      .image-container {
-        margin: auto;
-      }
-      .profile-image {
-        margin: auto;
-        padding: 0;
-        margin: 0;
-      }
-
-      p {
-        margin: 0;
-      }
     }
   }
 
@@ -149,13 +107,12 @@
   }
 
   .accordion {
+    margin-right: 15px;
     box-sizing: border-box;
     color: #444;
     cursor: pointer;
-    width: 500px;
     text-align: left;
     outline: none;
-    font-size: 18px;
     transition: 0.4s;
     border-radius: 5px;
   }
@@ -177,27 +134,23 @@
   }
 
   .accordion-content {
-    
     padding: 0 30px 15px;
     background-color: transparent;
   }
+}
 
-  .accordion {
-    background-color: #ffffff;
-  }
-
-  @media only screen and (max-width: 1000px) {
-    .accordion {
-      width: 100%;
-    }
+@media only screen and (max-width: 1000px) {
+  .faq-container {
     .faq {
       display: flex;
       flex-direction: column-reverse;
     }
+  }
+  .accordion {
+    width: 100%;
+  }
 
-    .content {
-      padding: 10px;
-      margin: auto;
-    }
+  .contact-card-container {
+    margin: auto;
   }
 }
