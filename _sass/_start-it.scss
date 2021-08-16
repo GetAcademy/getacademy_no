@@ -33,15 +33,10 @@
     border-radius: 100%;
     list-style-type: disc;
 
-    li {
+    li{
       border-bottom: none;
       &:hover {
         border-bottom: none;
-      }
-      &::before {
-        content: "\2022 ";
-        color: $primary-color;
-        padding-right: 0.5em;
       }
     }
   }
