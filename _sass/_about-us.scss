@@ -20,7 +20,6 @@
     background-color: white;
     box-shadow: $box-shadow;
   }
-
   .boss-card {
     cursor: pointer;
     transition: 0.3s;
@@ -29,7 +28,31 @@
       transform: translateY(-0.5em);
     }
   }
-
+  
+  .employee-card-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border: 1px gray;
+    border-radius: 5px;
+    max-width: 320px;
+    min-height: 230px;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: $box-shadow;
+  } 
+ .employee-profile-card {
+   width: 100%;
+   .employee-img-container {
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+   }
+   .employee-name {
+    margin: 0;
+   }
+ }
   .view-profile-container {
     padding: 15px;
     width: 70px;
@@ -82,7 +105,9 @@
       margin: 20px auto;
     }
   }
-
+  .employee-card-container {
+    margin: 20px auto;
+  }
   .text {
     margin: auto;
     margin-bottom: 60px;
