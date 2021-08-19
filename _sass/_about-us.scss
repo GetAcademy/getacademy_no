@@ -40,35 +40,38 @@
 
   .employee-card-container {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    justify-content: space-between;
+    max-width: 320px;
     width: 100%;
+    padding: 5px;
     border: 1px gray;
     border-radius: 5px;
-    max-width: 320px;
-    min-height: 230px;
-    justify-content: space-between;
     background-color: white;
-    box-shadow: $box-shadow;
+    box-shadow: -2px 2px 0 2px #61a1cb;
   }
   .employee-profile-card {
     width: 100%;
+    align-items: center;
     .employee-img-container {
       display: flex;
-      align-items: center;
-      justify-content: flex-start;
+      position: relative;
+      .view-profile-container {
+        position: absolute;
+        clip: rect(0, 200px, 200px, 0);
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 100%;
+      }
+      .employee-text-container {
+        padding-left: 125px;
+        .employee-name {
+          font-size: 1.1em;
+          font-weight: bold;
+        }
+      }
     }
-    .employee-name {
-      margin: 0;
-    }
-  }
-  .view-profile-container {
-    padding: 15px;
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    display: inline-block;
-    vertical-align: middle;
   }
 
   .person-name {
