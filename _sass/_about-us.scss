@@ -60,21 +60,18 @@
   }
   .employee-profile-card {
     width: 100%;
-    min-height: 125px;
+    // min-height: 125px;
     align-items: center;
     .employee-img-container {
       display: flex;
       position: relative;
       .view-profile-container {
-        position: absolute;
-        clip: rect(0, 200px, 200px, 0);
         width: 100px;
         height: 100px;
         object-fit: cover;
         border-radius: 100%;
       }
       .employee-text-container {
-        padding-left: 125px;
         .employee-name {
           font-size: 1.1em;
           font-weight: bold;
