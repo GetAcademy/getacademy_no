@@ -105,11 +105,6 @@
     flex-direction: row;
   }
 
-  @media only screen and (max-width: 768px) {
-    .profile-card-container {
-      margin: 20px auto;
-    }
-  }
   .employee-card-container {
     margin: 20px auto;
   }
@@ -155,5 +150,10 @@
   .partner-description {
     margin: auto;
     max-width: $max-text-width-size;
+  }
+  @media only screen and (max-width: 768px) {
+    .profile-card-container {
+      margin: 20px auto;
+    }
   }
 }
