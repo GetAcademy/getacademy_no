@@ -2,6 +2,6 @@
 published: true
 name: Emil Christiansen
 stilling: Programmerer
-tillegg: Geni, ydmyk
+tillegg: 
 profilbilde: /assets/ansatt-bilder/emil.jpg
 ---
