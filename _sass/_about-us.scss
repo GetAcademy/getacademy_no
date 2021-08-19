@@ -36,14 +36,14 @@
       box-shadow: $hover-box-shadow;
       transform: translateY(-0.5em);
     }
-  .view-profile-container {
-    padding: 15px;
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    display: inline-block;
-    vertical-align: middle;
-  }
+    .view-profile-container {
+      padding: 15px;
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
 
   .employee-card-container {
@@ -60,6 +60,7 @@
   }
   .employee-profile-card {
     width: 100%;
+    min-height: 125px;
     align-items: center;
     .employee-img-container {
       display: flex;
