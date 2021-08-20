@@ -36,39 +36,48 @@
       box-shadow: $hover-box-shadow;
       transform: translateY(-0.5em);
     }
+    .view-profile-container {
+      padding: 15px;
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
 
   .employee-card-container {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    justify-content: space-between;
+    max-width: 320px;
     width: 100%;
+    padding: 5px;
     border: 1px gray;
     border-radius: 5px;
-    max-width: 320px;
-    min-height: 230px;
-    justify-content: space-between;
     background-color: white;
-    box-shadow: $box-shadow;
+    box-shadow: -2px 2px 0 2px #61a1cb;
   }
   .employee-profile-card {
     width: 100%;
+    // min-height: 125px;
+    align-items: center;
     .employee-img-container {
       display: flex;
-      align-items: center;
-      justify-content: flex-start;
+      position: relative;
+      .view-profile-container {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 100%;
+      }
+      .employee-text-container {
+        .employee-name {
+          font-size: 1.1em;
+          font-weight: bold;
+        }
+      }
     }
-    .employee-name {
-      margin: 0;
-    }
-  }
-  .view-profile-container {
-    padding: 15px;
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    display: inline-block;
-    vertical-align: middle;
   }
 
   .person-name {
@@ -102,11 +111,6 @@
     flex-direction: row;
   }
 
-  @media only screen and (max-width: 768px) {
-    .profile-card-container {
-      margin: 20px auto;
-    }
-  }
   .employee-card-container {
     margin: 20px auto;
   }
@@ -152,5 +156,10 @@
   .partner-description {
     margin: auto;
     max-width: $max-text-width-size;
+  }
+  @media only screen and (max-width: 768px) {
+    .profile-card-container {
+      margin: 20px auto;
+    }
   }
 }

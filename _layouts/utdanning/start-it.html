@@ -103,9 +103,9 @@ layout: default
             <ul>
               <ul class="unordered-list unordered-list-sub" v-for="(paragraph, index) of item.sublist"
                 v-bind:key="index">
-                {% for key in modul.keycompetences %}
+                {% for competency in modul.keycompetences %}
                 <li>
-                  <span class="normal-text">{{ key }}</span>
+                  <span class="normal-text">{{ competency }}</span>
                 </li>
                 {% endfor %}
               </ul>

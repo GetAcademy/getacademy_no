@@ -5,7 +5,7 @@ date: 2021-08-16 13:09:00 +
 categories: nyheter
 published: true
 youtube-link:
-picture: "/assets/geir-eskil-terje-murstein.jpg"
+picture: "/assets/ansatt-bilder/Bjoornar murstein.jpg"
 picture-texts: "Bilde av Geir, Eskil og Terje med murstein vegg i bakgrunnen"
 link: 
 ---
