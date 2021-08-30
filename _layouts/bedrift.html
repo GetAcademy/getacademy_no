@@ -3,6 +3,42 @@ layout: default
 ---
 
 <div class="bedrift-side-container">
-  <h1>Bedrift</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla aut enim doloremque velit incidunt, ut cum voluptatem rem, fuga pariatur eligendi inventore quis dolorem libero tempore repudiandae rerum sit?</p>
+  <div class="horizontal-flex even-space">
+    <img class="rotated-image" src="/assets/home-logo.png" />
+    <div>
+      <h2>Sikre deg dyktige IT-utviklere.
+      </h2>
+      <h2><a href="">Kontakt</a> oss nå!</h2>
+      </h2>
+    </div>
+  </div>
+  <div class="company-quotes">
+    <div class="horizontal-flex quote-container">
+      {% for quote in site.data.sitater %}
+      <div class="horizontal-flex quote-card">
+        <img src="{{quote.image | relative_url }}" alt="{{company.name}}" alt="{{quote.image}}" srcset="">
+        <div>
+          <p class="quote-text">{{quote.text}}</p>
+          <p class="quote-speaker">{{quote.speaker}}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="map-of-students">
+    <h3 class="centered-header">Studenter fra hele Norge</h3>
+    <div class="horizontal-flex centered-div">
+      <div class="norway-map">
+        <img class="map-pin" src="/assets/map-pin.svg">
+      </div>
+      <!-- <img class="norway-map" src="/assets/norway.svg" alt="Kart av Norge"> -->
+      <div>
+        <p>Vi har studenter rundt hele norge</p>
+        <p>Vi har studenter rundt hele norge</p>
+        <p>Vi har studenter rundt hele norge</p>
+        <p>Vi har studenter rundt hele norge</p>
+        <p>Vi har studenter rundt hele norge</p>
+      </div>
+    </div>
+  </div>
 </div>
