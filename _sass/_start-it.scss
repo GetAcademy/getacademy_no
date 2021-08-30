@@ -14,7 +14,6 @@
   }
 
   .module-container:nth-child(odd) {
-    background-color: $alternating-background-color;
     border-top: 3px solid $primary-color;
     border-bottom: 3px solid $primary-color;
   }

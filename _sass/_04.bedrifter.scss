@@ -2,13 +2,6 @@
   padding: 3rem $global-padding;
   margin: auto;
   margin-bottom: 60px;
-  &:nth-child(even) {
-    background-color: $alternating-background-color;
-  }
-
-  &:nth-child(2) {
-    margin: 0 auto;
-  }
 }
 .container {
   text-align: center;

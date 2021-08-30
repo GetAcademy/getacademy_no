@@ -1,7 +1,4 @@
 .video-and-text-container {
-  &:nth-child(even) {
-    background-color: $alternating-background-color;
-  }
 }
 .video-and-text {
   display: flex;
