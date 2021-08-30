@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     max-width: $content-max-width;
     margin: auto;
     padding: 1em;
@@ -13,8 +14,19 @@
   .footer-block {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    justify-content: space-around;
+    &:nth-child(1) {
+      width: 70%;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      max-height: 200px;
+      width: 100%;
+      a {
+        padding: 5px;
+      }
+    }
   }
   .mer-info {
     a {
@@ -85,17 +97,25 @@
       flex-wrap: wrap;
     }
     .footer-block {
+      margin: auto;
       text-align: center;
-    }
-    ul {
-      margin: 10px auto;
+      width: 75%;
+      ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-height: none;
+        a {
+          width: 100%;
+        }
+      }
     }
     li {
       margin: 10px;
     }
 
     .mer-info {
-      padding: 1.5rem 0rem;
+      // padding: 1.5rem 0rem;
     }
   }
 }
