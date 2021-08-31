@@ -5,12 +5,19 @@
 <body>
   {% include header.html %}
   <main>
-    {% include home/01.oppmerksomhets-bilde.html %}
-    <div class="container-block-startup-dates">{% include home/02.oppstartsdatoer.html %}</div>
-    <div class="container-block-steps">{% include home/03.steg-til-utvikler.html %}</div>
-    <div class="container-block-companies">{% include home/04.bedrifter.html %}</div>
-    <div class="container-block-feedback">{% include home/05.tilbakemeldinger-elever.html %}</div>
-    <div class="container-block-statistics">{% include home/06.statistikk.html %}</div>
+    {% include home/oppmerksomhets-bilde.html %}
+    <div class="container-block">{% include home/kompani-sitater.html %}</div>
+    <div class="container-block">{% include home/oppstartsdatoer.html %}</div>
+    <div class="container-block">{% include home/steg-til-utvikler.html %}</div>
+    <div class="container-block">{% include home/norge-kart.html %}</div>
+    <div class="container-block">{% include home/utvikle-virksomhet.html %}</div>
+    <div class="container-block">{% include home/bedrifter.html %}</div>
+    <div class="container-block centered">
+      <a href="/bedrift" class="orange-centered-link">Les mer fra våre partnere &gt;</a>
+    </div>
+    <div class="container-block">{% include home/kontakt-oss-komponent.html %}</div>
+    <div class="container-block">{% include home/tilbakemeldinger-elever.html %}</div>
+    <!-- <div class="container-block-statistics">{% include home/statistikk.html %}</div> -->
     <div id="application-container" style="text-align: center; padding: 1.5rem;">
       <a class="application-button" href="{{ '/soknad/' | relative_url }}">
         <!-- Søknad -->

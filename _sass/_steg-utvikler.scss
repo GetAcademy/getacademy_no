@@ -1,11 +1,6 @@
-.container-block-steps {
-  padding: 3rem $global-padding;
-  margin: auto;
-  margin-bottom: 60px;
-  max-width: 1195px;
-}
-
 .steps-container {
+  width: $content-max-width;
+  margin: auto;
   * {
     box-sizing: border-box;
   }
@@ -91,7 +86,12 @@
     border: 1px solid $primary-border-color;
     border-radius: 5px;
     background-color: white;
+    text-align: left;
   }
+}
+#application-container {
+  text-align: center;
+  margin-top: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {

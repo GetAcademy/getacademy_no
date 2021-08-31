@@ -1,0 +1,54 @@
+.map-of-students {
+    margin: auto;
+    padding: $global-padding;
+    max-width: $content-max-width;
+    .rotated-image {
+        transform: rotateY(180deg);
+        height: 300px;
+    }
+    h2 {
+        padding: 15px;
+        a {
+            color: $primary-color;
+            font-weight: bold;
+        }
+    }
+    .centered-header {
+        text-align: center;
+        font-weight: bold;
+    }
+    .centered-div {
+        justify-content: center;
+        .norway-map {
+            background-image: url("/assets/norway.svg");
+            background-size: 300px 300px;
+            background-repeat: no-repeat;
+            width: 300px;
+            height: 300px;
+        }
+        .map-pin {
+            height: 40px;
+            padding: 240px 50px;
+            transition: 1s;
+            animation-name: pin-enter;
+            animation-duration: 1s;
+            &:hover {
+                height: 50px;
+                padding: 232px 47px;
+            }
+        }
+
+        // Gjør dette om til javascript?
+
+        @keyframes pin-enter {
+            0% {
+                height: 0;
+                padding: 260px 60px;
+            }
+            100% {
+                height: 40px;
+                padding: 240px 50px;
+            }
+        }
+    }
+}

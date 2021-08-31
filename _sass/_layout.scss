@@ -113,6 +113,12 @@ h4 {
 .Cookie--get .Cookie__content {
   max-width: 1000px;
 }
+
+.container-block {
+  max-width: $content-max-width;
+  margin: 30px auto;
+}
+
 a {
   color: #333;
   text-decoration: none;
@@ -168,6 +174,23 @@ time {
 .fade-enter,
 .fade-leave-active {
   opacity: 0;
+}
+
+.horizontal-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+.orange-centered-link {
+  margin: auto;
+  max-width: $content-max-width;
+  color: $primary-color;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {

@@ -1,0 +1,25 @@
+<div class="student-feedback">
+
+  <div class="carousel container">
+    <h2>Dette sier studenter om GET Academy</h2>
+    <br />
+    {% for tilbakemelding in site.data.tilbakemeldinger %}
+    <div class="mySlides fade">
+      <img class="slides" src="{{tilbakemelding.image | relative_url }}" alt="{{tilbakemelding.name}}" />
+      <div>{{ tilbakemelding.name }}</div>
+      <div>{{ tilbakemelding.currentOccupation }}</div>
+      <p class="p-quotes">{{ tilbakemelding.quote }}</p>
+    </div>
+    {% endfor %}
+    <div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      {% for tilbakemelding in site.data.tilbakemeldinger %}
+      <span class="dot" onclick="currentSlide('{{tilbakemelding.slides}}')"></span>
+      {% endfor %}
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
+  <br>
+</div>
+</div>
+<script src="{{'/assets/js/tilbakemeldinger-elev.js' | relative_url}}"></script>

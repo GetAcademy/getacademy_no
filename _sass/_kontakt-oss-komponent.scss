@@ -1,0 +1,30 @@
+.contact-us-component {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: $content-max-width;
+    margin: auto;
+    padding: $global-padding 100px;
+    background-color: $primary-color;
+    .white-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+        h3 {
+            color: #ffffff;
+        }
+        a {
+            background-color: #ffffff;
+            color: $primary-color;
+            padding: 15px 30px;
+            text-decoration: none;
+        }
+    }
+    img {
+        margin: -50px 0;
+        width: 400px;
+        height: 250px;
+    }
+}
