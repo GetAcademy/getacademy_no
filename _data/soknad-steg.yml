@@ -1,7 +1,7 @@
           - header: Meld din interesse
             miniHeader: Send inn søknadskjema.
             link: Sjekk våre FAQ eller ta kontakt hvis du lurer på noe.
-            source: /kontakt-faq/
+            source: /kontakt/
             texts: Du får automatisk tilsendt en mail med instruksjoner til en opptaksprøve. Målet med opptaksprøven er å få en smakebit på koding. Vår målgruppe er unge voksne under 30 - gjerne gamere.
             direction: "container left"
 

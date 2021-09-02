@@ -186,11 +186,16 @@ time {
   text-align: center;
 }
 
-.orange-centered-link {
+.left-aligned-text {
+  text-align: left;
+}
+
+.orange-link {
   margin: auto;
   max-width: $content-max-width;
   color: $primary-color;
   text-align: center;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {

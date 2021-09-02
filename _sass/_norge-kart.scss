@@ -18,37 +18,44 @@
         font-weight: bold;
     }
     .centered-div {
-        justify-content: center;
+        justify-content: space-between;
         .norway-map {
             background-image: url("/assets/norway.svg");
             background-size: 300px 300px;
             background-repeat: no-repeat;
             width: 300px;
             height: 300px;
-        }
-        .map-pin {
-            height: 40px;
-            padding: 240px 50px;
-            transition: 1s;
-            animation-name: pin-enter;
-            animation-duration: 1s;
-            &:hover {
-                height: 50px;
-                padding: 232px 47px;
-            }
-        }
-
-        // Gjør dette om til javascript?
-
-        @keyframes pin-enter {
-            0% {
-                height: 0;
-                padding: 260px 60px;
-            }
-            100% {
+            .map-pin {
                 height: 40px;
-                padding: 240px 50px;
+                margin: 240px 50px;
+                transition: 1s;
+                animation-name: pin-enter;
+                animation-duration: 1s;
+                &:hover {
+                    height: 50px;
+                    margin: 232px 47px;
+                }
             }
         }
+        .map-text {
+            flex-grow: 1;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .horizontal-flex {
+        flex-direction: column;
+    }
+}
+
+@keyframes pin-enter {
+    0% {
+        height: 0;
+        margin: 260px 60px;
+    }
+    100% {
+        height: 40px;
+        margin: 240px 50px;
     }
 }
