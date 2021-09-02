@@ -4,16 +4,40 @@
 			<div class="nav-body">
 				<div class="logo-container">
 					<a href="{{ '/' | relative_url }}">
-						<img class="logo" src="{{ '/assets/GET-ACADEMY-LOGO-30-8-2021.svg' | relative_url }}" alt="GetAcademy Logo" />
+						<img class="logo" src="{{ '/assets/GET-ACADEMY-LOGO-30-8-2021.svg' | relative_url }}"
+							alt="GetAcademy Logo" />
 					</a>
 				</div>
 				<div class="nav-buttons">
-					{% for page in site.pages %} {% if page.nav %}
+					<div class="dropdown">
+						<button onclick="dropdown(this)" class="dropbtn">Utdanning</button>
+						<div class="dropdown-content">
+							<a href="/">Utdanningsløp ></a>
+							<a href="/">Erfaringer ></a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button onclick="dropdown(this)" class="dropbtn">Bedrift</button>
+						<div class="dropdown-content">
+							<a href="/">Sammarbeid ></a>
+							<a href="/">Referanser ></a>
+						</div>
+					</div>
+					<a class="link-div button-size" href="/nyheter">Nyheter</a>
+					<div class="dropdown">
+						<button onclick="dropdown(this)" class="dropbtn">Om GET</button>
+						<div class="dropdown-content">
+							<a href="/">Om GET Academy ></a>
+							<a href="/kontakt">Kontakt ></a>
+							<a href="/faq">FAQ ></a>
+						</div>
+					</div>
+					<!-- {% for page in site.pages %} {% if page.nav %}
 					<a class="link-div button-size" href="{{ page.url | relative_url }}">{{ page.title }}</a>
-					{% endif %} {% endfor %}
-					<a class="application-button" href="{{ '/soknad/' | relative_url }}"><button
-							class="button primary">Meld
-							interesse</button></a>
+					{% endif %} {% endfor %} -->
+					<a class="application-button" href="{{ '/soknad/' | relative_url }}">
+						<button class="button primary">Meld interesse</button>
+					</a>
 				</div>
 				<div class="hamburger" onclick="hamburger()"><i class="fa fa-bars" style="font-size:36px"></i>
 				</div>
@@ -27,9 +51,7 @@
 						<button class="button primary">Meld interesse</button>
 					</a>
 				</div>
-
 			</div>
-
 		</div>
 	</nav>
 </aside>
