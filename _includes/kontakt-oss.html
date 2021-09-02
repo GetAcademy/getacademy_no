@@ -1,34 +1,39 @@
-<div class="contact-card-container">
-    <div class="contact-card">
-        <div class="image-container">
-            <img loading="lazy" class="profile-image-container"
-                src="{{ '/assets/ansatt-bilder/geir.jpeg' | relative_url }}" :alt="page.navn" />
+<div class="contact-us-wrapper">
+    <div class="contact-card-container">
+        <div class="contact-card">
+            <div class="image-container">
+                <img loading="lazy" class="profile-image-container"
+                    src="{{ '/assets/ansatt-bilder/geir.jpeg' | relative_url }}" :alt="page.navn" />
+            </div>
+            <p class="person-name">
+
+                <span><span class="first-letter person-info">{{page.navn | slice: 0}}</span>{{ page.navn | slice: 1,
+                    page.navn.size }}</span>
+                <br />
+                <span class="person-info"><a :href="'mailto:' + personEmail" rel="noopener">{{page.email}}</a></span>
+                <br />
+                <span class="person-info">{{ page.number }}</span>
+            </p>
         </div>
-        <p class="person-name">
+        <br />
 
-            <span><span class="first-letter person-info">{{page.navn | slice: 0}}</span>{{ page.navn | slice: 1,
-                page.navn.size }}</span>
-            <br />
-            <span class="person-info"><a :href="'mailto:' + personEmail" rel="noopener">{{page.email}}</a></span>
-            <br />
-            <span class="person-info">{{ page.number }}</span>
-        </p>
+        <div class="form-group">
+            <h4>Lurer du på noe? Ta kontakt!</h4>
+            <form name="contact" action="https://formspree.io/xknqldae" method="POST">
+                <label type="text" for="name">Navn:</label>
+                <input type="text" name="name" id="name" />
+
+                <label type="text" for="email">E-post:</label>
+                <input type="text" name="email" id="email" />
+
+                <label type="text" for="message">Melding:</label>
+                <textarea class="form-field" name="message" id="message"></textarea>
+
+                <input class="form-button" type="submit" value="Send melding" />
+            </form>
+        </div>
     </div>
-    <br />
-
-    <div class="form-group">
-        <h4>Lurer du på noe? Ta kontakt!</h4>
-        <form name="contact" action="https://formspree.io/xknqldae" method="POST">
-            <label type="text" for="name">Navn:</label>
-            <input type="text" name="name" id="name" />
-
-            <label type="text" for="email">E-post:</label>
-            <input type="text" name="email" id="email" />
-
-            <label type="text" for="message">Melding:</label>
-            <textarea class="form-field" name="message" id="message"></textarea>
-
-            <input class="form-button" type="submit" value="Send melding" />
-        </form>
+    <div>
+        <img src="../assets/bilde 3.png" alt="">
     </div>
 </div>
