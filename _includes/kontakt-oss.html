@@ -1,37 +1,22 @@
 <div class="contact-us-wrapper">
-    <div class="contact-card-container">
-        <div class="contact-card">
-            <div class="image-container">
-                <img loading="lazy" class="profile-image-container"
-                    src="{{ '/assets/ansatt-bilder/geir.jpeg' | relative_url }}" :alt="page.navn" />
-            </div>
-            <p class="person-name">
-
-                <span><span class="first-letter person-info">{{page.navn | slice: 0}}</span>{{ page.navn | slice: 1,
-                    page.navn.size }}</span>
-                <br />
-                <span class="person-info"><a :href="'mailto:' + personEmail" rel="noopener">{{page.email}}</a></span>
-                <br />
-                <span class="person-info">{{ page.number }}</span>
-            </p>
+    <div class="contact-text-container">
+        <div class="text-container">
+            <h1>Kontakt oss</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi omnis voluptatum explicabo, rem vitae
+                atque officiis ullam dolore beatae nihil quasi quos consequatur quibusdam! Deserunt molestias qui quas
+                totam excepturi.</p>
+            <a href="/" class="orange-link">Les mer &gt;</a>
         </div>
-        <br />
-
-        <div class="form-group">
-            <h4>Lurer du på noe? Ta kontakt!</h4>
-            <form name="contact" action="https://formspree.io/xknqldae" method="POST">
-                <label type="text" for="name">Navn:</label>
-                <input type="text" name="name" id="name" />
-
-                <label type="text" for="email">E-post:</label>
-                <input type="text" name="email" id="email" />
-
-                <label type="text" for="message">Melding:</label>
-                <textarea class="form-field" name="message" id="message"></textarea>
-
-                <input class="form-button" type="submit" value="Send melding" />
-            </form>
+        {% for data in site.data.kontakt-data %}
+        <div class="text-container">
+            <h3 class="blue-header">{{ data.header }}</h3>
+            <p>{{ data.text }}</p>
+            <a class="orange-link" href="{{ data.link }}">Les mer &gt;</a>
+            <p>{{ data.name }}</p>
+            <p>E-mail: {{ data.email }}</p>
+            <p>Tel: {{ data.phone }}</p>
         </div>
+        {% endfor %}
     </div>
     <div>
         <img src="../assets/bilde 3.png" alt="">

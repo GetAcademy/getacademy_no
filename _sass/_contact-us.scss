@@ -2,104 +2,16 @@
   max-width: $content-max-width;
   margin: auto;
   padding: $global-padding;
-
-  .contact-us-container {
-    * {
-      box-sizing: border-box;
-    }
-    .contact-us-wrapper {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    .contact-card-container {
-      display: flex;
-      flex-direction: column;
-      border-radius: 10px;
-      max-width: 450px;
-      min-width: 250px;
-    }
-    input {
-      width: 100%;
-      margin: 10px 0;
-      padding: 15px;
-    }
-
-    input[type="text"] {
-      border-radius: 5px;
-      border: 1px solid $primary-border-color;
-      transition: 0.3s border-color;
-      &:hover {
-        border: 1px solid #aaa;
-      }
-    }
-
-    textarea {
-      width: 100%;
-      resize: vertical;
-      padding: 15px;
-      border-radius: 5px;
-      border: 1px solid $primary-border-color;
-      height: 8em;
-
-      &:hover {
-        border: 1px solid #aaa;
-      }
-    }
-
-    .form-button {
-      color: white;
-      background-color: #61a1cb;
-      border-radius: 5px;
-      border: 0;
-      text-align: center;
-      &:hover {
-        background-color: #4388b6;
-      }
-    }
-
-    .contact-card {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
-    .image-container {
-      width: 150px;
-      height: 150px;
-      .profile-image-container {
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
-      }
-    }
-
-    .person-name {
-      font-size: 1.3em;
-      font-weight: bold;
-      padding: 0 0 0 15px;
-    }
-
-    .person-info {
-      max-width: 350px;
-      font-weight: lighter;
-    }
-
-    .first-letter {
-      color: $primary-color;
-    }
-
-    h4 {
-      font-weight: bold;
-      padding-bottom: 1.25rem;
-    }
-    p {
-      margin: 0;
-    }
-    a {
-      color: #4c8bf5;
-      text-decoration: underline;
-      &:hover {
-        text-decoration: none;
+  .contact-us-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .contact-text-container {
+      .text-container {
+        margin: 30px auto;
+        * {
+          text-align: left;
+        }
       }
     }
   }

@@ -190,6 +190,11 @@ time {
   text-align: left;
 }
 
+.blue-header {
+  font-weight: bold;
+  color: $secondary-button-color;
+}
+
 .orange-link {
   margin: auto;
   max-width: $content-max-width;
