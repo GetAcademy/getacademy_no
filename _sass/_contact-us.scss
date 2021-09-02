@@ -1,4 +1,4 @@
-.faq-container {
+.contact-container {
   max-width: $content-max-width;
   margin: auto;
   padding: $global-padding;
@@ -100,65 +100,9 @@
       }
     }
   }
-
-  h2 {
-    padding-bottom: $global-padding;
-  }
-
-  .faq {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  // acc
-  .accordion:not(.is-open) > .accordion-body {
-    display: none;
-  }
-
-  .accordion {
-    margin-right: 15px;
-    box-sizing: border-box;
-    color: #444;
-    cursor: pointer;
-    text-align: left;
-    outline: none;
-    transition: 0.4s;
-    border-radius: 5px;
-  }
-
-  .accordion:nth-child(odd) {
-    background-color: #efefef;
-  }
-  .accordion:nth-child(even) {
-    background-color: #dedede;
-  }
-  .accordion:hover {
-    background-color: #cecece;
-  }
-
-  .accordion-header {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .accordion-content {
-    padding: 0 $global-padding 15px;
-    background-color: transparent;
-  }
 }
 
 @media only screen and (max-width: 1000px) {
-  .faq-container {
-    .faq {
-      display: flex;
-      flex-direction: column-reverse;
-    }
-  }
-  .accordion {
-    width: 100%;
-  }
 
   .contact-card-container {
     margin: auto;

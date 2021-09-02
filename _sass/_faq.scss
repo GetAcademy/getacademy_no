@@ -1,166 +1,92 @@
-// .faq-container {
-//   max-width: $content-max-width;
-//   margin: auto;
-//   padding: $global-padding;
+.faq-container {
+  max-width: $content-max-width;
+  margin: auto;
+  padding: $global-padding;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-//   .contact-us-container {
-//     * {
-//       box-sizing: border-box;
-//     }
+  .contact-us-container {
+    * {
+      box-sizing: border-box;
+    }
+  }
 
-//     input {
-//       width: 100%;
-//       margin: 10px 0;
-//       padding: 15px;
-//     }
+  // acc
 
-//     input[type="text"] {
-//       border-radius: 5px;
-//       border: 1px solid $primary-border-color;
-//       transition: 0.3s border-color;
-//       &:hover {
-//         border: 1px solid #aaa;
-//       }
-//     }
+  .accordion-container {
+    flex-grow: 1;
+  }
+  .accordion:not(.is-open) > .accordion-body {
+    display: none;
+  }
 
-//     textarea {
-//       width: 100%;
-//       resize: vertical;
-//       padding: 15px;
-//       border-radius: 5px;
-//       border: 1px solid $primary-border-color;
-//       height: 8em;
+  .accordion {
+    margin-right: 15px;
+    box-sizing: border-box;
+    color: #444;
+    cursor: pointer;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 5px;
+  }
 
-//       &:hover {
-//         border: 1px solid #aaa;
-//       }
-//     }
+  .accordion:nth-child(odd) {
+    background-color: #efefef;
+  }
+  .accordion:nth-child(even) {
+    background-color: #dedede;
+  }
+  .accordion:hover {
+    background-color: #cecece;
+  }
 
-//     .form-button {
-//       color: white;
-//       background-color: #61a1cb;
-//       border-radius: 5px;
-//       border: 0;
-//       text-align: center;
-//       &:hover {
-//         background-color: #4388b6;
-//       }
-//     }
+  .accordion-header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
 
-//     .contact-card-container {
-//       display: flex;
-//       flex-direction: column;
-//       border-radius: 10px;
-//       max-width: 450px;
-//       min-width: 250px;
-//     }
+  .accordion-content {
+    padding: 0 $global-padding 15px;
+    background-color: transparent;
+  }
+  .inefficient-faq {
+    height: 550px;
+    width: 400px;
+    background-image: url("/assets/bilde 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    .text-container {
+      margin-top: 400px;
+      padding: $global-padding;
+      height: fit-content;
+      width: 250px;
+      box-shadow: 0 8px 2px -2px #dfdfdf;
+      background-color: #ffffff;
+      text-align: center;
+      font-weight: bold;
+      button {
+        width: 80%;
+        padding: 5px;
+        background-color: $primary-color;
+        color: #ffffff;
+      }
+    }
+  }
+}
 
-//     .contact-card {
-//       display: flex;
-//       flex-direction: row;
-//       align-items: center;
-//     }
-//     .image-container {
-//       width: 150px;
-//       height: 150px;
-//       .profile-image-container {
-//         width: 130px;
-//         height: 130px;
-//         border-radius: 50%;
-//       }
-//     }
-
-//     .person-name {
-//       font-size: 1.3em;
-//       font-weight: bold;
-//       padding: 0 0 0 15px;
-//     }
-
-//     .person-info {
-//       max-width: 350px;
-//       font-weight: lighter;
-//     }
-
-//     .first-letter {
-//       color: $primary-color;
-//     }
-
-//     h4 {
-//       font-weight: bold;
-//       padding-bottom: 1.25rem;
-//     }
-//     p {
-//       margin: 0;
-//     }
-//     a {
-//       color: #4c8bf5;
-//       text-decoration: underline;
-//       &:hover {
-//         text-decoration: none;
-//       }
-//     }
-//   }
-
-//   h2 {
-//     padding-bottom: $global-padding;
-//   }
-
-//   .faq {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//   }
-
-//   // acc
-//   .accordion:not(.is-open) > .accordion-body {
-//     display: none;
-//   }
-
-//   .accordion {
-//     margin-right: 15px;
-//     box-sizing: border-box;
-//     color: #444;
-//     cursor: pointer;
-//     text-align: left;
-//     outline: none;
-//     transition: 0.4s;
-//     border-radius: 5px;
-//   }
-
-//   .accordion:nth-child(odd) {
-//     background-color: #efefef;
-//   }
-//   .accordion:nth-child(even) {
-//     background-color: #dedede;
-//   }
-//   .accordion:hover {
-//     background-color: #cecece;
-//   }
-
-//   .accordion-header {
-//     padding: 15px;
-//     display: flex;
-//     justify-content: space-between;
-//   }
-
-//   .accordion-content {
-//     padding: 0 $global-padding 15px;
-//     background-color: transparent;
-//   }
-// }
-
-// @media only screen and (max-width: 1000px) {
-//   .faq-container {
-//     .faq {
-//       display: flex;
-//       flex-direction: column-reverse;
-//     }
-//   }
-//   .accordion {
-//     width: 100%;
-//   }
-
-//   .contact-card-container {
-//     margin: auto;
-//   }
-// }
+@media only screen and (max-width: 1000px) {
+  .faq-container {
+    .faq {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  .accordion {
+    width: 100%;
+  }
+}
