@@ -12,24 +12,24 @@
 					<div class="dropdown">
 						<button onclick="dropdown(this)" class="dropbtn">Utdanning</button>
 						<div class="dropdown-content">
-							<a href="/">Utdanningsløp </a>
-							<a href="/">Erfaringer </a>
+							<a href="{{ '/' | relative_url }}">Utdanningsløp </a>
+							<a href="{{ '/' | relative_url }}">Erfaringer </a>
 						</div>
 					</div>
 					<div class="dropdown">
 						<button onclick="dropdown(this)" class="dropbtn">Bedrift</button>
 						<div class="dropdown-content">
-							<a href="/bedrift/sammarbeids-partnere">Sammarbeid ></a>
-							<a href="/">Referanser </a>
+							<a href="{{ '/bedrift/sammarbeids-partnere' | relative_url }}">Sammarbeid ></a>
+							<a href="{{ '/' | relative_url }}">Referanser </a>
 						</div>
 					</div>
-					<a class="link-div button-size" href="/nyheter">Nyheter</a>
+					<a class="link-div button-size" href="{{ '/nyheter' | relative_url }}">Nyheter</a>
 					<div class="dropdown">
 						<button onclick="dropdown(this)" class="dropbtn">Om GET</button>
 						<div class="dropdown-content">
-							<a href="/om-oss">Om GET Academy ></a>
-							<a href="/kontakt">Kontakt ></a>
-							<a href="/faq">FAQ ></a>
+							<a href="{{ '/om-oss' | relative_url }}">Om GET Academy ></a>
+							<a href="{{ '/kontakt' | relative_url }}">Kontakt ></a>
+							<a href="{{ '/faq' | relative_url }}">FAQ ></a>
 						</div>
 					</div>
 					<!-- {% for page in site.pages %} {% if page.nav %}
