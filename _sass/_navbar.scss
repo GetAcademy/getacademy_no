@@ -76,13 +76,16 @@ nav {
   cursor: pointer;
   background-color: #ffffff;
   &::after {
-    content: " v";
+    content: " ˅";
+    font-weight: bold;
+    font-size: 1.2em;
+    color: $primary-color;
   }
 }
 
 .dropbtn:focus {
   &::after {
-    content: " ^";
+    content: " ˄";
   }
 }
 
