@@ -1,6 +1,6 @@
 ---
-layout: bedrift
+layout: bedrift/sammarbeids-partnere
 title: Bedrift
-permalink: /bedrift/
+permalink: /bedrift/sammarbeids-partnere
 nav: true
 ---
