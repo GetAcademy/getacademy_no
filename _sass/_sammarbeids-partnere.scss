@@ -1,0 +1,9 @@
+.sammarbeids-partnere-container {
+    margin: auto;
+    padding: $global-padding;
+    max-width: $content-max-width;
+    .breathing-space {
+        // width: 70%;
+        justify-content: space-between;
+    }
+}
