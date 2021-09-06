@@ -27,6 +27,12 @@ layout: default
       nec lectus mollis fringilla. Proin aliquam egestas orci, vitae placerat mi faucibus eu. Aenean dictum sapien vitae
       dolor laoreet, et accumsan</p>
   </div>
+  {% for text-block in site.data.text-block %}
+  <div class="container-block large-gap">
+    <h2 class="left-aligned-text bold-text">{{ text-block.header }}</h2>
+    <p class="left-aligned-text">{{ text-block.paragraph }}</p>
+  </div>
+  {% endfor %}
   <div class="container-block">
     <h2 class="left-aligned-text bold-text">Våre samarbeidspartnere</h2>
   </div>
