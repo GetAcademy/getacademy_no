@@ -1,7 +1,8 @@
 /* Footer */
 .footer-container {
   background-color: $primary-color;
-  color: white;
+  color: $primary-font-color;
+  font-weight: bold;
   .content {
     display: flex;
     flex-direction: row;
@@ -28,74 +29,84 @@
       }
     }
   }
-  .mer-info {
-    a {
-      color: rgba(255, 255, 255, 0.65);
-      &:hover {
-        color: $primary-color;
-      }
-    }
-  }
 
-  .bottom-footer {
-    text-align: center;
+  .mer-info {
+    text-align: left;
     a {
+      color: $primary-font-color;
       &:hover {
-        color: $primary-color;
+        color: #ffffff;
       }
     }
   }
 
   .icons {
+    display: flex;
+    justify-content: space-between;
     max-width: 300px;
-    margin: auto;
   }
 
   i {
-    font-size: 1.5rem;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    font-size: 3rem;
+    // padding-right: 1.5rem;
+    // padding-left: 1.5rem;
     color: #000000;
 
     &:hover {
-      color: $primary-color;
+      color: #ffffff;
     }
   }
+
   ul {
     padding: 0;
     margin: 20px 60px 0 0;
 
     li {
       list-style-type: none;
-      border-bottom: 1px solid #6a6a6a;
+      border-bottom: 1px solid $primary-font-color;
       padding: 5px 0;
 
       &:hover {
-        border-bottom: 1px solid #eeeaea;
+        border-bottom: 1px solid #ffffff;
       }
     }
   }
 
   a {
     text-decoration: none;
-    color: white;
+    color: $primary-font-color;
     &:hover {
-      color: $primary-color;
+      color: #ffffff;
     }
   }
 
   .bottom-footer {
     padding-bottom: 2em;
-    border-top: 1px solid rgb(80, 77, 77);
-
-    & > .content {
+    * {
       max-width: $content-max-width;
       margin: auto;
+    }
+    .full-length-divider {
+      height: 1px;
+      width: 100%;
+      background-color: $primary-font-color;
+    }
+    .bottom-footer-link-container {
+      max-width: $content-max-width;
+      margin: auto;
+      padding: 15px 0 0;
+      a {
+        &:hover {
+          color: #ffffff;
+        }
+      }
     }
   }
   @media only screen and (max-width: 768px) {
     .content {
+      flex-direction: column;
       flex-wrap: wrap;
+      padding: 0;
     }
     .footer-block {
       margin: auto;
@@ -116,7 +127,12 @@
     }
 
     .mer-info {
-      // padding: 1.5rem 0rem;
+      text-align: center;
+    }
+    .bottom-footer {
+      a {
+        padding: 15px;
+      }
     }
   }
 }
