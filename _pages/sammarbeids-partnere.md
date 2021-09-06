@@ -1,6 +1,6 @@
 ---
 layout: bedrift/sammarbeids-partnere
-title: Bedrift
+title: Sammarbeids partnere
 permalink: /bedrift/sammarbeids-partnere
 nav: true
 ---
