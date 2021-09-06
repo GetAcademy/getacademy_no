@@ -3,7 +3,20 @@
     padding: $global-padding;
     max-width: $content-max-width;
     .breathing-space {
-        // width: 70%;
+        .medium-text-block {
+            width: 60%;
+        }
         justify-content: space-between;
+    }
+    .center-flex {
+        display: flex;
+        justify-content: center;
+    }
+    .short-width {
+        max-width: 550px;
+        margin: auto;
+        h3 {
+            text-align: center;
+        }
     }
 }
