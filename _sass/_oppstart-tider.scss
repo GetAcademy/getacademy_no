@@ -10,7 +10,7 @@
   }
 
   .startup-period-container {
-    width: 70%;
+    width: 90%;
     margin: auto;
     border-radius: 5px;
     border: 1px solid $primary-border-color;
@@ -66,7 +66,6 @@
 
   @media only screen and (max-width: 768px) {
     .startup-period-container {
-      width: auto;
       .startup-header {
         word-break: break-all;
       }
