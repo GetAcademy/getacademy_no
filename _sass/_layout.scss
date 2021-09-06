@@ -138,6 +138,10 @@ p {
   max-width: $content-max-width;
 }
 
+.fill-width {
+  width: 100%;
+}
+
 .main-content {
   margin: auto;
   width: 100%;

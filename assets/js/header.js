@@ -13,7 +13,18 @@ function hamburger() {
 toggle between hiding and showing the dropdown content */
 function dropdown(ele) {
     var menu = ele.parentElement.children[1];
-    menu.classList.toggle("show");
+    var isOpen = menu.classList.contains('show');
+    for (let c = 0; c < ele.parentElement.parentElement.children.length; c++) {
+        var kid = ele.parentElement.parentElement.children[c];
+        if (kid.classList.contains('dropdown')) {
+            kid.children[1].classList.remove('show');
+            ele.blur();
+        }
+    }
+    if (!isOpen) {
+        menu.classList.toggle("show");
+        ele.focus();
+    }
 }
 
 // Close the dropdown menu if the user clicks outside of it

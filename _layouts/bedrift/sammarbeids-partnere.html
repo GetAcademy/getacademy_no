@@ -2,14 +2,13 @@
 layout: default
 ---
 
-<div class="bedrift-side-container">
+<div class="sammarbeids-partnere-container">
   <div class="container-block">
-    <img src="/assets/bilde 4.png" style="width: 100%;" />
-
+    <img src="/assets/bilde 4.png" class="fill-width" />
   </div>
-  <div class="horizontal-flex even-space">
-    <div>
-      <h2 class="left-aligned-text bold-text">Sikre deg dyktige IT-utviklere.</h2>
+  <div class="horizontal-flex breathing-space">
+    <div class="medium-text-block">
+      <h2 class="left-aligned-text bold-text">Sikre deg talentfulle IT-utviklere</h2>
       <p class="left-aligned-text bold-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat nunc
         eget neque faucibus, vel aliquam
         odio tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla ornare
@@ -19,21 +18,26 @@ layout: default
     <div>{% include bedrift/kontakt-kort.html %}</div>
 
   </div>
-  <div class="container-block">{% include home/norge-kart.html %}</div>
+  <div class="container-block center-flex">{% include home/norge-kart.html %}</div>
+  <div class="short-width">
+    <h2 class="bold-text">Studenter fra hele Norge</h2>
+    <p class="left-aligned-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat nunc eget neque
+      faucibus, vel aliquam odio
+      tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla ornare ipsum
+      nec lectus mollis fringilla. Proin aliquam egestas orci, vitae placerat mi faucibus eu. Aenean dictum sapien vitae
+      dolor laoreet, et accumsan</p>
+  </div>
+  {% for text-block in site.data.text-block %}
+  <div class="container-block large-gap">
+    <h2 class="left-aligned-text bold-text">{{ text-block.header }}</h2>
+    <p class="left-aligned-text">{{ text-block.paragraph }}</p>
+  </div>
+  {% endfor %}
   <div class="container-block">
-    <h2 class="left-aligned-text">Bli en av våre samarbeidspartnere</h2>
-    <p class="left-aligned-text">
-      Som samarbeidsbedrift får du her hos oss en unik mulighet til å være med på å utvikle dyktige ansatter med stor
-      grad
-      av relevant kunnskap for din virksomhet.
-
-      Du får den store fordelen av å påvirke utdanningen og den kompetansen studenten tilegner seg slik at de matcher
-      det
-      du som bedrift har behov for.
-
-      Gjennom et samarbeid med oss får du muligheten l å sikre kollegaer med stor interesse og kompetanse innen koding .
-    </p>
+    <h2 class="left-aligned-text bold-text">Våre samarbeidspartnere</h2>
   </div>
   <div class="container-block">{% include home/bedrifter.html %}</div>
-  <p class="orange-link">Les mer fra våre partnere ></p>
+  <div class="centered">
+    <a href="/" class="orange-link">Les mer fra våre partnere &gt;</a>
+  </div>
 </div>

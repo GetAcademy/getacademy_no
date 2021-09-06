@@ -1,12 +1,16 @@
 .contact-card {
+    width: 150px;
     background-color: #ffffff;
     box-shadow: $box-shadow;
     text-align: center;
-    padding: 0 $global-padding;
+    padding: $global-padding;
     p {
         text-align: left;
     }
     button {
+        width: 100%;
         background-color: $primary-color;
+        color: #ffffff;
+        padding: 5px $global-padding;
     }
 }
