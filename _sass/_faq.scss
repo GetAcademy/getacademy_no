@@ -22,6 +22,7 @@
   }
 
   .accordion {
+    max-width: 70%;
     margin-right: 15px;
     box-sizing: border-box;
     cursor: pointer;
@@ -29,6 +30,7 @@
     outline: none;
     transition: 0.4s;
     border-radius: 5px;
+    border-bottom: 2px solid $primary-color;
   }
   .accordion-header {
     padding: 15px;
@@ -40,6 +42,7 @@
     padding: 0 $global-padding 15px;
     background-color: transparent;
     max-width: 70%;
+    
   }
   .inefficient-faq {
     min-width: 400px;
@@ -71,11 +74,16 @@
   .faq-container {
     display: flex;
       flex-direction: column;
+
   }
   .accordion {
-    width: 100%;
+    min-width: 100%;
+    &:last-child {
+      border: none;
+      margin-bottom: 20px;
+    }
   }
-  .faq-container .inefficient-faq {
-    width: 100%;
+  .faq-container .inefficient-faq { 
+    min-width: 100%;
   }
 }
