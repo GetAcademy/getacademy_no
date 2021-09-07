@@ -8,7 +8,15 @@
 
 - header: For bedrifter
   text: lorem ipsum
-  link: /
+  link: /bedrift/sammarbeids-partnere
   name: Eskil Domben
   email: eskil@getacademy.no
   phone: 45485922
+
+- header: CAMPUS
+  text: lorem ipsum
+  link: 
+  name: 
+  email: 
+  phone: 
+  source: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2051.8523966813436!2d10.016306351871926!3d59.051183940244115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4646e9bb3633ecc7%3A0x6ca465ce66442fbd!2sNedre%20Fritz%C3%B8egate%202%2C%203264%20Larvik!5e0!3m2!1sen!2sno!4v1631011345911!5m2!1sen!2sno"

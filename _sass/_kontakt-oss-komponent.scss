@@ -28,3 +28,19 @@
         height: 250px;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .contact-container .contact-us-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-container .contact-us-wrapper .contact-text-container .text-container {
+        margin: 0 0 25px 0;
+    }
+    .google-map {
+        width: 100%;
+    }
+    .filler-image {
+        display: none;
+    }
+}
