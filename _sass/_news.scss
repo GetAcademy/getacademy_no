@@ -13,9 +13,9 @@
     height: 100%;
     margin: 10px;
     padding: 0 20px;
-    box-shadow: $box-shadow;
+    // box-shadow: $box-shadow;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 1px;
     text-decoration: none;
     cursor: pointer;
     &:hover {
@@ -61,13 +61,18 @@
     align-items: center;
   }
 }
-
+.main-content {
+  text-align: center;
+}
 .news-content-container {
   max-width: $content-max-width;
   margin: 1.5rem auto 0;
 }
-
+.headline {
+  text-align: center;
+}
 .news-picture {
+  margin: auto;
   height: 25%;
   width: 25%;
 }

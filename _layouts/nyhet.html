@@ -21,15 +21,18 @@ timezone: Europe/Oslo
     <main>
       {% if page.picture %}
       {% for link in page.picture %}
-      <img class="news-picture" src="{{link | relative_url}}" alt="{{page.picture-texts}}">
-      {% endfor %}
-      {% endif %}
-      {{content}}
-      {% if page.youtube-link %}
-      <iframe width="560" height="315" src="{{page.youtube-link}}" title="YouTube video player" frameborder="0"
+      <div class="main-content">
+
+        <img class="news-picture" src="{{link | relative_url}}" alt="{{page.picture-texts}}">
+        {% endfor %}
+        {% endif %}
+        {{content}}
+        {% if page.youtube-link %}
+        <iframe width="560" height="315" src="{{page.youtube-link}}" title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
-      {% endif %}
+        {% endif %}
+      </div>
     </main>
 
     <div class="sub-footer">
