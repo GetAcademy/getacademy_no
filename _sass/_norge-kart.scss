@@ -19,11 +19,12 @@
     .centered-div {
         justify-content: space-between;
         .norway-map {
+            margin: auto;
+            width: 300px;
+            height: 300px;
             background-image: url("/assets/norway.svg");
             background-size: 300px 300px;
             background-repeat: no-repeat;
-            width: 300px;
-            height: 300px;
             .map-pin {
                 height: 40px;
                 margin: 240px 50px;
