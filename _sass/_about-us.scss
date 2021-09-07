@@ -79,7 +79,6 @@
       }
     }
   }
-
   .person-name {
     margin-right: 15px;
     margin-top: 25px;
@@ -109,14 +108,29 @@
   .employee-card-container {
     margin: 20px auto;
   }
-  .text {
+  .text-container {
+    // width: 60%;
     margin: 60px auto;
     text-align: center;
+    .header-with-description {
+      padding-right: 100px;
+      h2,
+      p {
+        text-align: left;
+      }
+    }
   }
-
-  .text h2,
-  p {
-    text-align: left;
+  .image-container {
+    .bg-img {
+      height: 600px;
+      width: 350px;
+      background-image: url("../assets/bilde 7.png");
+      // background-size: 100px;
+      background-repeat: no-repeat;
+    }
+    .contact-card {
+      width: auto;
+    }
   }
 
   .logos {

@@ -2,15 +2,28 @@
 layout: default
 ---
 <div class="about-us-container">
-  <div class="text">
-    {% for block in site.data.about-us-text-blocks %}
-    <div class="header-with-description">
-      <h2>{{block.header}}</h2>
-      {% for paragraph in block.paragraphs %}
-      <p>{{ paragraph }}</p>
+  <div class="horizontal-flex">
+    <div class="text-container">
+      {% for block in site.data.about-us-text-blocks %}
+      <div class="header-with-description">
+        <h2>{{block.header}}</h2>
+        {% for paragraph in block.paragraphs %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
+      </div>
       {% endfor %}
     </div>
-    {% endfor %}
+    <div class="image-container">
+      <!-- <img src="../assets/bilde 7.png" alt=""> -->
+      <div class="bg-img"></div>
+      <div class="contact-card">
+        <h3>Vil du vite mer?</h3>
+        <p>Ta kontakt for en hyggelig samtale</p>
+        <a href="{{ '/kontakt' | relative_url }}">
+          <button>Kontakt</button>
+        </a>
+      </div>
+    </div>
   </div>
   <div class="folkene-bak">
     <h2>Folkene bak GET-Academy</h2>
