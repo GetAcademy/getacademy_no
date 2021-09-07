@@ -42,10 +42,10 @@
     max-width: 70%;
   }
   .inefficient-faq {
-    width: 400px;
+    min-width: 400px;
     background-image: url("/assets/bilde 1.png");
     background-repeat: no-repeat;
-    background-position: center;
+    // background-position: center;
     display: flex;
     justify-content: center;
     .text-container {
