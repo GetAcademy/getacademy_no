@@ -165,9 +165,42 @@
     margin: auto;
     max-width: $max-text-width-size;
   }
-  @media only screen and (max-width: 768px) {
-    .profile-card-container {
-      margin: 20px auto;
-    }
+}
+
+@media only screen and (max-width: 768px) {
+  .invisible-link {
+    text-decoration: none;
+  }
+  .about-us-container .person-name {
+    margin-right: 0;
+    margin-top: 0;
+  }
+  .about-us-container .profile-card-container{
+    min-width: 100%;
+    text-align: center;
+  }
+  .about-us-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-us-container .text-container {
+    width: 100%;
+    margin: 0px auto;
+  }
+  .about-us-container .person-info {
+    padding: 10px;
+   margin: 0 auto;
+  }
+  .about-us-container .text-container .header-with-description {
+    padding-right: 0;
+  }
+  .text-container {
+    width: 100%;
+  }
+  .profile-card-container {
+    margin: 20px auto;
+  }
+  .contact-card {
+    margin-bottom: 40px;
   }
 }
