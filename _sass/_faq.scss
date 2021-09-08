@@ -5,13 +5,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   .contact-us-container {
     * {
       box-sizing: border-box;
     }
   }
-
+.faq-title {
+  text-align: left;
+}
   // acc
 
   .accordion-container {
@@ -29,7 +30,7 @@
     text-align: left;
     outline: none;
     transition: 0.4s;
-    border-radius: 5px;
+    border-radius: 1px;
     border-bottom: 2px solid $primary-color;
   }
   .accordion-header {
@@ -48,7 +49,6 @@
     min-width: 400px;
     background-image: url("/assets/bilde 1.png");
     background-repeat: no-repeat;
-    // background-position: center;
     display: flex;
     justify-content: center;
     .text-container {
