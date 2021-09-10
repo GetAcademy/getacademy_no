@@ -12,10 +12,27 @@
   .cta-container {
     display: flex;
     flex-direction: column;
-    flex-basis: 40%;
+    flex-basis: 55%;
     align-items: left;
     justify-content: center;
     white-space: nowrap;
+    .horizontal-button-container {
+      display: flex;
+      // align-items: center;
+      justify-content: space-evenly;
+      a {
+        
+        margin: auto;
+        width: 40%;
+      }
+      button {
+        width: 100%;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: $primary-color;
+        color: #ffffff;
+      }
+    }
   }
 
   .cta-text {
