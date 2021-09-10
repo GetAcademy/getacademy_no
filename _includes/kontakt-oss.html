@@ -5,7 +5,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi omnis voluptatum explicabo, rem vitae
                 atque officiis ullam dolore beatae nihil quasi quos consequatur quibusdam! Deserunt molestias qui quas
                 totam excepturi.</p>
-            <a href="/kontakt" class="orange-link">Les mer &gt;</a>
+            <a href="{{/kontakt | relative_url}}" class="orange-link">Les mer &gt;</a>
         </div>
         {% for data in site.data.kontakt-data %}
         <div class="text-container">
@@ -21,6 +21,6 @@
         <div class="text-container">
     </div>
     <div>
-        <img class="filler-image" src="../assets/bilde 3.png" alt="">
+        <img class="filler-image" src="{{../assets/bilde 3.png | relative_url}}" alt="">
     </div>
 </div>

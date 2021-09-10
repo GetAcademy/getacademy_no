@@ -4,7 +4,7 @@ layout: default
 
 <div class="sammarbeids-partnere-container">
   <div class="container-block">
-    <img src="/assets/bilde 4.png" class="fill-width" />
+    <img src="{{'/assets/bilde 4.png' | relative_url}}" class="fill-width" />
   </div>
   <div class="horizontal-flex breathing-space">
 
@@ -25,7 +25,7 @@ layout: default
   <div class="container-block large-gap">
     <h2 class="left-aligned-text bold-text">{{ text-block.header }}</h2>
     <p class="left-aligned-text">{{ text-block.paragraph }}</p>
-    <p class="left-aligned-text">{{ text-block.custom-markdown }}</p>
+    <p class="left-aligned-text">{{ text-block.custom-markdown | markdownify }}</p>
   </div>
   {% endfor %}
   <div class="container-block">
@@ -33,6 +33,6 @@ layout: default
   </div>
   <div class="container-block">{% include home/bedrifter.html %}</div>
   <div class="centered">
-    <a href="/bedrift/sammarbeids-partnere" class="orange-link">Les mer fra våre partnere &gt;</a> <!-- knappen høres ut som om den skal lede til siden du allerede er i? -->
+    <a href="{{'/bedrift/sammarbeids-partnere' | relative_url}}" class="orange-link">Les mer fra våre partnere &gt;</a> <!-- knappen høres ut som om den skal lede til siden du allerede er i? -->
   </div>
 </div>
