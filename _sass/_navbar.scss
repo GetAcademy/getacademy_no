@@ -10,14 +10,6 @@ nav {
     max-width: $content-max-width;
   }
 
-  .application-button {
-    border: 1px solid transparent;
-  }
-
-  .application-button:hover {
-    border-bottom: 1px solid white !important;
-  }
-
   .nav-buttons {
     a {
       display: flex;
@@ -123,10 +115,6 @@ nav {
 
   .nav-buttons {
     display: none;
-  }
-
-  .application-button {
-    padding: 20px 0;
   }
 
   .no-border-bottom {
