@@ -1,4 +1,4 @@
-.main-container-stilling{
+.main-container-stilling {
   max-width: $content-max-width;
   margin: auto;
   padding: $global-padding;
@@ -9,6 +9,7 @@
   }
   p {
     font-size: $font-size-default;
+    text-align: left;
   }
 
   .inline {

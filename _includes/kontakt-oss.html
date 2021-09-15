@@ -5,7 +5,18 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi omnis voluptatum explicabo, rem vitae
                 atque officiis ullam dolore beatae nihil quasi quos consequatur quibusdam! Deserunt molestias qui quas
                 totam excepturi.</p>
-            <a href="{{/kontakt | relative_url}}" class="orange-link">Les mer &gt;</a>
+            <div class="form-group">
+                <h3>Lurer du på noe? Ta kontakt!</h3>
+                <form name="contact" action="https://formspree.io/xknqldae" method="POST">
+                    <label type="text" for="name">Navn:</label>
+                    <input type="text" name="name" id="name" />
+                    <label type="text" for="email">E-post:</label>
+                    <input type="text" name="email" id="email" />
+                    <label type="text" for="message">Melding:</label>
+                    <textarea class="form-field" name="message" id="message"></textarea>
+                    <input class="form-button" type="submit" value="Send melding" />
+                </form>
+            </div>
         </div>
         {% for data in site.data.kontakt-data %}
         <div class="text-container">
@@ -15,12 +26,14 @@
             {% if data.name %}<p>{{ data.name }}</p>{% endif %}
             {% if data.email %}<p>E-mail: {{ data.email }}</p>{% endif %}
             {% if data.phone %}<p>Tel: {{ data.phone }}</p>{% endif %}
-            {% if data.source %}<iframe class="google-map" src="{{data.source}}" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>{% endif %}
+            {% if data.source %}<iframe class="google-map" src="{{data.source}}" width="400" height="300"
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>{% endif %}
         </div>
         {% endfor %}
-        <div class="text-container">
-    </div>
-    <div>
-        <img class="filler-image" src="{{../assets/bilde 3.png | relative_url}}" alt="">
+        <div class="contact-card-container">
+            <div>
+                <img class="filler-image" src="{{../assets/bilde 3.png | relative_url}}" alt="">
+            </div>
+        </div>
     </div>
 </div>
