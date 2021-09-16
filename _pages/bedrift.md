@@ -1,6 +1,6 @@
 ---
 permalink: /bedrift/
-layout: bedrift/bedrift
+layout: bedrift
 ---
 
 ## Rekrutter IT-utviklere via GET Academy!
@@ -13,6 +13,7 @@ Norge har for få utdanningsplasser innen IT-utvikling, selv om behovet i nærin
 Før praksis i bedrift tar studentene en ferdigehetsanalyse levert av oppstartsselskapet GrepS i Oslo. De har laget en film om oss:
 
 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6778793342969892864?compact=1" height="284" width="504" frameborder="0" allowfullscreen="" title="Innebygd innlegg"></iframe>
+
 Les mer om oss her:
 
 Intervju med arbeids- og sosialminister Torbjørn Røe Isaksen i Computerworld: – Ett av de beste konseptene jeg har sett
