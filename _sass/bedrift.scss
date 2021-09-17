@@ -1,0 +1,13 @@
+.bedrift-container {
+    margin: auto;
+    padding: $global-padding;
+    max-width: $content-max-width;
+    text-align: left;
+    p{
+        text-align: left;
+    }
+    iframe{
+        font-size: 15rem;
+        flex-direction: row;
+    }
+}
