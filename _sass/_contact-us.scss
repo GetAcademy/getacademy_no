@@ -65,7 +65,30 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .contact-card-container {
+  .contact-container {
     margin: auto;
+
+  input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid $primary-border-color;
+    transition: 0.3s border-color;
+  
+    &:hover {
+      border: 1px solid rgb(165, 165, 167);
+    }
   }
+  .form-button {
+    width: 100%;
+   
+  }
+  textarea {
+    width: 100%;
+    
+  }
+}
 }
