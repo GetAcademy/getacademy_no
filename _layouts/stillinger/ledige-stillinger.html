@@ -2,31 +2,32 @@
 layout: default
 ---
 <div class="vacancies">
-    <h2>Våre ledige stillinger</h2>
-    <div class="vacancies-list-container">
-      <div class="vacancy-list">
-        <ul>
-          {% for stilling in site.ledigestillinger %}
-          <li>
-            <!--WIP-->
-            <a class="m-list-item list-item" href="{{ stilling.side | relative_url }}">
-              <div class="a-list-item-side-content">
-                <i class="fa fa-briefcase fa-3x" aria-hidden="true" style="color: orange; padding: 1rem;"></i>
-              </div>
-              <div class="a-list-item-content information">
-                <h4 class="a-headline">
-                  <span>{{stilling.tittel}}</span>
-                </h4>
-                <ul class="a-metadata-list">
-                  <li class="item">{{stilling.arbeidssted}}</li>
-                  <li class="item">{{stilling.heltid-deltid}}</li>
-                  <li class="item">{{stilling.tiltredelsesdato}}</li>
-                </ul>
-              </div>
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
+  <h2>Våre ledige stillinger</h2>
+  <div class="vacancies-list-container">
+    <div class="vacancy-list">
+      <ul>
+        {% for stilling in site.ledigestillinger %}
+        <li>
+          <a class="m-list-item list-item" href="{{ stilling.side | relative_url }}">
+            <div class="a-list-item-side-content">
+              <i class="fa fa-briefcase fa-3x" aria-hidden="true" style="color: orange; padding: 1rem;"></i>
+            </div>
+            <div class="a-list-item-content information">
+              <h4 class="a-headline">
+                <span>{{stilling.tittel}}</span>
+              </h4>
+              {% if stilling.arbeidsted %}
+              <ul class="a-metadata-list">
+                <li class="item">{{stilling.arbeidssted}}</li>
+                <li class="item">{{stilling.heltid-deltid}}</li>
+                <li class="item">{{stilling.tiltredelsesdato}}</li>
+              </ul>
+              {% endif %}
+            </div>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
+</div>

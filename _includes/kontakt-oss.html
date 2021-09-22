@@ -1,39 +1,27 @@
 <div class="contact-us-wrapper">
-    <div class="contact-text-container">
-        <div class="text-container">
-            <h1>Kontakt oss</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi omnis voluptatum explicabo, rem vitae
-                atque officiis ullam dolore beatae nihil quasi quos consequatur quibusdam! Deserunt molestias qui quas
-                totam excepturi.</p>
-            <div class="form-group">
-                <h3>Lurer du på noe? Ta kontakt!</h3>
-                <form name="contact" action="https://formspree.io/xknqldae" method="POST">
-                    <label type="text" for="name">Navn:</label>
-                    <input type="text" name="name" id="name" />
-                    <label type="text" for="email">E-post:</label>
-                    <input type="text" name="email" id="email" />
-                    <label type="text" for="message">Melding:</label>
-                    <textarea class="form-field" name="message" id="message"></textarea>
-                    <input class="form-button" type="submit" value="Send melding" />
-                </form>
-            </div>
+    <div class="text-container">
+        <h1>Lurer du på noe</h1>
+        <div class="form-group">
+            <h3>Kontakt oss her</h3>
+            <form name="contact" action="https://formspree.io/xknqldae" method="POST">
+                <label type="text" for="name">Navn:</label>
+                <input type="text" name="name" id="name" />
+                <label type="text" for="email">E-post:</label>
+                <input type="text" name="email" id="email" />
+                <label type="text" for="message">Melding:</label>
+                <textarea class="form-field" name="message" id="message"></textarea>
+                <input class="form-button" type="submit" value="Send melding" />
+            </form>
         </div>
-        {% for data in site.data.kontakt-data %}
-        <div class="text-container">
-            <h3 class="blue-header">{{ data.header }}</h3>
-            {% if data.text %}<p>{{ data.text }}</p>{% endif %}
-            {% if data.link %}<a class="orange-link" href="{{ data.link }}">Les mer &gt;</a>{% endif %}
-            {% if data.name %}<p>{{ data.name }}</p>{% endif %}
-            {% if data.email %}<p>E-mail: {{ data.email }}</p>{% endif %}
-            {% if data.phone %}<p>Tel: {{ data.phone }}</p>{% endif %}
-            {% if data.source %}<iframe class="google-map" src="{{data.source}}" width="400" height="300"
-                style="border:0;" allowfullscreen="" loading="lazy"></iframe>{% endif %}
-        </div>
-        {% endfor %}
-        <div class="contact-card-container">
-            <div>
-                <img class="filler-image" src="{{../assets/bilde 3.png | relative_url}}" alt="">
-            </div>
-        </div>
+    </div>
+    <div class="text-container">
+        <h3 class="blue-header">Kontakt informasjon</h3>
+        <p class="person-name"><span class="first-letter">G</span>eir Sollid</p>
+        <p class="person-info">E-mail: geir@getacademy.no</p>
+        <p class="person-info">Tel: 926 21 638</p>
+        <h3 class="blue-header">Addresse</h1>
+        <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2051.8523966813436!2d10.016306351871926!3d59.051183940244115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4646e9bb3633ecc7%3A0x6ca465ce66442fbd!2sNedre%20Fritz%C3%B8egate%202%2C%203264%20Larvik!5e0!3m2!1sen!2sno!4v1631011345911!5m2!1sen!2sno" width="400" height="300" style="border:0;"
+            allowfullscreen="" loading="lazy">
+        </iframe>
     </div>
 </div>
