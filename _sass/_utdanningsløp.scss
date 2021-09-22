@@ -67,15 +67,12 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .content {
-    padding: 45px;
-  }
-  .cards-container {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  .course-overview {
+  .course-overview { 
     padding: 0;
+  }
+  .page-selector {
+    width: 70%;
+
   }
   .padding-mobile {
     padding: $global-padding;
