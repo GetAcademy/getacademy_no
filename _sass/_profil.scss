@@ -25,11 +25,20 @@
     border-radius: 10px;
   }
 
+
   .info-table {
     td {
       padding: 15px;
       border-bottom: 1px solid $primary-border-color;
     }
+  }
+
+  .area, h2 {
+    text-align: left;
+  }
+
+  .description-container p {
+    text-align: left;
   }
 
   .profile-image {

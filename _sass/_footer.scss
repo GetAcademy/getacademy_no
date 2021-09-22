@@ -11,6 +11,9 @@
     margin: auto;
     padding: 1em;
   }
+  .bottom-footer-link-container {
+    text-align: center;
+  }
   .footer-block {
     display: flex;
     flex-direction: column;
@@ -91,6 +94,7 @@
     * {
       max-width: $content-max-width;
       margin: auto;
+      text-align: center;
     }
     .full-length-divider {
       height: 1px;

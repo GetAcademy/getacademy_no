@@ -10,20 +10,14 @@
   currentOccupation: Utvikler i Abax
   slides: 2
 
-- image: /assets/tilbakemeldinger-elever/bjornar.jpg
-  name: Bjørnar J.
-  quote: Skolen la til rette til at jeg følte meg trygg, slik at jeg tørte å spørre mer, jeg ble enda mer motivert og fikk tilbake gleden av å lære. GET Academy ga meg de verktøyene som jeg trengte for å komme meg ut i praksis!
-  currentOccupation: Praksisplass i GET Solutions
-  slides: 3
-
 - image: /assets/tilbakemeldinger-elever/pia1.jpg
   name: Pia A.
   quote: GET er en utradisjonell skole som legger vekt på innsats, samarbeid, og engasjement i et trygt miljø. På skolen utvikler man seg ikke bare faglig, men også personlig både i forbindelse med jobb og på hjemmebane. Lærere og elever bidrar til et motiverende læringsløp i turbofart, uavhengig hva man kan fra før!
   currentOccupation: Ansatt i Reen
-  slides: 4
+  slides: 3
 
 - image: /assets/tilbakemeldinger-elever/christoffer.jpg
   name: Christoffer H.
   quote: Jeg angrer ikke ett sekund på at jeg startet på denne skolen. Har lært mye om meg selv gjennom nøkkelkompetanse, og fått nok kodekompetanse til å lage mine egne programmer og nettsider.
   currentOccupation: Tidligere ansatt i GET Solutions
-  slides: 5
+  slides: 4

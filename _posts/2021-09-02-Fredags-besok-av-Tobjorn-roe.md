@@ -1,6 +1,6 @@
 ---
 category: Facebook
-title: Fredags besøk av Torbjør Røe
+title: Fredags besøk av Torbjørn Røe
 date: 2021-09-02 13:45:00 +
 categories: nyheter
 published: true
