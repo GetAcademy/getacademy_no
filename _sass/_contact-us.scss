@@ -15,6 +15,53 @@
       }
     }
   }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    padding-right: 100px;
+    margin-top: 30px;
+  }
+  input {
+    display: block;
+    width: 30%;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid $primary-border-color;
+    transition: 0.3s border-color;
+  
+    &:hover {
+      border: 1px solid rgb(165, 165, 167);
+    }
+  }
+  .form-button {
+    color: white;
+    background-color: $primary-color;
+    border-radius: 5px;
+    border: 0;
+    text-align: center;
+    width: 33%;
+   
+  }
+  
+  input[type="submit"]:hover {
+    background-color: $primary-color-active;
+    border: 0;
+  }
+  textarea {
+    width: 30%;
+    resize: vertical;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid $primary-border-color;
+    height: 150px;
+    color: #333333;
+    font-size: 18px;
+  }
+  
 }
 
 @media only screen and (max-width: 1000px) {
