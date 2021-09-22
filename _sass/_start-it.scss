@@ -4,9 +4,13 @@
   padding: $global-padding;
 
   .start-it-ingress {
+    display: flex;
+    flex-direction: row;
     padding: $global-padding 0;
   }
-
+  .start-text {
+  width: 70%;
+  }
   .start-it-container {
     padding: $global-padding;
     display: flex;
@@ -17,12 +21,19 @@
     border-top: 3px solid $primary-color;
     border-bottom: 3px solid $primary-color;
   }
+  .module-container:last-child {
+    border-bottom: none;
+  }
 
   .module-component-container {
     display: flex;
     flex-direction: row;
   }
-
+ .module-paragraph-container {
+   p {
+     text-align: left;
+   }
+ }
   .unordered-list {
     display: flex;
     flex-direction: row;
@@ -87,10 +98,14 @@
   h3 {
     padding: $global-padding 0;
   }
-
-  .application-container {
-    text-align: center;
-    margin-top: 10px;
+  .application-box{
+    display: flex;
+    flex-direction: column;
+  width: 20%;
+  background-color: #ffffff;
+  box-shadow: $box-shadow;
+  text-align: center;
+  padding: $global-padding;
   }
   @media only screen and (max-width: 768px) {
     h1 {

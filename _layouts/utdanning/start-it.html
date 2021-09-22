@@ -5,6 +5,7 @@ layout: default
 <div class="start-it">
   <h1>Start IT</h1>
   <div class="start-it-ingress">
+    <div class="start-text">
     <span>
       GET Academy tilbyr deg muligheten til å gå fra null kodeerfaring til
       juniorutvikler på 1½ år.
@@ -17,6 +18,14 @@ layout: default
       Start IT er inngangen og består av tre moduler, studielengde i alle
       modulene er 2 måneder.
     </span>
+  </div>
+    <div class="application-box">
+      <p> Lyst til å lære å kode?</p>
+        <a class="application-button" href="{{ '/soknad/' | relative_url }}">
+          <!-- Søknad -->
+          <button class="button primary">Meld interesse</button>
+        </a>
+    </div>
   </div>
   {% for modul in page.moduler %}
   <div class="start-it-container module-container">
@@ -123,10 +132,4 @@ layout: default
     </div>
   </div>
   {% endfor %}
-  <div class="application-container">
-    <a class="application-button" href="{{ '/soknad/' | relative_url }}">
-      <!-- Søknad -->
-      <button class="button primary">Meld interesse</button>
-    </a>
-  </div>
 </div>
