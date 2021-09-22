@@ -33,10 +33,15 @@
     border-radius: 1px;
     border-bottom: 2px solid $primary-color;
   }
+  .accordion:last-child {
+      border-bottom: none;
+  }
+
   .accordion-header {
     padding: 15px;
     display: flex;
     justify-content: space-between;
+    
   }
 
   .accordion-content {
