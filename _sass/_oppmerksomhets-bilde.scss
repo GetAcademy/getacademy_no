@@ -91,14 +91,16 @@
     }
 
     .cta-container {
-      padding: 1rem 1rem 1rem 1.5rem;
+      padding: 0 0 30px;;
       flex-basis: 100%;
       text-align: center;
+      white-space: normal;
     }
 
     .hero-image {
       width: 100%;
       margin: auto;
     }
+    
   }
 }
