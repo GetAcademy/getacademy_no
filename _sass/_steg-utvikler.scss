@@ -97,6 +97,7 @@
 @media screen and (max-width: 768px) {
   .steps-container {
     width: 100%;
+    margin: auto;
     .timeline::after {
       left: -35%;
     }
@@ -114,5 +115,9 @@
     .left {
       left: -21vw;
     }
+  }
+  .steps-text-container {
+    padding: $global-padding;
+    width: 100%;
   }
 }
