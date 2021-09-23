@@ -216,4 +216,16 @@ time {
     padding: 1rem 2rem;
     justify-content: flex-start;
   }
+  .left-aligned-text {
+    padding: $global-padding;
+    margin: 0;
+  }
+  .bold-text {
+    padding:  0 0 0 30px;
+    margin: 0;
+  }
+  .blue-header {
+    padding: 0 0 0 30px;
+  }
+
 }
