@@ -1,5 +1,5 @@
 ---
-name: Terje Koldrup
+name: Terje Kolderup
 stilling: Hovedlærer i IT-utvikling
 tillegg: 
 profilbilde: /assets/ansatt-bilder/Terje.jpg
