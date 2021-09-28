@@ -80,7 +80,8 @@
     font-size: 1.2em;
   }
 
-  @media only screen and (max-width: 1020px) {
+  @media only screen and (max-width: 957px) {
+    .attention-image-container {
     h1 {
       margin-bottom: 0;
       font-size: 2rem;
@@ -96,11 +97,6 @@
       text-align: center;
       white-space: normal;
     }
-
-    .hero-image {
-      width: 100%;
-      margin: auto;
-    }
-    
   }
+}
 }
