@@ -2,7 +2,7 @@
 layout: profil
 title: Eskil
 permalink: /profil/eskil
-navn: Eskil Dombden
+navn: Eskil Domben
 stilling: Daglig leder
 profilbilde: /assets/ansatt-bilder/eskil.jpg
 bosted: Stavern
