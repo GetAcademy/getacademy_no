@@ -1,7 +1,6 @@
 ---
 published: true
 name: Anita
-stilling: Lærer i IT-utvikling og nøkkelkompetanser
+stilling: Teamleder/veileder
 profilbilde: /assets/ansatt-bilder/Anita.jpg
-profilbilde: /assets/ansatt-bilder/Bjornar.jpg
 ---
