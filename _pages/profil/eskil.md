@@ -4,7 +4,7 @@ title: Eskil
 permalink: /profil/eskil
 navn: Eskil Dombden
 stilling: Daglig leder
-profilbilde: /assets/ansatt-bilder/Eskil.jpg
+profilbilde: /assets/ansatt-bilder/eskil.jpg
 bosted: Stavern
 links:
 discord: Eskil#6979
