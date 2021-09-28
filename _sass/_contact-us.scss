@@ -1,11 +1,8 @@
 .contact-container {
   max-width: $content-max-width;
-  margin: auto;
   padding: $global-padding;
+  margin: auto;
 
-  .first-letter {
-    color: #ee7100;
-}
 .person-name {
     font-size: 24px;
     font-weight: 700;
@@ -17,9 +14,29 @@
     text-align: left;
 }
 
+p {
+  text-align: left;
+}
+
+a, a:visited{
+  text-decoration: none;
+  font-weight: bolder;
+}
+
   .contact-us-wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+
+    
+  .contact-person {
+    width: 85%;
+    padding: 1em;
+  }
+
+  .text-container {
+    width: 100%;
+  }
     .form-group {
       * {
       box-sizing: border-box;

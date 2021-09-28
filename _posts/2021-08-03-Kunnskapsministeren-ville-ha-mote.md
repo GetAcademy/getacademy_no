@@ -1,11 +1,11 @@
 ---
-category: Facebook
+tags: skole
 title: Kunnskapsministeren ville ha møte 
 date: 2021-08-03 19:02:00 +
 categories: nyheter
 published: true
 youtube-link: 
-picture: "/assets/eskil-terje-ministeren.jpg"
+picture: "/assets/nyheter/eskil-terje-ministeren.jpg"
 picture-texts: "Bilde av Eskil, Terje og kunnskapsministeren"
 link: 
 ---

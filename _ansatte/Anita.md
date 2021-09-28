@@ -1,6 +1,6 @@
 ---
 published: true
-name: Bjørnar
+name: Anita
 stilling: Lærer i IT-utvikling og nøkkelkompetanser
-profilbilde: /assets/ansatt-bilder/Bjornar.jpg
+profilbilde: /assets/ansatt-bilder/Anita.jpg
 ---

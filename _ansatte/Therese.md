@@ -1,6 +1,6 @@
 ---
 published: true
 name: Therese
-stilling: Lærer for Start IT og GET IT
-profilbilde: /assets/ansatt-bilder/Therese murstein.jpg
+stilling: Lærer i IT-utvikling og nøkkelkompetanser
+profilbilde: /assets/ansatt-bilder/Therese.jpg
 ---

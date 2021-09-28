@@ -4,7 +4,7 @@ title: Terje
 permalink: /profil/terje
 navn: Terje Kolderup
 stilling: Hovedlærer i IT-utvikling
-profilbilde: /assets/ansatt-bilder/terje.jpeg
+profilbilde: /assets/ansatt-bilder/Terje.jpg
 bosted: Stavern
 links: [
         "playterje.com",

@@ -1,6 +1,6 @@
 ---
 published: true
 name: Linn
-stilling: Lærer for Start IT og GET IT
-profilbilde: /assets/ansatt-bilder/Linn murstein.jpg
+stilling: Lærer i IT-utvikling og nøkkelkompetanser
+profilbilde: /assets/ansatt-bilder/Linn.jpg
 ---

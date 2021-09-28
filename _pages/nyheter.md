@@ -6,7 +6,7 @@ nav: true
 excerpt_separator: <!--slutt-->
 ---
 <div class="news-content-container">
-<h1>{{ page.title }}</h1>
+<h1 style="text-align:center;">{{ page.title }}</h1>
 <ul class="news-container">
   {% for post in site.posts %}
     <a class="news-card" href="{{ post.url | relative_url }}" >
@@ -19,10 +19,9 @@ excerpt_separator: <!--slutt-->
       {% endif %}
       <p class="news-title">{{ post.title }}</p>
       <div class="subinfo-container">
-      <span class="category"> {{post.category}}</span>
-      <time>{{post.date | date: "%d/%m/%Y %H:%M"}}</time>
-      <!-- <p>{{ post.description | default: 'Trykk her for info'}}</p> -->
-    </div>
+        <span class="news-tag"> <i class="fas fa-tags"></i> {{post.tags}}</span>
+        <time>{{post.date | date: "%d/%m/%Y %H:%M"}}</time>
+      </div>
     </div>
     </a>
   {% endfor %}

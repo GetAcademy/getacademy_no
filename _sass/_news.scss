@@ -1,3 +1,4 @@
+// Alle nyheter liste sin CSS
 .news-container {
   display: flex;
   flex-wrap: wrap;
@@ -8,19 +9,25 @@
   flex-direction: column wrap;
   .news-card {
     align-items: center;
+    border: grayscale($color: #ff00003f) 2px solid;
+    border-radius: 5%;
+    background-color: rgba($color: black, $alpha: 0.015);
     transition: 0.3s;
     width: 27%;
     height: 100%;
     margin: 10px;
     padding: 0 20px;
-    // box-shadow: $box-shadow;
-    background-color: white;
-    border-radius: 1px;
     text-decoration: none;
     cursor: pointer;
     &:hover {
       transform: $raise-effect;
       box-shadow: $hover-box-shadow;
+    }
+    time{
+      font-size: 1rem;
+      color: black;
+      font-weight: lighter;
+      font-style: italic;
     }
     .content {
       word-wrap: break-word;
@@ -28,6 +35,11 @@
       * {
         padding: 0;
         margin: 0;
+      }
+
+      .news-tag{
+        font-weight: lighter;
+        color: $primary-color;
       }
       .news-title {
         font-size: 1em;
@@ -44,40 +56,49 @@
       .subinfo-container {
         display: flex;
         justify-content: space-between;
+        font-weight: bolder;
       }
     }
   }
 }
-
+// Nyhet sin CSS
 .news-content {
+  .headline {
+  text-align: center;
+  }
+
   margin: 1.5rem auto;
-  max-width: $content-max-width;
+  max-width: 1000px;
   padding: $global-padding;
   background-color: white;
-  .sub-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
 .main-content {
-  text-align: center;
+time {
+  color: black;
+  font-weight: lighter;
+  font-style: italic;
+  padding-left: 1.25rem;
 }
-.news-content-container {
-  max-width: $content-max-width;
-  margin: 1.5rem auto 0;
-}
-.headline {
-  text-align: center;
-}
+border: grayscale($color: #ff00003f) 2px solid;
+border-radius: 2rem;
+background-color: rgba($color: black, $alpha: 0.015);
+width: auto;
+height: auto;
 .news-picture {
-  margin: auto;
-  height: 25%;
-  width: 25%;
+display: block;
+margin: auto;
+max-height: 500px;
+}
+.share-buttons{
+  font-size: large;
+  text-align: center;
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .headline{
+    font-size: 1.5rem;
+  }
   .news-content-container {
     text-align: center;
     width: 100%;

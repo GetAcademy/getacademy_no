@@ -17,11 +17,11 @@ timezone: Europe/Oslo
 
   <div class="news-content">
     <button class="back-button" onclick="window.history.back()">Tilbake</button>
-    <h1 class="headline">{{page.title}}</h1>
     <main>
       {% if page.picture %}
       {% for link in page.picture %}
       <div class="main-content">
+        <h1 class="headline">{{page.title}}</h1>
 
         <img class="news-picture" src="{{link | relative_url}}" alt="{{page.picture-texts}}">
         {% endfor %}
@@ -32,15 +32,14 @@ timezone: Europe/Oslo
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
         {% endif %}
+          <div class="share-buttons">
+            <div class="fb-share-button" data-href="{{ post.url | relative_url }}" data-size="large" data-layout="button"></div>
+          </div>
+          <time>{{page.date | date: "%d/%m/%Y %H:%M"}}</time>
+        </div>
       </div>
     </main>
 
-    <div class="sub-footer">
-      <div class="share-buttons">
-        <div class="fb-share-button" data-href="{{ post.url | relative_url }}" data-layout="button"></div>
-      </div>
-      <time>{{page.date | date: "%d/%m/%Y %H:%M"}}</time>
-    </div>
   </div>
 </body>
 

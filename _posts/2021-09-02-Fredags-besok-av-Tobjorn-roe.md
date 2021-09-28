@@ -1,11 +1,11 @@
 ---
-category: Facebook
+tags: skole
 title: Fredags besøk av Torbjørn Røe
 date: 2021-09-02 13:45:00 +
 categories: nyheter
 published: true
 youtube-link: 
-picture: assets/Torbjorn-Roe.jpg
+picture: assets/nyheter/Torbjorn-Roe.jpg
 picture-texts: 
 link: 
 ---
