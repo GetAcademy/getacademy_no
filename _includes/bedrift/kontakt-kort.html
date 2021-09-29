@@ -1,6 +1,17 @@
 <div class="contact-card">
-    <p>Flere spørsmål eller behov for mer informasjon?</p>
-    <a href="{{ '/kontakt' | relative_url }}">
-        <button>Kontakt</button>
-    </a>
+    <div class="form-group">
+        <h4>Har du lyst å vite mer?</h4>
+        <form name="contact"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSfHXMQ1v29jvajZSeYKIPejXc4K10zMQJbFK7Jy3Zf2QW_yjA/viewform?usp=sf_link"
+            target="hidden_iframe" onsubmit="submitted=true;">
+            <!-- <div class="required">
+                <label>E-post</label>
+                <input type="email" name="entry.389422620" id="email" required />
+
+                <label>Telefon</label>
+                <input type="text" name="entry.1360877689" id="phone" required />
+            </div> -->
+            <input class="form-button" type="submit" value="Ja, takk" />
+        </form>
+    </div>
 </div>

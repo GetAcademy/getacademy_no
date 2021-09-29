@@ -1,5 +1,5 @@
 .contact-card {
-    width: 150px;
+    width: 200px;
     background-color: #ffffff;
     box-shadow: $box-shadow;
     text-align: center;
@@ -13,4 +13,60 @@
         color: #ffffff;
         padding: 5px $global-padding;
     }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        * {
+          box-sizing: border-box;
+        }
+    
+        input {
+          display: block;
+          margin: 10px 0;
+          padding: 15px;
+          border-radius: 5px;
+          border: 1px solid $primary-border-color;
+          transition: 0.3s border-color;
+    
+          &:hover {
+            border: 1px solid rgb(165, 165, 167);
+          }
+        }
+    
+        .required label::after {
+          content: "*";
+          color: $primary-color;
+        }
+    
+        textarea {
+          resize: vertical;
+          padding: 15px;
+          border-radius: 5px;
+          border: 1px solid $primary-border-color;
+          height: 150px;
+        }
+    
+        textarea:hover {
+          border: 1px solid rgb(165, 165, 167);
+        }
+    
+        input,
+        textarea {
+          width: 100%;
+        }
+    
+        .form-button {
+          color: white;
+          background-color: $primary-color;
+          border-radius: 5px;
+          border: 0;
+        }
+    
+        input[type="submit"]:hover {
+          background-color: $primary-color-active;
+          border: 0;
+        }
+      }
 }
