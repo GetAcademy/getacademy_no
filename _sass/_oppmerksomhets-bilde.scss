@@ -80,22 +80,33 @@
     font-size: 1.2em;
   }
 
-  @media only screen and (max-width: 957px) {
-    .attention-image-container {
+}
+@media only screen and (max-width: 768px) {
+  .attention-image-container {
+  h1 {
+    margin-bottom: 0;
+    font-size: 2rem;
+  }
+
+  .hero-image {
+    display: none;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+
+  .cta-container {
+    padding: 9px 0;
+    flex-basis: 100%;
+    text-align: center;
+    white-space: normal;
+    
     h1 {
-      margin-bottom: 0;
-      font-size: 2rem;
+      display: none;
     }
-
-    h2 {
-      font-size: 1rem;
-    }
-
-    .cta-container {
-      padding: 0 0 30px;;
-      flex-basis: 100%;
-      text-align: center;
-      white-space: normal;
+    .cta-text {
+      padding: 0px;
+      margin: 0;
     }
   }
 }

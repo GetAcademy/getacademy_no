@@ -1,7 +1,6 @@
 .evolve-business {
     display: flex;
     align-items: center;
-    height: 500px;
     max-width: $content-max-width;
     margin: auto;
     // background-image: url("/assets/bilde 5.png");
@@ -25,5 +24,6 @@
 @media only screen and (max-width: 768px) { 
     .evolve-business .text-container {
         height: 200px;
+        padding: 10px;
     }
 }

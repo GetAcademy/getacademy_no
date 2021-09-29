@@ -5,7 +5,7 @@
     justify-content: space-between;
     max-width: 50%;
     margin: auto;
-    padding: $global-padding 100px;
+    padding: $global-padding 50px;
     background-color: $primary-color;
     border-radius: 5px;
     .white-container {
@@ -32,6 +32,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .contact-us-component {
+        padding: 30px;
+    }
     .contact-container .contact-us-wrapper {
         display: flex;
         flex-direction: column;
