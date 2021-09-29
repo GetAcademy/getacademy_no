@@ -23,4 +23,17 @@
     .large-gap {
         margin: 120px auto;
     }
+
+    @media only screen and (max-width: 768px) { 
+        padding: 0;
+        iframe {
+            width: 80vw;
+        }
+        .medium-text-block {
+            width: 100%;
+        }
+        .sammarbeids-partnere-container {
+            padding: 30px;
+        }
+      }
 }
