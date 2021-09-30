@@ -166,6 +166,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .about-us-container .employee-profile-card .employee-img-container {
+    display: block;
+    position: relative;
+}
   .about-us-container {
     .horizontal-flex {
       display: block;
