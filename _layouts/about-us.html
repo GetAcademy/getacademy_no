@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="about-us-container">
-  <div class="horizontal-flex">
+  <div id="lazy-id" class="horizontal-flex">
     <div class="text-container">
       {% for block in site.data.about-us-text-blocks %}
       <div class="header-with-description">
@@ -64,6 +64,24 @@ layout: default
     {% endfor %}
   </div>
 </div>
+<!-- <div class="folkene-bak">
+  <h2>Annsatte i GET-Academy Solutions</h2>
+  <div class="card-container">
+    {% for ansatt in site.ansatte %}
+    <div class="employee-card-container">
+      <div class="employee-profile-card">
+        <div class="horizontal-flex employee-img-container">
+          <img class="view-profile-container" src="{{ ansatt.profilbilde | relative_url}}" alt="{{ansatt.name}}">
+          <div class="employee-text-container">
+            <p class="employee-name">{{ ansatt.name }}</p>
+            <p class="employee-info">{{ ansatt.stilling }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div> -->
 <div class="logos">
   {% include home/bedrifter.html %}
 </div>

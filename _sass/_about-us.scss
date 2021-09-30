@@ -166,6 +166,14 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .about-us-container {
+    .horizontal-flex {
+      display: block;
+    }
+    .bg-img {
+      display: none;
+    }
+  }
   .invisible-link {
     text-decoration: none;
   }
