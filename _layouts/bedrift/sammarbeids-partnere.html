@@ -1,30 +1,36 @@
---- layout: default ---
+---
+layout: default
+---
 
 <div class="sammarbeids-partnere-container">
-    <div class="container-block">
-        <img src="{{'/assets/bedrift/samarbeid/studenter-koder.jpg' | relative_url}}" class="fill-width" />
-    </div>
-    <div class="horizontal-flex breathing-space">
+  <div class="container-block">
+    <img src="{{'/assets/bedrift/samarbeid/studenter-koder.jpg' | relative_url}}" class="fill-width" />
+  </div>
+  <div class="horizontal-flex breathing-space">
 
-        <div class="medium-text-block">{% include bedrift/talentfulle-utviklere.html %}</div>
-    </div>
-    <div>{% include bedrift/kontakt-kort.html %}</div>
-    <div class="left-aligned-text bold-text">Greps</div>
-    <iframe width="720" height="315" src="https://www.youtube.com/embed/QxavGidlpo8?controls=0&amp;start=00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    {% for text-block in site.data.text-block %}
-    <div id="special-clause" class="container-block large-gap">
-        <div class="left-aligned-text bold-text">{{ text-block.header }}</div>
-        <p class="left-aligned-text">{{ text-block.paragraph }}</p>
-    </div>
-    {% endfor %}
-    <div class="container-block center-flex">{% include home/norge-kart.html %}</div>
-    <div class="short-width">
-        <div class="bold-text">Studenter fra hele Norge</div>
-        <!-- Title -->
-        <p class="left-aligned-text">Teknologi interessen er høy blant våre studenter, og stort sett all undervisning foregår digitalt. Dette betyr at vi har studenter fra hele landet, og derfor har vi kanskje student til akkurat DIN bedrift.</p>
-    </div>
-    <div class="container-block">
-        <h2 class="left-aligned-text bold-text">Våre samarbeidspartnere</h2>
-        <!-- Title -->
-    </div>
-    <div class="container-block">{% include home/bedrifter.html %}</div>
+    <div class="medium-text-block">{% include bedrift/talentfulle-utviklere.html %}</div>
+  </div>
+  <div>{% include bedrift/kontakt-kort.html %}</div>
+  <div class="left-aligned-text bold-text">Greps</div>
+  <iframe width="720" height="315" src="https://www.youtube.com/embed/QxavGidlpo8?controls=0&amp;start=00"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+  {% for text-block in site.data.text-block %}
+  <div id="special-clause" class="container-block large-gap">
+    <div class="left-aligned-text bold-text">{{ text-block.header }}</div>
+    <p class="left-aligned-text">{{ text-block.paragraph }}</p>
+  </div>
+  {% endfor %}
+  <div class="container-block center-flex">{% include home/norge-kart.html %}</div>
+  <div class="short-width">
+    <div class="bold-text">Studenter fra hele Norge</div> <!-- Title -->
+    <p class="left-aligned-text">Teknologi interessen er høy blant våre studenter, og stort sett all undervisning
+      foregår digitalt. Dette betyr at vi har studenter fra hele landet, og derfor har vi kanskje student til akkurat
+      DIN bedrift.</p>
+  </div>
+  <div class="container-block">
+    <h2 class="left-aligned-text bold-text">Våre samarbeidspartnere</h2> <!-- Title -->
+  </div>
+  <div class="container-block">{% include home/bedrifter.html %}</div>
 </div>
