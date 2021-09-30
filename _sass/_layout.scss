@@ -1,231 +1,234 @@
 // Primary Button
 .primary {
-  background-color: $primary-color;
-  border: none;
-  margin: 0 0px;
-  padding: 0.59em 1.5em;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-  color: white;
-  font-size: 24px;
-
-  &:hover {
-    background-color: $primary-color-active;
-  }
-  @media only screen and (max-width: 768px) {
-    .primary {
-      font-size: 16px;
+    background-color: $primary-color;
+    border: none;
+    margin: 0 0px;
+    padding: 0.59em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 24px;
+    &:hover {
+        background-color: $primary-color-active;
     }
-  }
+    @media only screen and (max-width: 768px) {
+        .primary {
+            font-size: 16px;
+        }
+    }
 }
 
 // GLB
-
 * {
-  vertical-align: baseline;
-  font-weight: inherit;
-  font-family: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  border: 0 none;
-  outline: 0;
-  padding: 0;
-  margin: 0;
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
 }
+
 main {
-  min-height: 60vh;
+    min-height: 60vh;
 }
+
 html,
 body {
-  width: auto !important;
-  overflow-x: hidden !important;
+    width: auto !important;
+    overflow-x: hidden !important;
 }
 
 body {
-  margin: 0px;
-  font-size: $font-size-default;
-  font-family: Poppins;
-  color: $primary-font-color;
-  line-height: 1.75;
+    margin: 0px;
+    font-size: $font-size-default;
+    font-family: Poppins;
+    color: $primary-font-color;
+    line-height: 1.75;
 }
 
 #app {
-  margin: auto;
+    margin: auto;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 h1 {
-  font-size: 2.4rem;
+    font-size: 2.4rem;
 }
 
 h2 {
-  font-size: 1.9rem;
+    font-size: 1.9rem;
 }
 
 h3 {
-  font-size: 1.6rem;
+    font-size: 1.6rem;
 }
 
 h4 {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 .vue-typer {
-  // edit redudant
-  .custom.char {
-    color: $primary-font-color;
-  }
-
-  .custom.caret {
-    background-color: $primary-color;
-    width: 3px;
-    line-height: 2.5rem;
-    margin-left: 5px;
-  }
+    // edit redudant
+    .custom.char {
+        color: $primary-font-color;
+    }
+    .custom.caret {
+        background-color: $primary-color;
+        width: 3px;
+        line-height: 2.5rem;
+        margin-left: 5px;
+    }
 }
 
 .Cookie--get .Cookie__button {
-  background: #339966;
-  padding: 0.625em 3.125em;
-  color: white;
-  border-radius: 5px;
-  border: 0;
+    background: #339966;
+    padding: 0.625em 3.125em;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1em;
+    font-family: Poppins, sans-serif;
+}
 
-  font-size: 1em;
-  font-family: Poppins, sans-serif;
-}
 .Cookie--get .Cookie__button:hover {
-  background: #5caa83;
+    background: #5caa83;
 }
+
 .Cookie--get {
-  background-color: #444547e1;
-  color: white;
-  padding: 2rem 5rem;
-  justify-content: center;
+    background-color: #444547e1;
+    color: white;
+    padding: 2rem 5rem;
+    justify-content: center;
 }
+
 .Cookie--get .Cookie__content {
-  max-width: 1000px;
+    max-width: 1000px;
 }
 
 .container-block {
-  max-width: $content-max-width;
-  margin: 30px auto;
+    max-width: $content-max-width;
+    margin: 30px auto;
 }
 
 a {
-  color: #333;
-  text-decoration: none;
-
-  &:hover {
+    color: #333;
     text-decoration: none;
-  }
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 p {
-  margin: 1em auto;
-  font-size: 1rem;
+    margin: 1em auto;
+    font-size: 1rem;
 }
 
 .container {
-  margin: auto;
-  max-width: $content-max-width;
+    margin: auto;
+    max-width: $content-max-width;
 }
 
 .fill-width {
-  width: 100%;
+    width: 100%;
+}
+
+.fill-half-width {
+    width: 100%;
 }
 
 .main-content {
-  margin: auto;
-  width: 100%;
-  min-height: calc(100vh - 370px);
+    margin: auto;
+    width: 100%;
+    min-height: calc(100vh - 370px);
 }
 
 button,
 input[type="submit"],
 a {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 time {
-  color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.4);
 }
 
 .back-button {
-  &::before {
-    content: "\003C";
-  }
-  &:hover {
-    color: $primary-color-active;
-  }
-  background-color: transparent;
+    &::before {
+        content: "\003C";
+    }
+    &:hover {
+        color: $primary-color-active;
+    }
+    background-color: transparent;
 }
 
 .fade-enter-active,
 .fade-leave-active {
-  transition-duration: 0.5s;
-  transition-property: opacity;
-  transition-timing-function: ease;
+    transition-duration: 0.5s;
+    transition-property: opacity;
+    transition-timing-function: ease;
 }
 
 .fade-enter,
 .fade-leave-active {
-  opacity: 0;
+    opacity: 0;
 }
 
 .horizontal-flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .centered {
-  text-align: center;
+    text-align: center;
 }
 
 .left-aligned-text {
-  text-align: left;
+    text-align: left;
 }
 
 .bold-text {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .blue-header {
-  font-weight: bold;
-  color: $secondary-button-color;
+    font-weight: bold;
+    color: $secondary-button-color;
 }
 
 .orange-link {
-  margin: auto;
-  max-width: $content-max-width;
-  color: $primary-color;
-  text-align: center;
-  text-decoration: none;
+    margin: auto;
+    max-width: $content-max-width;
+    color: $primary-color;
+    text-align: center;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
-  .Cookie--get {
-    padding: 1rem 2rem;
-    justify-content: flex-start;
-  }
-  .left-aligned-text {
-    padding: $global-padding;
-    margin: 0;
-  }
-  .bold-text {
-    padding:  0 0 0 30px;
-    margin: 0;
-  }
-  .blue-header {
-    padding: 0 0 0 30px;
-  }
-
+    .Cookie--get {
+        padding: 1rem 2rem;
+        justify-content: flex-start;
+    }
+    .left-aligned-text {
+        padding: $global-padding;
+        margin: 0;
+    }
+    .bold-text {
+        padding: 0 0 0 30px;
+        margin: 0;
+    }
+    .blue-header {
+        padding: 0 0 0 30px;
+    }
 }
