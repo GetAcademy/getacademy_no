@@ -67,7 +67,8 @@
   @media only screen and (max-width: 768px) {
     .startup-period-container {
       .startup-header {
-        word-break: break-all;
+        word-break: normal;
+        text-align: left;
       }
       .start-up {
         display: flex;
