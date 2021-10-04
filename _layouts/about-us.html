@@ -32,7 +32,7 @@ layout: default
       <div class="profile-card-container boss-card"> <a class="invisible-link" href="{{ sjef.profil | relative_url }}">
           <div class="profile-card">
             <div class="horizontal-flex">
-              <img class="view-profile-container" src="{{ sjef.profilbilde | relative_url }}" alt="{{sjef.navn}}">
+              <img class="view-profile-container" src="{{ sjef.profilbilde | relative_url }}" loading="lazy" alt="{{sjef.navn}}">
               <div class="person-name">
                 <span><span class="first-letter">{{ sjef.name | slice: 0 }}</span>{{ sjef.name | slice: 1,
                   sjef.name.size }}</span>
@@ -55,7 +55,7 @@ layout: default
     <div class="employee-card-container">
       <div class="employee-profile-card">
         <div class="horizontal-flex employee-img-container">
-          <img class="view-profile-container" src="{{ ansatt.profilbilde | relative_url}}" alt="{{ansatt.name}}">
+          <img class="view-profile-container" src="{{ ansatt.profilbilde | relative_url}}" loading="lazy" alt="{{ansatt.name}}">
           <div class="employee-text-container">
             <p class="employee-name">{{ ansatt.name }}</p>
             <p class="employee-info">{{ ansatt.stilling }}</p>
