@@ -50,7 +50,8 @@ layout: default
 <div class="folkene-bak">
   <h2>Ansatte i GET-Academy</h2>
   <div class="card-container">
-    {% for ansatt in site.ansatte %}
+    {% assign sorted = site.ansatte | sort: 'stilling' %}
+    {% for ansatt in sorted %}
     <div class="employee-card-container">
       <div class="employee-profile-card">
         <div class="horizontal-flex employee-img-container">
