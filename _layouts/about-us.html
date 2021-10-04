@@ -27,7 +27,7 @@ layout: default
   <div class="folkene-bak">
     <h2>Folkene bak GET-Academy</h2>
     <div class="card-container">
-      {% assign sorted = site.sjefer | sort: 'order' %}
+      {% assign sorted = site.sjefer | sort: 'displayorder' %}
       {% for sjef in sorted %}
       <div class="profile-card-container boss-card"> <a class="invisible-link" href="{{ sjef.profil | relative_url }}">
           <div class="profile-card">
