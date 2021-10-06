@@ -1,5 +1,5 @@
 ---
 layout: soknad-side
 title: Søknad
-permalink: /soknad/
+permalink: /søke-start-it/
 ---
