@@ -9,6 +9,10 @@
     padding: 0 $global-padding;
   }
 
+  .deadline {
+    padding: 1vmax;
+  }
+
   .startup-period-container {
     width: 90%;
     margin: auto;
@@ -70,6 +74,12 @@
         word-break: normal;
         text-align: left;
       }
+
+      
+  .deadline {
+    padding: 0.2vmin;
+  }
+
       .start-up {
         display: flex;
         flex-direction: column;

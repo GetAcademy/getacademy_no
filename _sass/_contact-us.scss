@@ -2,6 +2,26 @@
   max-width: $content-max-width;
   padding: $global-padding;
   margin: auto;
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 45%;
+  }
+
+  .blue-header {
+    width: 100%;
+  }
+
+  #phone {
+    font-weight: lighter;
+  }
+  .contact-image {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 100%;
+  }
 
 .person-name {
     font-size: 24px;
@@ -16,6 +36,7 @@
 
 p {
   text-align: left;
+  margin: 0;
 }
 
 a, a:visited{
@@ -23,19 +44,23 @@ a, a:visited{
   font-weight: bolder;
 }
 
-  .contact-us-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    
   .contact-person {
-    width: 85%;
-    padding: 1em;
+    width: 40%;
+    padding: 0.75em;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    .contact-info{
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
   }
 
   .text-container {
     width: 100%;
+    display: flex;
+    flex-direction: row;
   }
     .form-group {
       * {
@@ -91,27 +116,13 @@ a, a:visited{
       background-color: #4388b6;
       border: 0;
     }
-    
-    .contact-card-container {
-      display: flex;
-      flex-direction: column;
-      border-radius: 10px;
-      max-width: 450px;
-      min-width: 250px;
-    }
-    
-    .contact-card {
-      display: flex;
-      flex-direction: row;
-    }
   }
   .form-group {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-    padding-right: 100px;
     margin-top: 30px;
+    width: 65%;
+    padding-left: 15%;
   }
   input {
     display: block;
@@ -152,12 +163,16 @@ a, a:visited{
     font-size: 18px;
   }
   
-}
+
 }
 
 @media only screen and (max-width: 1000px) {
   .contact-container {
     margin: auto;
+
+    .text-container {
+      flex-direction: column;
+    }
 
   input {
     width: 100%;

@@ -1,0 +1,21 @@
+
+- name: Anita
+  email: anita@getacademy.no
+  avatar: /assets/ansatt-bilder/anita.jpg
+  header: For studenter
+
+
+- name: Lise
+  email: lise@getacademy.no
+  avatar: /assets/ansatt-bilder/lise.jpg
+
+- name: Eskil Domben
+  email: eskil@getacademy.no
+  avatar: /assets/ansatt-bilder/eskil.jpg
+  phone: 454 859 22
+  header: For bedrifter
+
+- name: Elin
+  email: elin@getacademy.no
+  avatar: /assets/ansatt-bilder/elin.jpg
+  phone: 458 867 76

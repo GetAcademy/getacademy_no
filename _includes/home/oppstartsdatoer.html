@@ -9,11 +9,7 @@
             <!--Oppstartsdatoer kan endres ved å endre _data/oppstartsdatoer.yml-->
             <div class="start-up-child">
                 <strong class="date">{{ oppstart.dato }} </strong>
-                <br />
-                <strong class="capacity open">
-                    <!--Endre på denne slik at den kan endres individuelt-->
-                    <!-- {{ oppstart.kapasitet }} -->
-                </strong>
+                <p class="deadline">Forutsetter levert og godkjent opptaksprøve {{oppstart.frist}}</p>
             </div>
             {% endfor %}
         </div>
