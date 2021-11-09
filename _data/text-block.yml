@@ -1,6 +1,13 @@
-- header: Skreddersy ditt behov
-  paragraph: Studentene våre får en generell, bred innføring i IT-utviklerfaget de første intensive seks månedene av utdanningen. I praksisåret hos bedriften din, tilpasses læringen bedriftens behov og teknologi.
-  
-- header: Trenger dere et internt løft i IT-kompetanse for å videreutvikle virksomheten?
-  paragraph: Arbeidslivet er i rask forandring, og den kompetansen som var viktig i går, er kanskje ikke så viktig i dag. Vi kan hjelpe virksomheten din med et kunnskapsløft - ta kontakt så kartlegger vi behovet deres sammen.
+- header: Trenger dere et internt løft i IT-kompetanse for å videreutvikle virksomheten? Vi kan hjelpe dere med Reskilling og Upskilling!
+  paragraph: Arbeidslivet er i rask forandring, og den kompetansen som var viktig i går, er kanskje ikke så viktig i dag. Vi kan hjelpe virksomheten din med et kunnskapsløft
 
+- header: Start IT for bedrifter
+  paragraph: Kan brukes både til Reskilling for medarbeidere som skal ha nye arbeidsoppgaver, og Upskilling for medarbeidere som trenger en oppdatering av utdaterte ferdigheter.
+
+- header:
+  paragraph: Dette er en hands-on opplæring, der vi legger opp til at deltakerne  bruker mye av tiden på praktisk programmering. Vi fokuserer på de vanskelige tingene i faget - for det er der man trenger mye hjelp og støtte. I løpet av seks måneder lærer de alt det grunnleggende i strukturert og objektorientert programmering - og er klare for reelle oppgaver og videre læring i bedrift.
+  bulletpoints: 
+    [Grunnleggende strukturert programmering i JavaScript med web som sandkasse, Case-oppgave i å lage funksjonell prototype, inkl. kundedialog og utviklingsprosess,
+  Objektorientert programmering i C#]
+  additionalText: Vi kan også hjelpe dere med å kartlegge behovet deres, så skreddersyr vi et kortere eller lengre utdanningsløp.
+  

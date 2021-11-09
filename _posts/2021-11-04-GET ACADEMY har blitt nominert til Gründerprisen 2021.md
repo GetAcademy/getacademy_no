@@ -10,5 +10,7 @@ picture-texts: "Bilde av Get Academy bygget"
 link: 
 ---
 8 -11. november 2021 starter det!
+
+
 Mer info om Gründeruka finner du her
 [Bli engasjert & inspirert!](https://www.grunderuka.no/)
