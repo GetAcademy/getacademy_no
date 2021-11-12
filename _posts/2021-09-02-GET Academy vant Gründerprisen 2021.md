@@ -5,7 +5,7 @@ date: 2021-11-12 15:04:00 +
 categories: nyheter
 published: true
 youtube-link:
-picture: "/assets/nyheter/get-academy.jpg"
+picture: "/assets/nyheter/IMG_8558.png"
 picture-texts: "Bilde av Get Academy bygget"
 link: 
 ---
