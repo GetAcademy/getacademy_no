@@ -89,7 +89,13 @@ height: auto;
 .news-picture {
 display: block;
 margin: auto;
-max-height: 500px;
+max-height:500px;
+}
+p img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 .share-buttons{
   font-size: large;

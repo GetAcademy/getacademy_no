@@ -22,7 +22,6 @@ timezone: Europe/Oslo
       {% for link in page.picture %}
       <div class="main-content">
         <h1 class="headline">{{page.title}}</h1>
-
         <img class="news-picture" src="{{link | relative_url}}" alt="{{page.picture-texts}}">
         {% endfor %}
         {% endif %}
