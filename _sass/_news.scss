@@ -63,11 +63,18 @@
 }
 // Nyhet sin CSS
 .news-content {
+  h2 {
+    text-align: left;
+  }
+
+  em { // Ikke spør
+    font-style: italic !important;
+  }
   p {
     text-align: left;
   }
   .headline {
-  text-align: center;
+  text-align: left;
   }
 
   margin: 1.5rem auto;
@@ -81,8 +88,8 @@ time {
   font-style: italic;
   padding-left: 1.25rem;
 }
-border: grayscale($color: #ff00003f) 2px solid;
-border-radius: 2rem;
+// border: grayscale($color: #ff00003f) 2px solid;
+// border-radius: 2rem;
 background-color: rgba($color: black, $alpha: 0.015);
 width: auto;
 height: auto;
