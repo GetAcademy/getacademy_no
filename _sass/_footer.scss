@@ -33,7 +33,7 @@
   }
 
   .mer-info {
-    text-align: left;
+    text-align: center;
     a {
       color: white;
       &:hover {
@@ -46,6 +46,13 @@
     display: flex;
     justify-content: space-between;
     max-width: 300px;
+  }
+
+  .link-tree i{
+    display: flex;
+    font-size: medium;
+    justify-content: center;
+    color: $primary-color;
   }
 
   i {
