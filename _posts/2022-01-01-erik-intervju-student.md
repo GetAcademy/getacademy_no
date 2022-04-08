@@ -1,7 +1,7 @@
 ---
 tags: skole
 title: Bli kjent med Erik Student hos GET Academy
-date: 2022-04-08 13:04:00 +
+date: 2022-01-01 13:04:00 +
 categories: nyheter
 published: true
 youtube-link:
@@ -9,7 +9,6 @@ picture: "/assets/nyheter/Erik.jpg"
 picture-texts: "Bilde av Erik"
 link: 
 ---
-
 ### Hvem er du?
 
 - Jeg heter Erik, er 26 år og kommer fra Larvik. Mine fritidsinteresser er å spille på pcen, er veldig glad i styrketrening og liker å følge med på Formel 1.
