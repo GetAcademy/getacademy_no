@@ -22,4 +22,4 @@ link:
 
 Vi er motivert for å jobbe med vekst og god kvalitet. Vi jobber daglig bidra til at våre studenter utvikler seg til å bli dyktige og trygge it-utviklere. Ikke minst bidrar vi til at hver enkelt virksomhet kan få en skreddersydd rekruttering av it-kompetanse, og verdifulle enkeltmennesker med på laget. 
 
-Tusen takk for alle som har heiet på oss - vi ser frem til videre samarbeid!.
+Tusen takk for alle som har heiet på oss - vi ser frem til videre samarbeid.
