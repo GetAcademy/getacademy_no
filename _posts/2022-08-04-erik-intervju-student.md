@@ -1,7 +1,7 @@
 ---
 tags: skole
 title: Bli kjent med Erik Student hos GET Academy
-date: 2022-01-01 13:04:00 +
+date: 2022-08-04 13:04:00 +
 categories: nyheter
 published: true
 youtube-link:
