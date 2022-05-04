@@ -1,0 +1,71 @@
+---
+tags: skole
+title: Bli kjent med Kristian - Student hos GET Academy
+date: 2022-05-04 09:04:00 +
+categories: nyheter
+published: true
+youtube-link:
+picture: "/assets/nyheter/kristian.png"
+picture-texts: "Bilde av Harald"
+link: 
+---
+<br>
+
+### Hvem er du?
+- Kristian, Snart 20 år, bodd i Larvik så lenge jeg kan huske. Om jeg skulle beskrive meg selv med tre ord er det hyggelig, sosial og nysgjerrig. Mine største interesser er teknologi, gaming, venner, trening, tennis og svømming.
+
+***Fun fact: Diamond i League of Legends og bor 5 min unna skolen.***
+
+<br>
+
+### Dine tanker om GET Academy
+
+- Tenker at GET Academy er et sted for folk som er nysgjerrige som meg selv. Liker alltid å finne ut av nye ting, og er glad for at jeg kan bruke det videre her innenfor koding. Har også fått gode vaner i form av å stå opp tidlig, planlegge dagene og fått en mer meningsfull hverdag.
+
+<br>
+
+
+### Hva er din kode erfaring, kodemotivasjon og interesse for kode?
+
+- Visste ikke noe om hva koding var før jeg startet på GET. Nå har jeg blitt mye mer dreven og har laget noen egne prosjekter. Føler man aldri kan bli ferdig utlært, så lærer stadig noe nytt hver dag. Det inspirerer meg til å kode videre!
+
+<br>
+
+### Hvorfor valgte du GET?
+
+- Hadde hørt litt om GET Academy fra før av. Ble også veldig nysgjerrig når det sto at man kunne bli en utvikler på kort tid. Noe som er unikt i forhold til andre studier jeg kikket på. I tillegg var skolen veldig nærme der jeg bor, så da falt det veldig naturlig å starte der. Liker også veldig godt at man får en relasjon til lærerne sine og at ingen spørsmål er for dumme!
+
+<br>
+
+### Hva tenker du om GET sine nøkkelkompetanser?
+
+- Jeg tenker det at nøkkelkompetanser er det som er med på å gjøre skolen unik. Aldri før hadde jeg hørt om det før jeg startet her, men er veldig takknemlig for at jeg har jobbet med det. Jeg har fått et mer vekstorientert tankesett ut fra nøkkelkompetansene, og det har selv hjulpet meg mye med det å takle vanskelige ting og motivere meg selv.
+
+<br>
+
+### Hva er dine tanker om fremtiden angående IT-utviklere, IT generelt osv?
+
+- Tenker at jeg er glad jeg har gått den veien med å bli en IT-utvikler. Det er en investering som jeg er veldig sikker på at jeg kommer til å få stort utbytte fra gjennom hele livet.
+
+<br>
+
+# Fire kjappe spørsmål
+
+
+### Favoritt dataspill: 
+
+-- CS:GO, Tom Clancy's Rainbow Six Siege og League of Legends.
+
+
+### Favoritt kodespråk 
+
+-- Liker veldig godt både JavaScript og C#, men om jeg skal velge en blir det C#.
+
+### Det mest krevende kodespråket
+
+-- JavaScript! Vanskelig å finne feil i programmet i forhold til C#.
+
+
+### Har du "en go to" quote?
+
+-- ***"Det er de små tingene som utgjør de store forskjellene."*** - For eksempel det å gi et kompliment. Noe som ikke føles så stort, men kan gjøre at andre føler seg bedre.
