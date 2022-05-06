@@ -7,8 +7,8 @@
 
           - header: Du løser oppgaven i eget tempo
             miniHeader: Dette er helt uforpliktende.
-            link:
-            source:
+            link: Gjør oppgavene her
+            source: /start-it-oppgave/
             texts: Det er IKKE juks å spørre om hjelp. Tvert om ser vi på det som en styrke! Vi ser ikke etter “perfekte” oppgaver, så ikke bruk masse tid på å “finpusse”. Send heller inn noe som er 80% ferdig så får du bare tilbakemelding dersom vi savner noe og kan rette det.
             direction: "container right"
 

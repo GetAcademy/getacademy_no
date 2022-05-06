@@ -1,10 +1,13 @@
+.soknad-side-container{
+  padding-top : 9.5rem;
+}
 .steps-container {
   width: $content-max-width;
   margin: auto;
   * {
     box-sizing: border-box;
   }
-
+  padding-bottom: 1rem;
   h4 {
     font-weight: 700;
   }
@@ -56,7 +59,7 @@
     border-radius: 50%;
     z-index: 1;
   }
-
+  
   .left {
     left: -50%;
   }
@@ -76,6 +79,9 @@
     border-width: 10px 10px 10px 0;
   }
 
+  p {
+    text-align: left;
+  }
   .right::after {
     left: -16px;
   }

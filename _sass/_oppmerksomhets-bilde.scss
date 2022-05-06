@@ -21,9 +21,11 @@
       // align-items: center;
       justify-content: space-evenly;
       a {
-        
         margin: auto;
         width: 40%;
+        :hover {
+          background-color: $primary-color-active;
+        }
       }
       button {
         width: 100%;
