@@ -15,12 +15,12 @@ excerpt_separator: <!--slutt-->
       <img src="{{ post.picture | relative_url}}"/>
     {% endif %}
       {% if post.picture == "" or post.picture == unknown %}
-        <img src="{{'/assets/get-academy.png' | relative_url }}" />
+        <img src="{{'/assets/logo.svg' | relative_url }}" />
       {% endif %}
       <p class="news-title">{{ post.title }}</p>
       <div class="subinfo-container">
         <span class="news-tag"> <i class="fas fa-tags"></i> {{post.tags}}</span>
-        <time>{{post.date | date: "%d/%m/%Y %H:%M"}}</time>
+        <time>{{post.date | date: "%d/%m/%Y"}}</time>
       </div>
     </div>
     </a>

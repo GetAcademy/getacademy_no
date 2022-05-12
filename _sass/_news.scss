@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 1.5rem auto;
-  max-width: $content-max-width;
+  max-width: $content-max-width - 200px;
   align-items: stretch;
   justify-content: stretch;
   flex-direction: column wrap;
@@ -13,9 +13,9 @@
     border-radius: 5%;
     background-color: rgba($color: black, $alpha: 0.015);
     transition: 0.3s;
-    width: 27%;
+    width: 25%;
     height: 100%;
-    margin: 10px;
+    margin: 1vw;
     padding: 0 20px;
     text-decoration: none;
     cursor: pointer;
@@ -45,7 +45,7 @@
         font-size: 1em;
         height: 3.5em;
         color: #000000;
-        text-align: left;
+        text-align: center;
         overflow: hidden;
       }
       img {
@@ -67,6 +67,15 @@
     text-align: left;
   }
 
+  li::marker {
+    color: $primary-color;
+  }
+
+  h3 {
+    text-decoration: underline $primary-color;
+    text-underline-offset: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
   em { // Ikke spør
     font-style: italic !important;
   }
@@ -115,11 +124,14 @@ p img {
   .headline{
     font-size: 1.5rem;
   }
-  .news-content-container {
-    text-align: center;
-    width: 100%;
-    h1 {
-      padding: 0 $global-padding;
+  .news-content {
+    img {
+      width: 33%;
+    }
+    text-align: left;
+    h3 {
+      text-decoration: none;
+      padding-bottom: 0.5rem;
     }
   }
   .news-container {
