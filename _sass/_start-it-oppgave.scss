@@ -1,7 +1,16 @@
 .video-and-text-container {
+  p {
+    text-align: left;
+  }
 }
 .video-and-text {
   display: flex;
+  p {
+    text-align: left;
+  }
+  div {
+    padding-bottom: 1rem;
+  }
   flex-direction: row;
   margin: auto;
   max-width: $content-max-width;
