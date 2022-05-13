@@ -6,16 +6,20 @@
   .folkene-bak {
     text-align: center;
   }
+
   .profile-card {
+
     p,
     span {
       color: $primary-font-color;
+
       .first-letter {
         font-weight: bold;
         color: $primary-color;
       }
     }
   }
+
   .profile-card-container {
     display: flex;
     align-items: center;
@@ -28,17 +32,21 @@
     justify-content: space-between;
     background-color: white;
     box-shadow: $box-shadow;
-     a {
-       text-decoration: none;
-     }
+
+    a {
+      text-decoration: none;
+    }
   }
+
   .boss-card {
     cursor: pointer;
     transition: 0.3s;
+
     &:hover {
       box-shadow: $hover-box-shadow;
       transform: translateY(-0.5em);
     }
+
     .view-profile-container {
       width: 100px;
       height: 100px;
@@ -57,19 +65,23 @@
     background-color: white;
     box-shadow: $box-shadow;
   }
+
   .employee-profile-card {
     width: 100%;
     // min-height: 125px;
     align-items: center;
+
     .employee-img-container {
       display: flex;
       position: relative;
+
       .view-profile-container {
         width: 100px;
         height: 100px;
         object-fit: cover;
         border-radius: 100%;
       }
+
       .employee-text-container {
         .employee-name {
           font-size: 1.1em;
@@ -78,10 +90,12 @@
       }
     }
   }
+
   .person-name {
     margin-right: 15px;
     margin-top: 25px;
   }
+
   .person-info {
     max-width: 250px;
     height: 30px;
@@ -99,6 +113,7 @@
     color: white;
     text-align: center;
     background-color: $primary-color;
+
     &:hover {
       background-color: $primary-color-active;
     }
@@ -107,18 +122,22 @@
   .employee-card-container {
     margin: 20px auto;
   }
+
   .text-container {
     // width: 60%;
     margin: 60px auto;
     text-align: center;
+
     .header-with-description {
       padding-right: 100px;
+
       h2,
       p {
         text-align: left;
       }
     }
   }
+
   .image-container {
     .bg-img {
       margin-top: 5%;
@@ -126,6 +145,7 @@
       width: 350px;
       background-repeat: no-repeat;
     }
+
     .contact-card {
       width: auto;
     }
@@ -165,52 +185,72 @@
   }
 }
 
+@media only screen and (max-width: 950px) {
+  .about-us-container {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .about-us-container .employee-profile-card .employee-img-container {
     display: block;
     position: relative;
-}
+  }
+
   .about-us-container {
     .horizontal-flex {
       display: block;
     }
+
     .bg-img {
       display: none;
     }
   }
+
   .invisible-link {
     text-decoration: none;
   }
+
   .about-us-container .person-name {
     margin-right: 0;
     margin-top: 0;
   }
-  .about-us-container .profile-card-container{
+
+  .about-us-container .profile-card-container {
     min-width: 100%;
     text-align: center;
   }
+
   .about-us-container {
     display: flex;
     flex-direction: column;
     width: 75%;
   }
+
   .about-us-container .text-container {
     width: 100%;
     margin: 0px auto;
   }
+
   .about-us-container .person-info {
     padding: 10px;
-   margin: 0 auto;
+    margin: 0 auto;
   }
+
   .about-us-container .text-container .header-with-description {
     padding-right: 0;
   }
+
   .text-container {
     width: 100%;
   }
+
   .profile-card-container {
     margin: 20px auto;
   }
+
   .contact-card {
     margin-bottom: 40px;
   }
