@@ -3,17 +3,17 @@
   margin: auto;
   padding: $global-padding;
   display: flex;
+  p {
+    text-align: left;
+  }
   .quote-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     .quote-card {
       align-items: flex-start;
       width: 100%;
-      img {
-        width: 200px;
-        height: 100px;
-      }
       p {
         margin: 0;
       }
@@ -27,16 +27,25 @@
     }
   }
 }
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 950px) { 
   .company-quotes .quote-container .quote-card > * {
     margin: 0 auto;
     padding: 10px 0;
   }
   .company-quotes {
     padding: 10px 10px;
+
   }
 .company-quotes .horizontal-flex {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .quote-container {
+    .quote-text {
+      font-size: smaller;
+    }
   }
 }

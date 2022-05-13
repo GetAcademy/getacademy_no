@@ -2,8 +2,8 @@
   <div class="horizontal-flex quote-container">
     {% for quote in site.data.sitater %}
     <div class="horizontal-flex quote-card">
-      <img src="{{quote.image | relative_url }}" alt="{{company.name}}" alt="{{quote.image}}" srcset="">
       <div>
+        <img src="{{quote.image | relative_url }}" alt="{{company.name}}" alt="{{quote.image}}" srcset="">
         <p class="quote-text">{{quote.text}}</p>
         <p class="quote-speaker">{{quote.speaker}}</p>
       </div>

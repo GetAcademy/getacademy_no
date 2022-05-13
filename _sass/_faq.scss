@@ -46,8 +46,9 @@
 
   .accordion-content {
     padding: 0 $global-padding 15px;
-    background-color: transparent;
+    background-color: rgba($color: $primary-color, $alpha: 0.1);
     max-width: 70%;
+    font-size: medium;
     
   }
   .inefficient-faq {
@@ -76,20 +77,22 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
   .faq-container {
     display: flex;
       flex-direction: column;
-
   }
   .accordion {
-    min-width: 100%;
-    &:last-child {
+    .accordion-content {
       border: none;
       margin-bottom: 20px;
+      font-size: smaller;
     }
   }
   .faq-container .inefficient-faq { 
-    min-width: 100%;
+    min-width: 0 !important;
+    .text-container {
+      margin: 1rem;
+    }
   }
 }
