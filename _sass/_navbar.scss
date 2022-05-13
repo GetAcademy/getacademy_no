@@ -121,6 +121,8 @@ nav {
   }
   .hamburger-menu {
     display: none;
+    border-bottom: 0.1rem $primary-color solid;
+    background-color: rgba($color: $primary-color, $alpha: 0.05);
   }
   .hamburger-links {
     display: flex;

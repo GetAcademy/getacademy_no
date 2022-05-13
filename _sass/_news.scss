@@ -3,13 +3,13 @@
   display: flex;
   flex-wrap: wrap;
   margin: 1.5rem auto;
-  max-width: $content-max-width - 200px;
+  max-width: $content-max-width - 50px;
   align-items: stretch;
-  justify-content: stretch;
+  justify-content: center;
   flex-direction: column wrap;
   .news-card {
     align-items: center;
-    border: grayscale($color: #ff00003f) 2px solid;
+    border: grayscale($color: #fc65003f) 0.25rem solid;
     border-radius: 5%;
     background-color: rgba($color: black, $alpha: 0.015);
     transition: 0.3s;
@@ -68,7 +68,7 @@
   }
 
   li::marker {
-    color: $primary-color;
+    color: $primary-color;  
   }
 
   h3 {
@@ -127,6 +127,9 @@ p img {
   .news-content {
     img {
       width: 33%;
+    }
+    iframe {
+      width: 100%;
     }
     text-align: left;
     h3 {

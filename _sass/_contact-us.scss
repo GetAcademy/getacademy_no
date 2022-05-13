@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 45%;
   }
 
   .blue-header {
@@ -178,5 +177,10 @@ a, a:visited{
   textarea {
     width: 100%;
     }
+  }
+}
+@media only screen and(max-width:400px){
+  .contact-container {
+    padding: 0;
   }
 }
