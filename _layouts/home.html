@@ -16,7 +16,7 @@
     </div>
     <div class="container-block">{% include home/norge-kart.html %}</div>
     <div class="container-block">{% include home/utvikle-virksomhet.html %}</div>
-    <h2 class="header">Bedrifter som stoler på oss</h2>
+    <h2 id="header-home" class="header">Bedrifter som stoler på oss</h2>
     <div class="container-block">{% include home/bedrifter.html %}</div>
     <div class="container-block centered">
       <a href="{{'/bedrift' | relative_url }}" class="orange-link for-bedrift-link">Les mer fra våre partnere &gt;</a>
@@ -33,5 +33,10 @@
   </main>
   <footer>{% include footer.html %}</footer>
 </body>
-
 </html>
+<style>
+  #header-home {
+    font-weight: 500;
+    font-size: 1.9rem;
+  }
+</style>
