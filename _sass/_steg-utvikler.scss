@@ -2,7 +2,7 @@
   padding-top : 9.5rem;
 }
 .steps-container {
-  width: $content-max-width;
+  max-width: $content-max-width;
   margin: auto;
   * {
     box-sizing: border-box;
@@ -14,6 +14,7 @@
 
   h2 {
     text-align: center;
+    font-size: 1.9rem;
   }
 
   .steg-h3 {
@@ -105,7 +106,7 @@
     width: 100%;
     margin: auto;
     .timeline::after {
-      left: -35%;
+      left: -37%;
     }
     .container {
       width: 100vw;

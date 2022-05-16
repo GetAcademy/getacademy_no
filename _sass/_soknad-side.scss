@@ -2,8 +2,10 @@
   padding: 15px;
   margin: auto;
   max-width: $content-max-width;
+
   #mandatory {
     text-align: center;
+
     .required-info {
       color: $primary-color;
     }
@@ -14,10 +16,15 @@
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+
+    form {
+      width: 25vw;
+    }
+
     * {
       box-sizing: border-box;
     }
-    
+
     input {
       display: block;
       margin: 10px 0;
@@ -65,20 +72,30 @@
       border: 0;
     }
   }
+
   h2 {
+    font-size: 1.9rem;
     text-align: center;
     padding: 1rem 0;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  input,
-  textarea {
-    margin: auto;
-    width: 100%;
-  }
+  .soknad-side-container {
+    form {
+      width: unset !important;
+    }
+    #soknad-timeline .timeline::after {
+      left: -39%;
+    }
+    input,
+    textarea {
+      margin: auto;
+      width: 100%;
+    }
 
-  h2 {
-    font-size: 1.5rem;
+    h2 {
+      font-size: 1.5rem;
+    }
   }
 }
