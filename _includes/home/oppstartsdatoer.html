@@ -9,7 +9,9 @@
             <!--Oppstartsdatoer kan endres ved å endre _data/oppstartsdatoer.yml-->
             <div class="start-up-child">
                 <strong class="date">{{ oppstart.dato }} </strong>
+                {% if oppstart.dato != null %}
                 <p class="deadline">Forutsetter levert og godkjent opptaksprøve</p>
+                {% endif %}
             </div>
             {% endfor %}
         </div>
