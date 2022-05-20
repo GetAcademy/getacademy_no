@@ -1,166 +1,212 @@
-// Alle nyheter liste sin CSS
-.news-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1.5rem auto;
-  max-width: $content-max-width - 50px;
-  align-items: stretch;
-  justify-content: center;
-  flex-direction: column wrap;
-  .news-card {
-    align-items: center;
-    border: grayscale($color: #fc65003f) 0.25rem solid;
-    border-radius: 5%;
-    background-color: rgba($color: black, $alpha: 0.015);
-    transition: 0.3s;
-    width: 25%;
-    height: 100%;
-    margin: 1vw;
-    padding: 0 20px;
-    text-decoration: none;
-    cursor: pointer;
-    &:hover {
-      transform: $raise-effect;
-      box-shadow: $hover-box-shadow;
-    }
-    time{
-      font-size: 1rem;
-      color: black;
-      font-weight: lighter;
-      font-style: italic;
-    }
-    .content {
-      word-wrap: break-word;
-      text-align: center;
-      * {
-        padding: 0;
-        margin: 0;
-      }
+// News Cards
+#news-container {
+  * {
+    box-sizing: border-box;
+  }
 
-      .news-tag{
-        font-weight: lighter;
-        color: $primary-color;
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Open Sans';
+    background: #fafafa;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .cards-wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    padding: 4rem;
+    margin: 0 auto;
+    width: max-content;
+  }
+
+  .card {
+    --color: #fff;
+    --background:none;
+    font-family: 'Heebo';
+    --bg-filter-opacity: 0.5;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
+    height: 20em;
+    width: 15em;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 3em -1em black;
+    position: relative;
+    overflow: hidden;
+    border: 10px solid #ccc;
+    text-decoration: none;
+
+    &:hover {
+      * {
+        --bg-filter-opacity: 0;
+        font-size: 105%;
       }
-      .news-title {
-        font-size: 1em;
-        height: 3.5em;
-        color: #000000;
-        text-align: center;
-        overflow: hidden;
-      }
-      img {
-        max-width: 100%;
-        height: 150px;
-        padding-top: 10px;
-      }
-      .subinfo-container {
-        display: flex;
-        justify-content: space-between;
-        font-weight: bolder;
-      }
+    }
+  }
+
+  .card h1 {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.2em;
+  }
+
+  .card p {
+    font-size: 1em;
+    font-family: 'Open Sans';
+    margin-top: 0.5em;
+    line-height: 2em;
+  }
+
+  .card .tags {
+    display: flex;
+    color: black;
+    text-transform: uppercase;
+  }
+
+  .card .tags .tag {
+    font-size: 0.75em;
+    background: rgba(255, 255, 255, 0.928);
+    border-radius: 0.3rem;
+    padding: 0 0.5em;
+    margin-right: 0.5em;
+    line-height: 1.5em;
+  }
+
+  .card .date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.75em;
+    padding: 1em;
+    line-height: 1em;
+    opacity: .8;
+  }
+
+
+  .card-grid-space .num {
+    font-size: 3em;
+    margin-bottom: 1.2rem;
+    margin-left: 1rem;
+  }
+
+  .info {
+    font-size: 1.2em;
+    display: flex;
+    padding: 1em 3em;
+    height: 3em;
+  }
+
+  .info img {
+    height: 3em;
+    margin-right: 0.5em;
+  }
+
+  .info h1 {
+    margin: 0 auto;
+    font-weight: normal;
+  }
+
+  /* MEDIA QUERIES */
+  @media screen and (max-width: 1285px) {
+    .cards-wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .cards-wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    .info {
+      justify-content: center;
+    }
+
+    .card-grid-space .num {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .cards-wrapper {
+      padding: 4rem 2rem;
+    }
+
+    .card {
+      max-width: calc(100vw - 4rem);
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .info {
+      display: block;
+      text-align: center;
+    }
+
+    .info h1 {
+      margin: 0;
     }
   }
 }
-// Nyhet sin CSS
-.news-content {
-  h2 {
-    text-align: left;
-  }
 
-  li::marker {
-    color: $primary-color;  
-  }
+// News Content
+
+
+.news-content {
+  display: flex;
+  max-width: $content-max-width - 250px;
+  margin: auto;
+  padding: $global-padding;
+  justify-content: center;
+  align-items: center;
 
   h3 {
-    text-decoration: underline $primary-color;
+    text-decoration: underline #EE7100;
     text-underline-offset: 0.5rem;
     padding-bottom: 0.5rem;
   }
-  em { // Ikke spør
-    font-style: italic !important;
+
+  .back-button {
+    background-color: $primary-color;
+    padding: 0.65rem;
+    color: white;
+    border: solid 1px transparent;
+    border-radius: 30% 0% 30% 0%;
+
+    &:hover {
+      background-color: $primary-color-active;
+    }
   }
+
+  li::marker {
+    color: #EE7100;
+  }
+
+  img {
+    width: 50%;
+    /* width of container */
+    max-height: 400px;
+    /* height of container */
+    object-fit: cover;
+    object-position: 20% 40%;
+    box-shadow: 0 0 2em -1em black;
+    border: 0.25em solid white;
+  }
+
   p {
-    text-align: left;
-  }
-  .headline {
-  text-align: left;
-  }
-
-  margin: 1.5rem auto;
-  max-width: 1000px;
-  padding: $global-padding;
-  background-color: white;
-.main-content {
-time {
-  color: black;
-  font-weight: lighter;
-  font-style: italic;
-  padding-left: 1.25rem;
-}
-// border: grayscale($color: #ff00003f) 2px solid;
-// border-radius: 2rem;
-background-color: rgba($color: black, $alpha: 0.015);
-width: auto;
-height: auto;
-.news-picture {
-display: block;
-margin: auto;
-max-height:500px;
-}
-p img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-.share-buttons{
-  font-size: large;
-  text-align: center;
-    }
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .headline{
-    font-size: 1.5rem;
-  }
-  .news-content {
-    img {
-      width: 33%;
-    }
-    iframe {
-      width: 100%;
-    }
-    text-align: left;
-    h3 {
-      text-decoration: none;
-      padding-bottom: 0.5rem;
-    }
-  }
-  .news-container {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    .news-card {
-      width: 80%;
-      text-align: center;
-      margin: 15px auto;
-      // align-items: stretch;
-    }
-  }
-  .news-picture {
-    width: 100%;
-  }
-  .content {
-    padding: 0;
-    margin: auto;
-    width: 100%;
-  }
-  .subinfo-container {
-    width: 100%;
-    flex-direction: column;
-    .category {
-      color: $primary-color;
-    }
+    text-align: left !important;
   }
 }

@@ -6,18 +6,17 @@ timezone: Europe/Oslo
 
 <head>
   <title>Get Academy</title>
-  <meta property="og:url" content="{{ post.url | relative_url }}" />
+  <meta property="og:url" content="{{ page.url | relative_url }}" />
   <meta property="og:type" content="Skole" />
   <meta property="og:title" content="Get Academy" />
   <meta property="og:description" content="{{page.description}}" />
-  <meta property="og:image" content="{{link | relative_url }}" />
+  <meta property="og:image" content="{{page.picture | relative_url }}" />
 </head>
-
 <body>
 
   <div class="news-content">
-    <button class="back-button" onclick="window.history.back()">Tilbake</button>
     <main>
+      <button class="back-button" onclick="window.history.back()">Tilbake</button>
       {% if page.picture %}
       {% for link in page.picture %}
       <div class="main-content">
