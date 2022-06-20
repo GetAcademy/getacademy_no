@@ -18,6 +18,25 @@
         }
     }
 }
+.secondary {
+    background-color: $secondary-button-color;
+    border: none;
+    margin: 0.59em 0px;
+    padding: 0.59em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 24px;
+    &:hover {
+        background-color: $secondary-button-active;
+    }
+    @media only screen and (max-width: 768px) {
+        .primary {
+            font-size: 16px;
+        }
+    }
+}
 
 // GLB
 * {

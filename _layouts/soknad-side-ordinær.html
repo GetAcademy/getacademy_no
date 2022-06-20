@@ -3,24 +3,6 @@ layout: default
 ---
 
 <div class="soknad-side-container">
-  <h2>Slik foregår det</h2>
-  <div class="steps-container">
-    <div class="flex-container">
-      <div id="soknad-timeline"class="timeline">
-        <div>{% for steg in site.data.soknad-steg %}
-          <div class="{{ steg.direction }}">
-            <div class="content">
-              <h3>{{ steg.header }}</h3>
-              <h4>{{ steg.miniHeader }}</h4>
-              <p>{{ steg.texts }}</p>
-              <a class="link-text" alt="getAcademy" href="{{steg.source | relative_url}}">{{ steg.link }}</a>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-  </div>
   <h2>Meld interesse for Start IT</h2>
   <p id="mandatory"> <span class="required-info">*</span> indikerer obligatorisk felt</p>
   <div class="form-group">

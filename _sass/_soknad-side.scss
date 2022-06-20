@@ -1,4 +1,35 @@
 .soknad-side-container {
+  .important-text {
+    margin: 0 28%;
+  }
+  input[type="checkbox"] {
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.5em;
+    height: 1.5em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+    display: inline;
+  }
+
+  input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+  }
+
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+
   padding: 15px;
   margin: auto;
   max-width: $content-max-width;
@@ -80,14 +111,29 @@
   }
 }
 
+
+@media only screen and (max-width: 1200px) {
+  .soknad-side-container {
+    form {
+      width: 45vw !important;
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .soknad-side-container {
+    .important-text {
+      margin: unset;
+      padding: 5vw;
+    }
     form {
       width: unset !important;
     }
+
     #soknad-timeline .timeline::after {
       left: -39%;
     }
+
     input,
     textarea {
       margin: auto;

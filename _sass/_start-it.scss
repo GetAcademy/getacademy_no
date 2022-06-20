@@ -1,3 +1,18 @@
+.krav-container {
+  .module-component {
+    overflow: hidden;
+  }
+
+  .application-box {
+    width: unset !important;
+  }
+
+  img {
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
 .start-it {
   max-width: $content-max-width;
   margin: auto;
@@ -8,9 +23,11 @@
     flex-direction: row;
     padding: $global-padding 0;
   }
+
   .start-text {
-  width: 70%;
+    width: 70%;
   }
+
   .start-it-container {
     padding: $global-padding;
     display: flex;
@@ -21,6 +38,7 @@
     border-top: 3px solid $primary-color;
     border-bottom: 3px solid $primary-color;
   }
+
   .module-container:last-child {
     border-bottom: none;
   }
@@ -29,11 +47,13 @@
     display: flex;
     flex-direction: row;
   }
- .module-paragraph-container {
-   p {
-     text-align: left;
-   }
- }
+
+  .module-paragraph-container {
+    p {
+      text-align: left;
+    }
+  }
+
   .unordered-list {
     display: flex;
     flex-direction: row;
@@ -43,8 +63,27 @@
     border-radius: 100%;
     list-style-type: disc;
 
-    li{
+    li {
       border-bottom: none;
+
+      &:hover {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .unordered-list-column {
+    display: flex;
+    flex-direction: column;
+    color: $primary-color;
+    margin: 0;
+    padding: 0 20px;
+    border-radius: 100%;
+    list-style-type: disc;
+
+    li {
+      border-bottom: none;
+
       &:hover {
         border-bottom: none;
       }
@@ -98,29 +137,33 @@
   h3 {
     padding: $global-padding 0;
   }
-  .application-box{
+
+  .application-box {
     display: flex;
     flex-direction: column;
-  width: 20%;
-  background-color: #ffffff;
-  box-shadow: $box-shadow;
-  text-align: center;
-  padding: $global-padding;
+    width: 20%;
+    background-color: #ffffff;
+    box-shadow: $box-shadow;
+    text-align: center;
+    padding: $global-padding;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .start-it {
-    // h1 {
-    //   padding: $global-padding;
-    // }
+    h2 {
+      font-size: 2rem;
+    }
     padding: 0 2vmax;
+
     .start-it-ingress {
       width: 100%;
       flex-direction: column;
-      .start-text{
+
+      .start-text {
         width: 100%;
       }
+
       .application-box {
         width: 100%;
         padding: 5vmax 0;
@@ -133,17 +176,20 @@
       width: 100%;
       padding: 0;
       margin: 0;
+
       .unordered-list {
         display: flex;
         flex-direction: column;
       }
-    
+
       .info-table {
         width: 100%;
+
         td {
           padding: 2vmax 0;
           width: 100%;
         }
+
         tr {
           display: flex;
           flex-direction: column;

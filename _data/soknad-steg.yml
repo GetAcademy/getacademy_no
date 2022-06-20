@@ -21,7 +21,7 @@
 
           - header: Du kan delta på kurset
             miniHeader: Velkommen til GET Academy.
-            link: Informasjon om moduler og priser
+            link: #Informasjon om moduler og priser
             source: /utdanning/start-it
             texts:
             direction: "container right"

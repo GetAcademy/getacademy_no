@@ -1,22 +1,31 @@
 .course-overview {
+  p {
+    text-align: left;
+  }
+
   padding: $global-padding;
   max-width: $content-max-width;
   margin: auto;
+
   h1,
   h2 {
     padding-bottom: 2.5rem;
   }
+
   h2 {
     font-size: 1.2em;
   }
+
   .course-overview-card {
     display: flex;
     flex-wrap: wrap;
   }
+
   .cards-container {
     // background-color: #e4f5ff;
     padding: 5rem $global-padding;
   }
+
   .page-links {
     margin: auto;
   }
@@ -27,6 +36,7 @@
     color: #333333;
     text-decoration: none;
   }
+
   .content {
     max-width: 350px;
     display: flex;
@@ -42,6 +52,7 @@
       box-shadow: 0px 10px 15px 3px #ceced0;
       transform: scale(1.02);
       transition: 0.2s;
+
       h2 {
         padding-right: 15px;
       }
@@ -66,15 +77,11 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .course-overview { 
-    padding: 0;
-  }
-  .page-selector {
-    width: 70%;
-
-  }
-  .padding-mobile {
-    padding: $global-padding;
+@media only screen and (max-width: 375px) {
+  .course-overview {
+    width: unset !important;
+    .page-selector .content {
+      padding: 1vw !important;
+    }
   }
 }

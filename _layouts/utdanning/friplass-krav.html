@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<div class="start-it krav-container">
+    <h1>Start IT - Krav for friplass</h1>
+    <div class="start-it-container module-container">
+        <div class="module-component">
+            <h3>{{page.info}}:</h3>
+            <div class="module-component-container">
+                <ul class="unordered-list-column">
+                    {% for krav in page.hovedkrav %}
+                    <div class="module-paragraph-container">
+                        <li>
+                            <span class="normal-text">{{ krav }}</span>
+                        </li>
+                    </div>
+                    {% endfor %}
+                </ul>
+            </div>
+            <br>
+            <div>{{page.info-tillegg}}</div>
+            <div>
+                {% for krav in page.info-krav %}
+                <div>
+                    <h3>{{krav.tittel}}</h3>
+                    <div>{{ krav.begrunnelse }}</div>
+                </div>
+                {% endfor %}
+                <div>
+                    <h3>Mer omfattende arbeidsprøve og intervju i opptaksprosessen</h3>
+                    <div>Søker du på en friplass, skal du gjøre en mer omfattende arbeidsprøve enn den ordinære
+                        oppgaven. Vi har også et mer omfattende intervju. Vi går sammen gjennom det du har laget. Vi
+                        krever også at du tar en personlighetstest basert på Femfaktormodellen <a
+                            href="https://bigfive-test.com/no" target="_blank">Bigfive-test</a> og går gjennom
+                        resultatet sammen med oss. Vi ser etter deg som har et bevisst forhold til egne styrker og
+                        svakheter og som er villig til å jobbe videre med å øke din egen selvinnsikt.</div>
+                </div>
+            </div><br>
+            <h3>Melde interesse</h3>
+            <div>{{page.slutt-info.text}}</div><br>
+            <img src="{{'/assets/illustrasjon.png' | relative_url }}" alt="illustrasjon konsepter" /><br>
+
+            <div class="application-box" style="margin: 0 auto;">
+                <a class="application-button" href="{{ '/søke-start-it-friplass/' | relative_url }}">
+                    <!-- Søknad ordinær plass -->
+                    <button class="button secondary">Søk om friplass</button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>

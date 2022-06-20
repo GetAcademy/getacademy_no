@@ -4,29 +4,65 @@ layout: default
 
 <div class="start-it">
   <h1>Start IT</h1>
+  <h3>Nyhet - friplasser på Start IT fra høsten 2022!<br>
+    Før du melder interesse for en friplass er det viktig at du leser
+    <a class="application-button" href="{{ 'søke-start-it-friplass/krav' | relative_url }}">
+      kravene for friplass
+    </a>
+  </h3>
   <div class="start-it-ingress">
     <div class="start-text">
-    <span>
-      GET Academy tilbyr deg muligheten til å gå fra null kodeerfaring til
-      juniorutvikler på 1½ år.
-      <br />
-      Utdanningen er delt i to hoveddeler: Start IT og GET IT og forutsetter
-      ingen formell kompetanse eller tidligere kodeerfaring. Du trenger bare å
-      ha tenning for koding og være villig til å legge til mye innsats!
-      <br />
-      <br />
-      Start IT er inngangen og består av tre moduler, studielengde i alle
-      modulene er 2 måneder.
-    </span>
-  </div>
+      <span>
+        GET Academy tilbyr deg muligheten til å gå fra null kodeerfaring til
+        juniorutvikler på 1½ år.
+        <br />
+        Utdanningen er delt i to hoveddeler: Start IT og GET IT og forutsetter
+        ingen formell kompetanse eller tidligere kodeerfaring. Du trenger bare å
+        ha tenning for koding og være villig til å legge til mye innsats!
+        <br />
+        <br />
+        Start IT er inngangen og består av tre moduler, studielengde i alle
+        modulene er 2 måneder.
+      </span>
+    </div>
     <div class="application-box">
-      <p> Lyst til å lære å kode?</p>
-        <a class="application-button" href="{{ '/søke-start-it/' | relative_url }}">
-          <!-- Søknad -->
-          <button class="button primary">Meld interesse</button>
-        </a>
+      <a class="application-button" href="{{ '/søke-start-it-ordinær/' | relative_url }}">
+        <!-- Søknad ordinær plass -->
+        <button class="button primary">Søk om ordinær plass</button>
+      </a>
+      <div></div>
+      <a class="application-button" href="{{ '/søke-start-it-friplass/' | relative_url }}">
+        <!-- Søknad friplass -->
+        <button class="button secondary">Søk om friplass*</button>
+      </a>
+      <a class="application-button" href="{{ '/søke-start-it-friplass/krav' | relative_url }}">*Les kravene for
+        friplass</a>
+    </div>
+
+  </div>
+
+  <div class="soknad-side-container">
+    <h2>Slik foregår det</h2>
+    <div class="steps-container">
+      <div class="flex-container">
+        <div id="soknad-timeline" class="timeline">
+          <div>{% for steg in site.data.soknad-steg %}
+            <div class="{{ steg.direction }}">
+              <div class="content">
+                <h3>{{ steg.header }}</h3>
+                <h4>{{ steg.miniHeader }}</h4>
+                <p>{{ steg.texts }}</p>
+                <a class="link-text" alt="getAcademy" href="{{steg.source | relative_url}}">{{ steg.link }}</a>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+  <tr></tr>
   {% for modul in page.moduler %}
   <div class="start-it-container module-container">
     <div class="module-component">
@@ -125,8 +161,9 @@ layout: default
 
       <div class="module-component-container">
         <div class="area area4">
-          <h3>Praktisk informasjon</h3>
-          <p>{{ modul.tileggs-info }}</p>
+          <h3>Praktisk informasjon<br>
+            <h4 class="important-text">{{ modul.tileggs-info }}</h4>
+          </h3>
         </div>
       </div>
     </div>
