@@ -11,13 +11,13 @@ layout: default
   </div>
   <div class="container-block center-flex">{% include home/norge-kart.html %}</div>
   <!-- <div class="short-width"> -->
-    <div class="bold-text">Studenter fra hele Norge</div> <!-- Title -->
-    <p class="left-aligned-text">Teknologi interessen er høy blant våre studenter, og stort sett all undervisning
-      foregår digitalt. Dette betyr at vi har studenter fra hele landet, og derfor har vi kanskje student til akkurat
-      DIN bedrift.</p>
-    <!-- </div> -->
-    <div>{% include bedrift/kontakt-kort.html %}</div>
-  <div class="left-aligned-text bold-text">Greps</div>
+  <div class="bold-text">Studenter fra hele Norge</div>
+  <div class="left-aligned-text">Teknologi interessen er høy blant våre studenter, og stort sett all undervisning
+    foregår digitalt. Dette betyr at vi har studenter fra hele landet, og derfor har vi kanskje student til akkurat
+    DIN bedrift.</div>
+  <!-- </div> -->
+  <div>{% include bedrift/kontakt-kort.html %}</div>
+  <h2 class="left-aligned-text bold-text">Greps</h2>
   <iframe width="640" height="320" src="https://www.youtube.com/embed/QxavGidlpo8?controls=0&amp;start=00"
     title="YouTube video player" frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -25,21 +25,22 @@ layout: default
   {% for text-block in site.data.text-block %}
   <div id="special-clause" class="container-block">
     <div class="left-aligned-text bold-text">{{ text-block.header }}</div>
-    <p class="left-aligned-text">{{ text-block.paragraph }}</p>
+    <div class="left-aligned-text">{{ text-block.paragraph }}</div>
   </div>
   {% if text-block.bulletpoints %}
-    {% for bulletpoint in text-block.bulletpoints %} 
-    <div class="vertical-align">
-      <li>
-        <span class="normal-text  .start-it .unordered-list">{{ bulletpoint }}</span>
-      </li>
+  {% for bulletpoint in text-block.bulletpoints %}
+  <div class="vertical-align">
+    <li>
+      <span class="normal-text  .start-it .unordered-list">{{ bulletpoint }}</span>
+    </li>
     {% endfor %}
-    <p class="left-aligned-text">{{ text-block.additionalText }}</p>
-{% endif %}
-  {% endfor %}
+    <br>
+    <h3 class="left-aligned-text">{{ text-block.additionalText }}</h3>
+    {% endif %}
+    {% endfor %}
 
-  <div class="container-block">
-    <h2 class="left-aligned-text bold-text">Våre samarbeidspartnere</h2> <!-- Title -->
+    <div class="container-block">
+      <h2 class="left-aligned-text bold-text">Våre samarbeidspartnere</h2> <!-- Title -->
+    </div>
+    <div class="container-block">{% include home/bedrifter.html %}</div>
   </div>
-  <div class="container-block">{% include home/bedrifter.html %}</div>
-</div>

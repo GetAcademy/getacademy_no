@@ -20,11 +20,9 @@
 
     .horizontal-button-container {
       display: flex;
-      // align-items: center;
-      justify-content: space-evenly;
 
       a {
-        margin: auto;
+        padding-right: 1vw;
         width: 40%;
 
         :hover {
@@ -114,43 +112,40 @@
 
 @media only screen and (max-width: 950px) {
   .attention-image-container {
-      justify-content: center;
-    }
-    h1 {
-      margin-bottom: 0;
-      font-size: 2rem;
-    }
+    justify-content: center;
 
     .hero-image {
       display: none;
     }
 
-    h2 {
-      font-size: 1rem;
+    h1 {
+      margin-bottom: 0;
+      font-size: 2rem;
     }
 
+    h2 {
+      text-align: center !important;
+    }
+    .horizontal-button-container {
+      display: flex;
+      justify-content: center !important;
+  }
     .cta-container {
-      padding: 9px 0;
-      flex-basis: 0%;
-      text-align: center;
-      white-space: normal;
-
       h1 {
         display: none;
       }
-
-      .cta-text {
-        padding: 0px;
-        text-align: center;
-        margin: 0;
-      }
     }
   }
 
-  @media only screen and (max-width: 420px) {
-    .attention-image-container {
-      .cta-text {
-        font-size: smaller;
-      }
+  // h2 {
+  //   font-size: 1rem;
+  // }
+}
+
+@media only screen and (max-width: 420px) {
+  .attention-image-container {
+    .cta-text {
+      font-size: smaller;
     }
   }
+}

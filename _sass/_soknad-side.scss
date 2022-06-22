@@ -2,6 +2,9 @@
   .important-text {
     margin: 0 28%;
   }
+  .center-align-text {
+    text-align: center;
+  }
   input[type="checkbox"] {
     background-color: #fff;
     margin: 0;
@@ -35,9 +38,8 @@
   max-width: $content-max-width;
 
   #mandatory {
-    text-align: center;
-
     .required-info {
+      text-align: left;
       color: $primary-color;
     }
   }
@@ -107,7 +109,6 @@
   h2 {
     font-size: 1.9rem;
     text-align: center;
-    padding: 1rem 0;
   }
 }
 

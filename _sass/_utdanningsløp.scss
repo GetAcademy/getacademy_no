@@ -61,7 +61,6 @@
 
   h2 {
     line-height: 1em;
-
     display: inline-block;
     position: relative;
     transition: 0.5s;
@@ -81,7 +80,7 @@
   .course-overview {
     width: unset !important;
     .page-selector .content {
-      padding: 1vw !important;
+      padding: 2vw !important;
     }
   }
 }
