@@ -15,7 +15,9 @@ layout: default
       </li>
       {% endfor %}
     </ul>
+    <br>
 
+    {% if page.personligeegenskaper %}
     <p class="sub-title">Kvalifikasjoner og personlige egenskaper:</p>
     <ul class="list-style">
       {% for egenskap in page.personligeegenskaper %}
@@ -24,15 +26,45 @@ layout: default
       </li>
       {% endfor %}
     </ul>
+    {% endif %}
 
     <br />
+    <p class="sub-title">Vi tilbyr:</p>
+    <ul class="list-style">
+      {% for tilbyr in page.vitilbyr %}
+      <li>
+        <p class="normal-text">{{tilbyr}}</p>
+      </li>
+      {% endfor %}
+    </ul>
+    <br>
 
-    <span>Ta gjerne kontakt med oss om du har spørsmål. </span>
-    <br />
-    <br />
+    <p class="sub-title">{{page.om.title}}</p>
+    <p>{{page.om.arbeidsgiver}}</p>
+    <br>
+
     <span class="sub-title">Kontaktperson: </span>
     <span>{{page.kontaktperson}}</span>
     <br />
+
     <span class="sub-title">Arbeidssted: </span>
     <span>{{page.sluttinfo}}</span>
+    <br>  
+
+    <span class="sub-title">Sektor: </span>
+    <span>{{page.om.sektor}}</span>
+    <br>  
+
+    <span class="sub-title">Hjemmekontor: </span>
+    <span>{{page.om.hjemmekontor}}</span>
+    <br>  
+
+    <span class="sub-title">Stillingsfunksjon: </span>
+    <span>{{page.om.stillingsfunksjon}}</span>
+    <br>  
+
+    <span class="sub-title">Språk: </span>
+    <span>{{page.om.language}}</span>
+    <br>    <br>
+    <h3>Ta gjerne kontakt med oss om du har spørsmål. </h3>
   </div>

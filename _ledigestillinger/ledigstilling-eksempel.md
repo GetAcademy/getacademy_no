@@ -1,8 +1,8 @@
 <!-- ---
-side: /ledige-stillinger/it-utvikler
+side: /ledige-stillinger/eksempel
 published: false # 
-tittel: "Eksempel stilling"
+tittel: "Være!"
 arbeidssted: LARVIK
-heltid-deltid: Heltid
+heltid-deltid: Fast
 tiltredelsesdato: Snarest
 --- -->

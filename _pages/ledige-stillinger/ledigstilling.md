@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: stillinger/stilling
 tittel: "Vi søker etter en IT-utvikler"
 page-path: /ledige-stillinger/utlysning-eksempel
@@ -39,4 +39,4 @@ vitilbyr: [
 
 kontaktperson: "Terje Kolderup Tlf: 952 28 064 E-post: terje@getacademy.no"
 sluttinfo: Plateverkstedet, Nedre Fritzøegate 2, LARVIK
----
+--- -->
