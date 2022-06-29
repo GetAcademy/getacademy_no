@@ -2,7 +2,7 @@
 published: true
 layout: stillinger/stilling
 tittel: "Være med og gjøre en forskjell? Bli vår nye salgs- og markedsansvarlige!"
-permalink: /ledige-stillinger/markedsførings-ansvarlig
+permalink: /ledige-stillinger/markedsforings-ansvarlig
 arbeidssted: LARVIK
 heltid-deltid: Heltid
 tiltredelsesdato: Snarest
