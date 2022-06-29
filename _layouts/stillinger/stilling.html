@@ -4,6 +4,15 @@ layout: default
 <div class="main-container-stilling">
   <button class="back-button" onclick="window.history.back()">Tilbake</button>
   <h1>{{page.tittel}}</h1>
+  <span class="sub-title">Arbeidssted: </span>
+  <span>{{page.arbeidssted}}</span>
+  <br>
+  <span class="sub-title">Frist: </span>
+  <span>{{page.tiltredelsesdato}}</span>
+  <br>
+  <span class="sub-title">Ansettelsesform: </span>
+  <span>{{page.heltid-deltid}}</span>
+  <br>
   {% for paragraph in page.paragraphs %}
   <p>{{paragraph}}</p>
   {% endfor %}
@@ -66,7 +75,7 @@ layout: default
   <span class="sub-title">Språk: </span>
   <span>{{page.om.language}}</span>
   <br>
-  <h3>Ta gjerne kontakt med oss om du har spørsmål. </h3>
+  <h3>Ta gjerne kontakt med oss om du har spørsmål.</h3>
   <br>
   <a class="application-button" href="{{page.sokher}}" target="_blank"><span> <button class="button primary">Søk her</button></span></a>
   <br>
