@@ -48,4 +48,5 @@ om: {
 
 kontaktperson: "Elin Herlev Christoffersen Mobil: 458 86 776"
 sluttinfo: Torget 1, 3256 Larvik
+sokher: "https://www.finn.no/job/fulltime/ad.html?finnkode=263755278"
 ---
