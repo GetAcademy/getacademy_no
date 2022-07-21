@@ -1,0 +1,117 @@
+.gaming-container {
+  max-width: $content-max-width;
+  margin: auto;
+  padding: $global-padding;
+
+  .header {
+    font-size: 2.5em;
+    padding: 0;
+  }
+
+  .intro-question {
+    font-size: 1.225em;
+    text-align: left;
+    margin: 1em 5em 2em 0
+  }
+
+  .header,
+  .info-text {
+    text-align: left;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    .info {
+      padding: 0 10em 0 0;
+      .info-text {
+        font-size: 1.125em;
+        margin-bottom: 1em;
+
+
+        #frist {
+          font-style: italic;
+        }
+      }
+
+      a {
+        color: $primary-color;
+        font-size: larger;
+        &:hover {
+          color: $primary-color-active;
+        }
+      }
+    }
+
+    .quotes {
+      min-width: 25vw;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      .card {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 1.5em;
+        box-shadow: 0px 2px 2px 2px #dfdfdf;
+        padding: 1em;
+        img {
+          width: 125px;
+          height: 125px;
+          object-fit: cover;
+          border-radius: 100%;
+        }
+
+        .name {
+          color: #2D354A;
+          text-align: left;
+          margin: 0;
+          font-weight: 500;
+          font-style: italic;
+        }
+
+        .quote {
+          color: #080911;
+          text-align: left;
+          margin-bottom: 0.5em;
+        }
+
+        .place {
+          font-family: "Open Sans", sans-serif;
+          color: $secondary-button-color;
+          text-align: left;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .contact {
+    font-size: larger;
+    margin: 1em auto;
+    .contact-header{
+      font-weight: bolder;
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .gaming-container {
+    .intro-question {
+      margin: 1em auto;
+    }
+    .content {
+      flex-direction: column;
+
+      .info {
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {}

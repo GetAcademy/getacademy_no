@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="gaming-container">
+    <div class="header">{{ page.header }}</div>
+    
+    {% for question in page.intro-text %}
+    <p class="intro-question">{{ question }}</p>
+    {% endfor %}
+
+    <div class="content">
+
+        <div class="info">
+            {% for text in page.text %}
+            <p class="info-text">{{text}}</p>
+            {% endfor %}
+            <p class="info-text">
+                Høres dette spennende ut? Se mer om tilbudet vårt
+                <a href="{{ '/utdanning/start-it' | relative_url}}">her</a><span id="frist"> (siste frist for å søke er en uke før oppstart)</span>
+            </p>
+        </div>
+
+        <div class="quotes">
+            {% for el in page.sitater %}
+            <div class="card">
+                <img src="{{ el.src | relative_url }}" alt="bilde sitat person"/>
+                <p class="quote">{{el.sitat}}</p>
+                <p class="name">{{el.navn}} <span class="place">{{el.sted}}</span></p>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+    <div class="contact">
+        <div class="contact-header">{{page.kontakt.header}}</div>
+        <div class="contact-info">Kontakt Anita på <a href="mailto:{{page.kontakt.info}}">{{page.kontakt.info}}</a></div>
+    </div>
+</div>

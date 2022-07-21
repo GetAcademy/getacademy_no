@@ -23,7 +23,7 @@
   }
 
   .accordion {
-    max-width: 70%;
+    max-width: 60%;
     margin-right: 15px;
     box-sizing: border-box;
     cursor: pointer;
@@ -39,16 +39,18 @@
 
   .accordion-header {
     padding: 15px;
-    display: flex;
-    justify-content: space-between;
+    &:hover {
+      color: rgba($color: $secondary-button-active, $alpha: 1);
+    }
     
   }
 
   .accordion-content {
-    padding: 0 $global-padding 15px;
-    background-color: rgba($color: $primary-color, $alpha: 0.1);
-    max-width: 70%;
+    padding: 1em $global-padding;
+    background-color: rgba($color: $secondary-button-active, $alpha: 1);
+    color:white;
     font-size: medium;
+    margin-bottom: 1em;
     
   }
   .inefficient-faq {
@@ -80,13 +82,17 @@
 @media only screen and (max-width: 900px) {
   .faq-container {
     display: flex;
-      flex-direction: column;
-  }
-  .accordion {
-    .accordion-content {
-      border: none;
-      margin-bottom: 20px;
-      font-size: smaller;
+    flex-direction: column;
+    .accordion {
+      max-width: unset;
+      .accordion-header {
+        text-align: center;
+      }
+      .accordion-content {
+        border: none;
+        margin-bottom: 1em;
+        max-width: unset;
+      }
     }
   }
   .faq-container .inefficient-faq { 
