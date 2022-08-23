@@ -58,6 +58,8 @@ a, a:visited{
   .text-container {
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     flex-direction: row;
   }
     .form-group {
@@ -119,8 +121,7 @@ a, a:visited{
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    width: 65%;
-    padding-left: 15%;
+    width: 50%;
   }
   input {
     display: block;
@@ -176,6 +177,13 @@ a, a:visited{
   }
   textarea {
     width: 100%;
+    }
+  }
+}
+@media only screen and(max-width:760px){
+  .contact-container {
+    .form-group {
+      width: 75%;
     }
   }
 }
