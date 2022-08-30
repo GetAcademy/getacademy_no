@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+
+<div class="soknad-side-container">
+    <iframe width="220" height="400" src="https://www.youtube.com/embed/CuverhN22kk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2>Påmelding infomøte</h2>
+    <p>GET Academy arrangerer fire digitale informasjonsmøter om tilbudet vårt.
+        Fyll ut skjemaet under, så får du tilsendt lenke til disse møtene på Google Meet.
+        Du trenger ikke velge tid nå - du får lenke til alle fire etter tur.
+    </p>
+    <p>
+        tirsdag 06. september kl. 17.00 - 18.00<br />
+        mandag 12. september kl. 10.00 - 11.00<br />
+        torsdag 22. september kl. 14.00 - 15.00<br />
+        onsdag 28. september kl. 17.30 - 18.30<br />
+    </p>
+    <div class="form-group">
+        <form name="contact"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdAgpuEB33Alww5AHvCcIOlt7OO-VILkPG0lcaH2kapmNRTIw/formResponse"
+            target="hidden_iframe" onsubmit="submitted=true;">
+            <div class="required">
+                <label>E-post</label>
+                <input type="email" name="entry.389422620" id="email" required />
+
+                <input type="hidden" name="entry.1360877689" id="source" />
+                <input class="form-button" style="background-color: #3195D8;" type="submit" value="Send" />
+            </div>
+        </form>
+        <div>
+        </div>
+    </div>
+</div>
+<script>
+    document.getElementById('source').value = location.hash.substr(1);
+</script>
