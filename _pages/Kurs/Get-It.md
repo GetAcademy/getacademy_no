@@ -24,4 +24,3 @@ keycompetences: [
         "Oppsummering og personliggjøring av tema fra modul 1, 2 og 3"]
 
 ---
-dgf.khdfljgldfkjg
