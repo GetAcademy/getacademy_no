@@ -11,8 +11,8 @@ layout: default
   </ol>
   <div class="start-it-ingress">
     <div class="start-text">
-      Start IT-kurset vil gå over 20 uker og inneholde det samme innholdet som tidligere.
-      Modul 1 er de første 7 ukene. Modul 2 er de neste 7 ukene, og Modul 3 er de siste 6 ukene.
+      Start IT-kurset vil gå over 20 uker og inneholde det samme innholdet som tidligere.<br/>
+      Modul 1 er de første 7 ukene. Modul 2 er de neste 7 ukene.  og Modul 3 er de siste 6 ukene.
       <br /><br />
       Før du melder interesse for en friplass er det viktig at du leser
       <a class="application-button" href="{{ 'søke-start-it-friplass/krav' | relative_url }}">
@@ -64,6 +64,42 @@ layout: default
   </div>
 
   <tr></tr>
+
+  <div>
+    <div class="table-container" style="width: 34rem">
+      <table class="info-table" >
+        <tr>
+          <td>
+            <span><i class="fas fa-map-marker-alt"></i> Studiested</span>
+          </td>
+          <td>Larvik eller nettbasert</td>
+        </tr>
+
+        <tr>
+          <td>
+            <span><i class="fas fa-calendar-alt"></i> Studielengde</span>
+          </td>
+          <td>20 uker</td>
+        </tr>
+
+        <tr>
+          <td>
+            <span><i class="fas fa-credit-card"></i> Pris</span>
+          </td>
+          <td>49 500kr</td>
+        </tr>
+
+        <tr class="no-border-bottom">
+          <td>
+            <span><i class="fas fa-sticky-note"></i> Opptakskrav</span>
+          </td>
+          <td>Opptaksprøve</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
   {% for modul in page.moduler %}
   <div class="start-it-container module-container">
     <div class="module-component">
@@ -79,37 +115,6 @@ layout: default
         </div>
 
         <div class="area area2">
-          <div class="table-container">
-            <table class="info-table">
-              <tr>
-                <td>
-                  <span><i class="fas fa-map-marker-alt"></i> Studiested</span>
-                </td>
-                <td>{{ modul.studiested }}</td>
-              </tr>
-
-              <tr>
-                <td>
-                  <span><i class="fas fa-calendar-alt"></i> Studielengde</span>
-                </td>
-                <td>{{ modul.studielengde }}</td>
-              </tr>
-
-              <tr>
-                <td>
-                  <span><i class="fas fa-credit-card"></i> Pris</span>
-                </td>
-                <td>{{ modul.kostnad }}</td>
-              </tr>
-
-              <tr class="no-border-bottom">
-                <td>
-                  <span><i class="fas fa-sticky-note"></i> Opptakskrav</span>
-                </td>
-                <td>{{ modul.krav }}</td>
-              </tr>
-            </table>
-          </div>
         </div>
       </div>
 
