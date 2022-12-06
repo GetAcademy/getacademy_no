@@ -11,9 +11,6 @@ hovedkrav: [
     Hjelpe andre kursdeltakere,
     Mer omfattende arbeidsprøve og intervju i opptaksprosessen
     ]
-
-info-tillegg: Du må søke deg inn på modul 2 og 3 på samme måte som alle andre, men om du kommer inn, får du friplass også for disse modulene. Dersom du har behov for å gå en modul på nytt, må du forvente å måtte ta den ordinære og betalte varianten. Det er GET Academy som til enhver tid vurderer om du har tilstrekkelig kompetanse og oppfyller kriteriene for å gå videre til neste modul.
-
 info-krav: [
     {
         tittel: "Engasjement, motivasjon og faglig interesse",
