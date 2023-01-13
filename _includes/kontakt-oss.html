@@ -1,23 +1,8 @@
-
-    <div class="text-container">
-        <div class="contact-wrapper">
-        {% for person in site.data.kontakt-oss %}
-        {% if person.header %}
-            <h3 class="blue-header">{{person.header}}</h3>
-        {% endif %}
-        <div class="contact-person">
-            <img class="contact-image" src="{{ person.avatar | relative_url}}" loading="lazy" alt="{{person.name}}">
-            <div class="contact-info"><h2 class="person-name">{{person.name}}</h2>
-            <p><i class="fa fa-address-book" aria-hidden="true"></i> <a class="person-info" href="mailto: {{person.email}}">{{person.email}}</a></p>
-            {% if person.phone %}<p><span class="fas fa-phone"></span> {{person.phone}}</p>
-            {% endif %}
-            </div>
-        </div>
-        {% endfor %}
-    </div>
+<div class="text-container">
     <div class="form-group">
-            <h1>Lurer du på noe</h1>
-            <h3>Kontakt oss her</h3>
+        <h1>Lurer du på noe?</h1>
+        Ta kontakt med en av oss på epost eller telefon.
+        <!-- <h3>Kontakt oss her</h3>
             <form name="contact" action="https://formspree.io/xknqldae" method="POST">
                 <label type="text" for="name">Navn:</label>
                 <input type="text" name="name" id="name" />
@@ -26,6 +11,24 @@
                 <label type="text" for="message">Melding:</label>
                 <textarea class="form-field" name="message" id="message"></textarea>
                 <input class="form-button" type="submit" value="Send melding" />
-            </form>
-        </div>
+            </form> -->
     </div>
+    <div class="contact-wrapper">
+        {% for person in site.data.kontakt-oss %}
+        {% if person.header %}
+        <h3 class="blue-header">{{person.header}}</h3>
+        {% endif %}
+        <div class="contact-person">
+            <img class="contact-image" src="{{ person.avatar | relative_url}}" loading="lazy" alt="{{person.name}}">
+            <div class="contact-info">
+                <h2 class="person-name">{{person.name}}</h2>
+                <p><i class="fa fa-address-book" aria-hidden="true"></i> <a class="person-info"
+                        href="mailto: {{person.email}}">{{person.email}}</a></p>
+                {% if person.phone %}<p><span class="fas fa-phone"></span> {{person.phone}}</p>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
